@@ -447,6 +447,7 @@ en:
     search:
       title:
         latlon_html: 'Results from <a href="https://openstreetmap.org/">Internal</a>'
+        plus_code_html: 'Results from <a href="https://plus.codes/">Plus Codes</a>'
         ca_postcode_html: 'Results from <a href="https://geocoder.ca/">Geocoder.CA</a>'
         osm_nominatim_html: 'Results from <a href="https://nominatim.openstreetmap.org/">OpenStreetMap Nominatim</a>'
         geonames_html: 'Results from <a href="http://www.geonames.org/">GeoNames</a>'

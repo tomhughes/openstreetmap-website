@@ -13,6 +13,10 @@ class GeocoderControllerTest < ActionDispatch::IntegrationTest
       { :controller => "geocoder", :action => "search_latlon" }
     )
     assert_routing(
+      { :path => "/geocoder/search_plus_code", :method => :get },
+      { :controller => "geocoder", :action => "search_plus_code" }
+    )
+    assert_routing(
       { :path => "/geocoder/search_ca_postcode", :method => :get },
       { :controller => "geocoder", :action => "search_ca_postcode" }
     )
@@ -234,6 +238,21 @@ class GeocoderControllerTest < ActionDispatch::IntegrationTest
   end
 
   ##
+  # Test identification of plus codes
+  def test_identify_plus_code
+    [
+      "6PH57VP3+PQ",
+      "6GCRPR6C+24",
+      "8FWC2345+G6",
+      "8FWC2345+G6G",
+      "8fwc2345+",
+      "8FWCX400+"
+    ].each do |code|
+      search_check code, %w[plus_code]
+    end
+  end
+
+  ##
   # Test identification of US zipcodes
   def test_identify_us_postcode
     %w[
@@ -313,6 +332,58 @@ class GeocoderControllerTest < ActionDispatch::IntegrationTest
 
     get geocoder_search_latlon_path(:lat => 1.23, :lon => 180.23, :zoom => 16, :latlon_digits => true), :xhr => true
     results_check_error "Latitude or longitude are out of range"
+  end
+
+  ##
+  # Test the plus code search
+  def test_search_plus_code
+    get geocoder_search_plus_code_path(:query => "6PH57VP3+PQ", :zoom => 10,
+                                       :minlon => -0.559, :minlat => 51.217,
+                                       :maxlon => 0.836, :maxlat => 51.766), :xhr => true
+    results_check "name" => "6PH57VP3+PQ",
+                  "lat" => 1.2868125, "lon" => 103.85443749999999,
+                  "min-lat" => 1.2867499999999998, "max-lat" => 1.2868749999999998,
+                  "min-lon" => 103.85437499999999, "max-lon" => 103.85449999999999
+
+    get geocoder_search_plus_code_path(:query => "6GCRPR6C+24", :zoom => 10,
+                                       :minlon => -0.559, :minlat => 51.217,
+                                       :maxlon => 0.836, :maxlat => 51.766), :xhr => true
+    results_check "name" => "6GCRPR6C+24",
+                  "lat" => -1.2899375, "lon" => 36.8203125,
+                  "min-lat" => -1.29, "max-lat" => -1.289875,
+                  "min-lon" => 36.82025, "max-lon" => 36.820375
+
+    get geocoder_search_plus_code_path(:query => "8FWC2345+G6", :zoom => 10,
+                                       :minlon => -0.559, :minlat => 51.217,
+                                       :maxlon => 0.836, :maxlat => 51.766), :xhr => true
+    results_check "name" => "8FWC2345+G6",
+                  "lat" => 48.0063125, "lon" => 8.058062500000002,
+                  "min-lat" => 48.00625, "max-lat" => 48.006375,
+                  "min-lon" => 8.058000000000002, "max-lon" => 8.058125000000002
+
+    get geocoder_search_plus_code_path(:query => "8FWC2345+G6G", :zoom => 10,
+                                       :minlon => -0.559, :minlat => 51.217,
+                                       :maxlon => 0.836, :maxlat => 51.766), :xhr => true
+    results_check "name" => "8FWC2345+G6G",
+                  "lat" => 48.0063125, "lon" => 8.058078125000002,
+                  "min-lat" => 48.0063, "max-lat" => 48.006325000000004,
+                  "min-lon" => 8.058062500000002, "max-lon" => 8.058093750000001
+
+    get geocoder_search_plus_code_path(:query => "8fwc2345+", :zoom => 10,
+                                       :minlon => -0.559, :minlat => 51.217,
+                                       :maxlon => 0.836, :maxlat => 51.766), :xhr => true
+    results_check "name" => "8fwc2345+",
+                  "lat" => 48.00625, "lon" => 8.058750000000002,
+                  "min-lat" => 48.005, "max-lat" => 48.0075,
+                  "min-lon" => 8.057500000000001, "max-lon" => 8.06
+
+    get geocoder_search_plus_code_path(:query => "8FWCX400+", :zoom => 10,
+                                       :minlon => -0.559, :minlat => 51.217,
+                                       :maxlon => 0.836, :maxlat => 51.766), :xhr => true
+    results_check "name" => "8FWCX400+",
+                  "lat" => 48.975, "lon" => 8.125,
+                  "min-lat" => 48.95, "max-lat" => 49.0,
+                  "min-lon" => 8.1, "max-lon" => 8.15
   end
 
   ##

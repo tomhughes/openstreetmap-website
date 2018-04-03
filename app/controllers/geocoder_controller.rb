@@ -2,6 +2,7 @@ class GeocoderController < ApplicationController
   require "cgi"
   require "uri"
   require "rexml/document"
+  require "plus_codes/open_location_code"
 
   before_action :authorize_web
   before_action :set_locale
@@ -17,7 +18,9 @@ class GeocoderController < ApplicationController
       @sources.push "osm_nominatim_reverse"
       @sources.push "geonames_reverse" if Settings.key?(:geonames_username)
     elsif @params[:query]
-      if @params[:query].match?(/^\d{5}(-\d{4})?$/)
+      if olc.full?(@params[:query])
+        @sources.push "plus_code"
+      elsif @params[:query].match?(/^\d{5}(-\d{4})?$/)
         @sources.push "osm_nominatim"
       elsif @params[:query].match?(/^(GIR 0AA|[A-PR-UWYZ]([0-9]{1,2}|([A-HK-Y][0-9]|[A-HK-Y][0-9]([0-9]|[ABEHMNPRV-Y]))|[0-9][A-HJKS-UW])\s*[0-9][ABD-HJLNP-UW-Z]{2})$/i)
         @sources.push "osm_nominatim"
@@ -79,6 +82,20 @@ class GeocoderController < ApplicationController
         render :action => "results"
       end
     end
+  end
+
+  def search_plus_code
+    code_area = olc.decode(params[:query])
+
+    @results = [{ :lat => code_area.latitude_center,
+                  :lon => code_area.longitude_center,
+                  :min_lat => code_area.south_latitude,
+                  :max_lat => code_area.north_latitude,
+                  :min_lon => code_area.west_longitude,
+                  :max_lon => code_area.east_longitude,
+                  :name => params[:query] }]
+
+    render :action => "results"
   end
 
   def search_ca_postcode
@@ -349,5 +366,9 @@ class GeocoderController < ApplicationController
       lon = !captures[5].casecmp("w").zero? ? captures[6].to_f + (captures[7].to_f + captures[8].to_f / 60) / 60 : -(captures[6].to_f + (captures[7].to_f + captures[8].to_f / 60) / 60)
     end
     { :lat => lat, :lon => lon }
+  end
+
+  def olc
+    @olc ||= PlusCodes::OpenLocationCode.new
   end
 end
