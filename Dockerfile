@@ -9,7 +9,7 @@ RUN apt-get update \
       curl \
       default-jre-headless \
       file \
-      firefox-geckodriver \
+      chromium-chromedriver \
       libarchive-dev \
       libffi-dev \
       libgd-dev \
