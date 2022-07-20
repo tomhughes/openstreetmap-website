@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM debian:stable
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -9,7 +9,7 @@ RUN apt-get update \
       curl \
       default-jre-headless \
       file \
-      chromium-chromedriver \
+      chromium-driver \
       libarchive-dev \
       libffi-dev \
       libgd-dev \
@@ -29,6 +29,11 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+# Configure the en_US locale
+RUN sed -i -e "s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/" /etc/locale.gen \
+ && dpkg-reconfigure --frontend=noninteractive locales \
+ && update-locale LANG=en_US.UTF-8
+
 # Install compatible Osmosis to help users import sample data in a new instance
 RUN curl -OL https://github.com/openstreetmap/osmosis/releases/download/0.47.2/osmosis-0.47.2.tgz \
  && tar -C /usr/local -xzf osmosis-0.47.2.tgz
@@ -47,4 +52,8 @@ RUN gem install bundler \
 # Install NodeJS packages using yarnpkg
 # `bundle exec rake yarn:install` will not work
 ADD package.json yarn.lock /app/
-RUN yarnpkg --ignore-engines install
+RUN yarnpkg install
+
+# Add a user
+RUN useradd -d /app -M openstreetmap \
+ && chown -R openstreetmap /app/tmp
