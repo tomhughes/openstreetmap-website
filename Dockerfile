@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM debian:stable
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -9,7 +9,7 @@ RUN apt-get update \
       curl \
       default-jre-headless \
       file \
-      chromium-chromedriver \
+      chromium-driver \
       libarchive-dev \
       libffi-dev \
       libgd-dev \
@@ -47,4 +47,4 @@ RUN gem install bundler \
 # Install NodeJS packages using yarnpkg
 # `bundle exec rake yarn:install` will not work
 ADD package.json yarn.lock /app/
-RUN yarnpkg --ignore-engines install
+RUN yarnpkg install
