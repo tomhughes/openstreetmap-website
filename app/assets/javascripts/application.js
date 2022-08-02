@@ -60,7 +60,7 @@ window.updateLinks = function (loc, zoom, layers, object) {
   $("#edit_tab")
     .tooltip({ placement: "bottom" })
     .attr("data-original-title", editDisabled ?
-      I18n.t("javascripts.site.edit_disabled_tooltip") : "")
+      OSM.i18n.t("javascripts.site.edit_disabled_tooltip") : "")
     // Disable the button group and also the buttons to avoid
     // inconsistent behaviour when zooming
     .toggleClass("disabled", editDisabled)
@@ -127,9 +127,16 @@ $(document).ready(function () {
 
   var application_data = $("head").data();
 
-  I18n.default_locale = OSM.DEFAULT_LOCALE;
-  I18n.locale = application_data.locale;
-  I18n.fallbacks = true;
+  $.getJSON(OSM.DEFAULT_LOCALE_DATA, function (json) {
+    OSM.i18n.store(json);
+  });
+
+  $.getJSON(application_data.localeData, function (json) {
+    OSM.i18n.store(json);
+  });
+
+  OSM.i18n.defaultLocale = OSM.DEFAULT_LOCALE;
+  OSM.i18n.locale = application_data.locale;
 
   OSM.preferred_editor = application_data.preferredEditor;
 

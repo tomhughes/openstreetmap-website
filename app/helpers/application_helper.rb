@@ -48,6 +48,7 @@ module ApplicationHelper
   def application_data
     data = {
       :locale => I18n.locale,
+      :locale_data => asset_path("i18n/#{I18n.locale}.json"),
       :preferred_editor => preferred_editor
     }
 

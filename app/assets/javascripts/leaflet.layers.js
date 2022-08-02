@@ -10,7 +10,7 @@ L.OSM.layers = function (options) {
     var button = $("<a>")
       .attr("class", "control-button")
       .attr("href", "#")
-      .attr("title", I18n.t("javascripts.map.layers.title"))
+      .attr("title", OSM.i18n.t("javascripts.map.layers.title"))
       .html("<span class=\"icon layers\"></span>")
       .on("click", toggle)
       .appendTo($container);
@@ -23,12 +23,12 @@ L.OSM.layers = function (options) {
       .appendTo($ui)
       .append(
         $("<span>")
-          .text(I18n.t("javascripts.close"))
+          .text(OSM.i18n.t("javascripts.close"))
           .attr("class", "icon close")
           .bind("click", toggle))
       .append(
         $("<h4>")
-          .text(I18n.t("javascripts.map.layers.header")));
+          .text(OSM.i18n.t("javascripts.map.layers.header")));
 
     var baseSection = $("<div>")
       .attr("class", "section base-layers")
@@ -115,7 +115,7 @@ L.OSM.layers = function (options) {
         .appendTo($ui);
 
       $("<p>")
-        .text(I18n.t("javascripts.map.layers.overlays"))
+        .text(OSM.i18n.t("javascripts.map.layers.overlays"))
         .attr("class", "text-muted")
         .appendTo(overlaySection);
 
@@ -141,7 +141,7 @@ L.OSM.layers = function (options) {
           .prop("checked", checked)
           .appendTo(label);
 
-        label.append(I18n.t("javascripts.map.layers." + name));
+        label.append(OSM.i18n.t("javascripts.map.layers." + name));
 
         input.on("change", function () {
           checked = input.is(":checked");
@@ -172,7 +172,7 @@ L.OSM.layers = function (options) {
 
           $(item).attr("class", disabled ? "disabled" : "");
           item.attr("data-original-title", disabled ?
-            I18n.t("javascripts.site.map_" + name + "_zoom_in_tooltip") : "");
+            OSM.i18n.t("javascripts.site.map_" + name + "_zoom_in_tooltip") : "");
         });
       };
 

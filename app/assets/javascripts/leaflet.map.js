@@ -1,3 +1,4 @@
+//= require i18n
 //= require qs/dist/qs
 
 L.extend(L.LatLngBounds.prototype, {
@@ -15,13 +16,13 @@ L.OSM.Map = L.Map.extend({
   initialize: function (id, options) {
     L.Map.prototype.initialize.call(this, id, options);
 
-    var copyright = I18n.t("javascripts.map.copyright", { copyright_url: "/copyright" });
-    var donate = I18n.t("javascripts.map.donate_link_text", { donate_url: "https://donate.openstreetmap.org" });
-    var terms = I18n.t("javascripts.map.terms", { terms_url: "https://wiki.osmfoundation.org/wiki/Terms_of_Use" });
-    var cyclosm = I18n.t("javascripts.map.cyclosm", { cyclosm_url: "https://www.cyclosm.org", osmfrance_url: "https://openstreetmap.fr/" });
-    var thunderforest = I18n.t("javascripts.map.thunderforest", { thunderforest_url: "https://www.thunderforest.com/" });
-    var memomaps = I18n.t("javascripts.map.opnvkarte", { memomaps_url: "https://memomaps.de/" });
-    var hotosm = I18n.t("javascripts.map.hotosm", { hotosm_url: "https://www.hotosm.org/", osmfrance_url: "https://openstreetmap.fr/" });
+    var copyright = OSM.i18n.t("javascripts.map.copyright", { copyright_url: "/copyright" });
+    var donate = OSM.i18n.t("javascripts.map.donate_link_text", { donate_url: "https://donate.openstreetmap.org" });
+    var terms = OSM.i18n.t("javascripts.map.terms", { terms_url: "https://wiki.osmfoundation.org/wiki/Terms_of_Use" });
+    var cyclosm = OSM.i18n.t("javascripts.map.cyclosm", { cyclosm_url: "https://www.cyclosm.org", osmfrance_url: "https://openstreetmap.fr/" });
+    var thunderforest = OSM.i18n.t("javascripts.map.thunderforest", { thunderforest_url: "https://www.thunderforest.com/" });
+    var memomaps = OSM.i18n.t("javascripts.map.opnvkarte", { memomaps_url: "https://memomaps.de/" });
+    var hotosm = OSM.i18n.t("javascripts.map.hotosm", { hotosm_url: "https://www.hotosm.org/", osmfrance_url: "https://openstreetmap.fr/" });
 
     this.baseLayers = [];
 
@@ -29,14 +30,14 @@ L.OSM.Map = L.Map.extend({
       attribution: copyright + " &hearts; " + donate + ". " + terms,
       code: "M",
       keyid: "mapnik",
-      name: I18n.t("javascripts.map.base.standard")
+      name: OSM.i18n.t("javascripts.map.base.standard")
     }));
 
     this.baseLayers.push(new L.OSM.CyclOSM({
       attribution: copyright + ". " + cyclosm + ". " + terms,
       code: "Y",
       keyid: "cyclosm",
-      name: I18n.t("javascripts.map.base.cyclosm")
+      name: OSM.i18n.t("javascripts.map.base.cyclosm")
     }));
 
     if (OSM.THUNDERFOREST_KEY) {
@@ -45,7 +46,7 @@ L.OSM.Map = L.Map.extend({
         apikey: OSM.THUNDERFOREST_KEY,
         code: "C",
         keyid: "cyclemap",
-        name: I18n.t("javascripts.map.base.cycle_map")
+        name: OSM.i18n.t("javascripts.map.base.cycle_map")
       }));
 
       this.baseLayers.push(new L.OSM.TransportMap({
@@ -53,7 +54,7 @@ L.OSM.Map = L.Map.extend({
         apikey: OSM.THUNDERFOREST_KEY,
         code: "T",
         keyid: "transportmap",
-        name: I18n.t("javascripts.map.base.transport_map")
+        name: OSM.i18n.t("javascripts.map.base.transport_map")
       }));
     }
 
@@ -61,14 +62,14 @@ L.OSM.Map = L.Map.extend({
       attribution: copyright + ". " + memomaps + ". " + terms,
       code: "O",
       keyid: "opnvkarte",
-      name: I18n.t("javascripts.map.base.opnvkarte")
+      name: OSM.i18n.t("javascripts.map.base.opnvkarte")
     }));
 
     this.baseLayers.push(new L.OSM.HOT({
       attribution: copyright + ". " + hotosm + ". " + terms,
       code: "H",
       keyid: "hot",
-      name: I18n.t("javascripts.map.base.hot")
+      name: OSM.i18n.t("javascripts.map.base.hot")
     }));
 
     this.noteLayer = new L.FeatureGroup();
@@ -80,7 +81,7 @@ L.OSM.Map = L.Map.extend({
     this.gpsLayer = new L.OSM.GPS({
       pane: "overlayPane",
       code: "G",
-      name: I18n.t("javascripts.map.base.gps")
+      name: OSM.i18n.t("javascripts.map.base.gps")
     });
 
     this.on("layeradd", function (event) {

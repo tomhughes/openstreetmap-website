@@ -47,6 +47,6 @@ $(document).ready(function () {
 
     id.attr("src", id.data("url") + "#" + Qs.stringify(params));
   } else {
-    alert(I18n.t("site.edit.id_not_configured"));
+    alert(OSM.i18n.t("site.edit.id_not_configured"));
   }
 });

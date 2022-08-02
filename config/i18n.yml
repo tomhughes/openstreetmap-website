@@ -1,9 +1,6 @@
-export_i18n_js: false
-
 translations:
-  - file: "app/assets/javascripts/i18n/%{locale}.js"
-    pretty_print: true
-    only:
+  - file: "app/assets/javascripts/i18n/:locale.json"
+    patterns:
     - "*.date"
     - "*.time"
     - "*.browse.start_rjs.*"
@@ -15,6 +12,5 @@ translations:
     - "*.layouts.project_name.title"
     - "*.geocoder.search_osm_nominatim.*"
   - file: "app/assets/javascripts/i18n/embed.js"
-    pretty_print: true
-    only:
+    patterns:
     - "*.javascripts.embed.*"

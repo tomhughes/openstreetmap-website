@@ -1,4 +1,5 @@
 //= require_self
+//= require i18n
 //= require leaflet.sidebar
 //= require leaflet.locatecontrol/src/L.Control.Locate
 //= require leaflet.layers
@@ -107,9 +108,9 @@ $(document).ready(function () {
     icon: "icon geolocate",
     iconLoading: "icon geolocate",
     strings: {
-      title: I18n.t("javascripts.map.locate.title"),
+      title: OSM.i18n.t("javascripts.map.locate.title"),
       popup: function (options) {
-        return I18n.t("javascripts.map.locate." + options.unit + "Popup", { count: options.distance });
+        return OSM.i18n.t("javascripts.map.locate." + options.unit + "Popup", { count: options.distance });
       }
     }
   }).addTo(map);
@@ -269,7 +270,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
       if (!loaded) {
-        alert(I18n.t("site.index.remote_failed"));
+        alert(OSM.i18n.t("site.index.remote_failed"));
         iframe.remove();
       }
     }, 1000);
@@ -288,7 +289,7 @@ $(document).ready(function () {
       .removeAttr("title")
       .tooltip({
         placement: "bottom",
-        title: I18n.t("javascripts.edit_help")
+        title: OSM.i18n.t("javascripts.edit_help")
       })
       .tooltip("show");
 
@@ -302,7 +303,7 @@ $(document).ready(function () {
 
     page.pushstate = page.popstate = function () {
       map.setSidebarOverlaid(true);
-      document.title = I18n.t("layouts.project_name.title");
+      document.title = OSM.i18n.t("layouts.project_name.title");
     };
 
     page.load = function () {

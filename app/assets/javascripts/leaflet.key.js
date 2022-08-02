@@ -20,12 +20,12 @@ L.OSM.key = function (options) {
       .appendTo($ui)
       .append(
         $("<span>")
-          .text(I18n.t("javascripts.close"))
+          .text(OSM.i18n.t("javascripts.close"))
           .attr("class", "icon close")
           .bind("click", toggle))
       .append(
         $("<h4>")
-          .text(I18n.t("javascripts.key.title")));
+          .text(OSM.i18n.t("javascripts.key.title")));
 
     var $section = $("<div>")
       .attr("class", "section")
@@ -64,7 +64,7 @@ L.OSM.key = function (options) {
       button
         .toggleClass("disabled", disabled)
         .attr("data-original-title",
-              I18n.t(disabled ?
+              OSM.i18n.t(disabled ?
                 "javascripts.key.tooltip_disabled" :
                 "javascripts.key.tooltip"));
     }

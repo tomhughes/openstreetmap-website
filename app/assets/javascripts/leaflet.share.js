@@ -13,7 +13,7 @@ L.OSM.share = function (options) {
     var button = $("<a>")
       .attr("class", "control-button")
       .attr("href", "#")
-      .attr("title", I18n.t("javascripts.share.title"))
+      .attr("title", OSM.i18n.t("javascripts.share.title"))
       .html("<span class=\"icon share\"></span>")
       .on("click", toggle)
       .appendTo($container);
@@ -26,12 +26,12 @@ L.OSM.share = function (options) {
       .appendTo($ui)
       .append(
         $("<span>")
-          .text(I18n.t("javascripts.close"))
+          .text(OSM.i18n.t("javascripts.close"))
           .attr("class", "icon close")
           .bind("click", toggle))
       .append(
         $("<h4>")
-          .text(I18n.t("javascripts.share.title")));
+          .text(OSM.i18n.t("javascripts.share.title")));
 
     // Link / Embed
 
@@ -40,7 +40,7 @@ L.OSM.share = function (options) {
       .appendTo($ui);
 
     $("<h4>")
-      .text(I18n.t("javascripts.share.link"))
+      .text(OSM.i18n.t("javascripts.share.link"))
       .appendTo($linkSection);
 
     var $form = $("<form>")
@@ -59,7 +59,7 @@ L.OSM.share = function (options) {
               .attr("type", "checkbox")
               .attr("class", "form-check-input")
               .bind("change", toggleMarker))
-          .append(I18n.t("javascripts.share.include_marker")));
+          .append(OSM.i18n.t("javascripts.share.include_marker")));
 
     $("<div>")
       .attr("class", "share-tabs")
@@ -68,15 +68,15 @@ L.OSM.share = function (options) {
         .attr("class", "active")
         .attr("for", "long_input")
         .attr("id", "long_link")
-        .text(I18n.t("javascripts.share.long_link")))
+        .text(OSM.i18n.t("javascripts.share.long_link")))
       .append($("<a>")
         .attr("for", "short_input")
         .attr("id", "short_link")
-        .text(I18n.t("javascripts.share.short_link")))
+        .text(OSM.i18n.t("javascripts.share.short_link")))
       .append($("<a>")
         .attr("for", "embed_html")
         .attr("href", "#")
-        .text(I18n.t("javascripts.share.embed")))
+        .text(OSM.i18n.t("javascripts.share.embed")))
       .on("click", "a", function (e) {
         e.preventDefault();
         var id = "#" + $(this).attr("for");
@@ -118,7 +118,7 @@ L.OSM.share = function (options) {
       .append(
         $("<p>")
           .attr("class", "text-muted")
-          .text(I18n.t("javascripts.share.paste_html"))
+          .text(OSM.i18n.t("javascripts.share.paste_html"))
           .appendTo($linkSection));
 
     // Geo URI
@@ -128,7 +128,7 @@ L.OSM.share = function (options) {
       .appendTo($ui);
 
     $("<h4>")
-      .text(I18n.t("javascripts.share.geo_uri"))
+      .text(OSM.i18n.t("javascripts.share.geo_uri"))
       .appendTo($geoUriSection);
 
     $("<div>")
@@ -143,13 +143,13 @@ L.OSM.share = function (options) {
       .appendTo($ui);
 
     $("<h4>")
-      .text(I18n.t("javascripts.share.image"))
+      .text(OSM.i18n.t("javascripts.share.image"))
       .appendTo($imageSection);
 
     $("<div>")
       .attr("id", "export-warning")
       .attr("class", "text-muted")
-      .text(I18n.t("javascripts.share.only_standard_layer"))
+      .text(OSM.i18n.t("javascripts.share.only_standard_layer"))
       .appendTo($imageSection);
 
     $form = $("<form>")
@@ -171,14 +171,14 @@ L.OSM.share = function (options) {
               .attr("type", "checkbox")
               .attr("class", "form-check-input")
               .bind("change", toggleFilter))
-          .append(I18n.t("javascripts.share.custom_dimensions")));
+          .append(OSM.i18n.t("javascripts.share.custom_dimensions")));
 
     $("<div>")
       .appendTo($form)
       .append(
         $("<label>")
           .attr("for", "mapnik_format")
-          .text(I18n.t("javascripts.share.format")))
+          .text(OSM.i18n.t("javascripts.share.format")))
       .append($("<select>")
         .attr("name", "mapnik_format")
         .attr("id", "mapnik_format")
@@ -191,7 +191,7 @@ L.OSM.share = function (options) {
       .appendTo($form)
       .append($("<label>")
         .attr("for", "mapnik_scale")
-        .text(I18n.t("javascripts.share.scale")))
+        .text(OSM.i18n.t("javascripts.share.scale")))
       .append("1 : ")
       .append($("<input>")
         .attr("name", "mapnik_scale")
@@ -229,13 +229,13 @@ L.OSM.share = function (options) {
 
     $("<p>")
       .attr("class", "text-muted")
-      .html(I18n.t("javascripts.share.image_dimensions", args))
+      .html(OSM.i18n.t("javascripts.share.image_dimensions", args))
       .appendTo($form);
 
     $("<input>")
       .attr("type", "submit")
       .attr("class", "btn btn-primary")
-      .attr("value", I18n.t("javascripts.share.download"))
+      .attr("value", OSM.i18n.t("javascripts.share.download"))
       .appendTo($form);
 
     locationFilter
@@ -355,7 +355,7 @@ L.OSM.share = function (options) {
           escapeHTML(OSM.SERVER_PROTOCOL + "://" + OSM.SERVER_URL + "/export/embed.html?" + $.param(params)) +
           "\" style=\"border: 1px solid black\"></iframe><br/>" +
           "<small><a href=\"" + escapeHTML(map.getUrl(marker)) + "\">" +
-          escapeHTML(I18n.t("javascripts.share.view_larger_map")) + "</a></small>");
+          escapeHTML(OSM.i18n.t("javascripts.share.view_larger_map")) + "</a></small>");
 
       // Geo URI
 

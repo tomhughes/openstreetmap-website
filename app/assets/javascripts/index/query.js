@@ -82,11 +82,11 @@ OSM.Query = function (map) {
     var prefix = "";
 
     if (tags.boundary === "administrative" && tags.admin_level) {
-      prefix = I18n.t("geocoder.search_osm_nominatim.admin_levels.level" + tags.admin_level, {
-        defaultValue: I18n.t("geocoder.search_osm_nominatim.prefix.boundary.administrative")
+      prefix = OSM.i18n.t("geocoder.search_osm_nominatim.admin_levels.level" + tags.admin_level, {
+        defaultValue: OSM.i18n.t("geocoder.search_osm_nominatim.prefix.boundary.administrative")
       });
     } else {
-      var prefixes = I18n.t("geocoder.search_osm_nominatim.prefix");
+      var prefixes = OSM.i18n.t("geocoder.search_osm_nominatim.prefix");
       var key, value;
 
       for (key in tags) {
@@ -112,7 +112,7 @@ OSM.Query = function (map) {
     }
 
     if (!prefix) {
-      prefix = I18n.t("javascripts.query." + feature.type);
+      prefix = OSM.i18n.t("javascripts.query." + feature.type);
     }
 
     return prefix;
@@ -120,7 +120,7 @@ OSM.Query = function (map) {
 
   function featureName(feature) {
     var tags = feature.tags,
-        locales = I18n.locales.get();
+        locales = OSM.i18n.locales.get();
 
     for (var i = 0; i < locales.length; i++) {
       if (tags["name:" + locales[i]]) {
@@ -227,14 +227,14 @@ OSM.Query = function (map) {
         if (results.remark) {
           $("<li>")
             .addClass("query-result list-group-item")
-            .text(I18n.t("javascripts.query.error", { server: url, error: results.remark }))
+            .text(OSM.i18n.t("javascripts.query.error", { server: url, error: results.remark }))
             .appendTo($ul);
         }
 
         if ($ul.find("li").length === 0) {
           $("<li>")
             .addClass("query-result list-group-item")
-            .text(I18n.t("javascripts.query.nothing_found"))
+            .text(OSM.i18n.t("javascripts.query.nothing_found"))
             .appendTo($ul);
         }
       },
@@ -243,7 +243,7 @@ OSM.Query = function (map) {
 
         $("<li>")
           .addClass("query-result list-group-item")
-          .text(I18n.t("javascripts.query." + status, { server: url, error: error }))
+          .text(OSM.i18n.t("javascripts.query." + status, { server: url, error: error }))
           .appendTo($ul);
       }
     }));

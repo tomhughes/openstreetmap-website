@@ -3,7 +3,6 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <%= javascript_include_tag "es6" unless browser.es6? %>
   <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "i18n/#{I18n.locale}" %>
   <%= stylesheet_link_tag "screen-#{dir}", :media => "screen" %>
   <%= stylesheet_link_tag "print-#{dir}", :media => "print" %>
   <%= stylesheet_link_tag "leaflet-all", :media => "screen, print" %>

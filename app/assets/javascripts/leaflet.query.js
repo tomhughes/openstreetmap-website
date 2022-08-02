@@ -20,7 +20,7 @@ L.OSM.query = function (options) {
           isDisabled = map.getZoom() < 14;
       link
         .toggleClass("disabled", isDisabled)
-        .attr("data-original-title", I18n.t(isDisabled ?
+        .attr("data-original-title", OSM.i18n.t(isDisabled ?
           "javascripts.site.queryfeature_disabled_tooltip" :
           "javascripts.site.queryfeature_tooltip"));
 

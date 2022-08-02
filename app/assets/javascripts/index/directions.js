@@ -32,15 +32,15 @@ OSM.Directions = function (map) {
   var engines = OSM.Directions.engines;
 
   engines.sort(function (a, b) {
-    var localised_a = I18n.t("javascripts.directions.engines." + a.id),
-        localised_b = I18n.t("javascripts.directions.engines." + b.id);
+    var localised_a = OSM.i18n.t("javascripts.directions.engines." + a.id),
+        localised_b = OSM.i18n.t("javascripts.directions.engines." + b.id);
     return localised_a.localeCompare(localised_b);
   });
 
   var select = $("select.routing_engines");
 
   engines.forEach(function (engine, i) {
-    select.append("<option value='" + i + "'>" + I18n.t("javascripts.directions.engines." + engine.id) + "</option>");
+    select.append("<option value='" + i + "'>" + OSM.i18n.t("javascripts.directions.engines." + engine.id) + "</option>");
   });
 
   function Endpoint(input, iconUrl) {
@@ -110,7 +110,7 @@ OSM.Directions = function (map) {
         endpoint.hasGeocode = true;
         if (json.length === 0) {
           input.addClass("error");
-          alert(I18n.t("javascripts.directions.errors.no_place", { place: endpoint.value }));
+          alert(OSM.i18n.t("javascripts.directions.errors.no_place", { place: endpoint.value }));
           return;
         }
 
@@ -240,7 +240,7 @@ OSM.Directions = function (map) {
         map.removeLayer(polyline);
 
         if (reportErrors) {
-          $("#sidebar_content").html("<p class=\"search_results_error\">" + I18n.t("javascripts.directions.errors.no_route") + "</p>");
+          $("#sidebar_content").html("<p class=\"search_results_error\">" + OSM.i18n.t("javascripts.directions.errors.no_route") + "</p>");
         }
 
         return;
@@ -255,14 +255,14 @@ OSM.Directions = function (map) {
       }
 
       var html = "<h2><a class=\"geolink\" href=\"#\">" +
-        "<span class=\"icon close\"></span></a>" + I18n.t("javascripts.directions.directions") +
+        "<span class=\"icon close\"></span></a>" + OSM.i18n.t("javascripts.directions.directions") +
         "</h2><p>" +
-        I18n.t("javascripts.directions.distance") + ": " + formatDistance(route.distance) + ". " +
-        I18n.t("javascripts.directions.time") + ": " + formatTime(route.time) + ".";
+        OSM.i18n.t("javascripts.directions.distance") + ": " + formatDistance(route.distance) + ". " +
+        OSM.i18n.t("javascripts.directions.time") + ": " + formatTime(route.time) + ".";
       if (typeof route.ascend !== "undefined" && typeof route.descend !== "undefined") {
         html += "<br />" +
-          I18n.t("javascripts.directions.ascend") + ": " + Math.round(route.ascend) + "m. " +
-          I18n.t("javascripts.directions.descend") + ": " + Math.round(route.descend) + "m.";
+          OSM.i18n.t("javascripts.directions.ascend") + ": " + Math.round(route.ascend) + "m. " +
+          OSM.i18n.t("javascripts.directions.descend") + ": " + Math.round(route.descend) + "m.";
       }
       html += "</p><table id=\"turnbyturn\" class=\"mb-3\"/>";
 
@@ -313,7 +313,7 @@ OSM.Directions = function (map) {
       });
 
       $("#sidebar_content").append("<p class=\"text-center\">" +
-        I18n.t("javascripts.directions.instructions.courtesy", { link: chosenEngine.creditline }) +
+        OSM.i18n.t("javascripts.directions.instructions.courtesy", { link: chosenEngine.creditline }) +
         "</p>");
 
       $("#sidebar_content a.geolink").on("click", function (e) {
