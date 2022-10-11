@@ -6,6 +6,7 @@ module Auth
       I18n.t("auth.providers.openid") => "openid"
     }.tap do |providers|
       providers[I18n.t("auth.providers.google")] = "google" if Settings.key?(:google_auth_id)
+      providers[I18n.t("auth.providers.apple")] = "apple" if Settings.key?(:apple_auth_id)
       providers[I18n.t("auth.providers.facebook")] = "facebook" if Settings.key?(:facebook_auth_id)
       providers[I18n.t("auth.providers.microsoft")] = "microsoft" if Settings.key?(:microsoft_auth_id)
       providers[I18n.t("auth.providers.github")] = "github" if Settings.key?(:github_auth_id)
