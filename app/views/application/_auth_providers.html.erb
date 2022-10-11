@@ -2,7 +2,7 @@
   <div class="list-inline justify-content-center d-flex align-items-center flex-wrap w-100 mb-3" id="login_auth_buttons">
 
     <% prefered_auth_button_available = false %>
-    <% %w[google facebook microsoft github wikipedia].each do |provider| %>
+    <% %w[google apple facebook microsoft github wikipedia].each do |provider| %>
       <% if Settings.key?("#{provider}_auth_id".to_sym) -%>
         <% if @preferred_auth_provider == provider %>
           <% prefered_auth_button_available = true %>
@@ -12,7 +12,7 @@
 
     <% if prefered_auth_button_available %>
       <div class="list-inline justify-content-center d-flex align-items-center flex-wrap w-50">
-        <% %w[google facebook microsoft github wikipedia].each do |provider| %>
+        <% %w[google apple facebook microsoft github wikipedia].each do |provider| %>
           <% if Settings.key?("#{provider}_auth_id".to_sym) -%>
             <% if @preferred_auth_provider == provider %>
               <%= auth_button_preferred provider, provider %>
@@ -33,7 +33,7 @@
                   :title => t("application.auth_providers.openid.title"),
                   :class => "p-2 d-block" %>
 
-      <% %w[google facebook microsoft github wikipedia].each do |provider| %>
+      <% %w[google apple facebook microsoft github wikipedia].each do |provider| %>
         <% unless @preferred_auth_provider == provider %>
           <% if Settings.key?("#{provider}_auth_id".to_sym) -%>
             <%= auth_button provider, provider %>

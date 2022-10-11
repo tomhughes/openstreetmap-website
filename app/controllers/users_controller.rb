@@ -197,7 +197,7 @@ class UsersController < ApplicationController
                      when "openid"
                        uid.match(%r{https://www.google.com/accounts/o8/id?(.*)}) ||
                        uid.match(%r{https://me.yahoo.com/(.*)})
-                     when "google", "facebook", "microsoft", "github", "wikipedia"
+                     when "google", "apple", "facebook", "microsoft", "github", "wikipedia"
                        true
                      else
                        false
