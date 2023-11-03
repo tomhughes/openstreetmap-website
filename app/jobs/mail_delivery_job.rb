@@ -1,4 +1,4 @@
-class ApplicationJob < ActiveJob::Base
+class MailDeliveryJob < ActionMailer::MailDeliveryJob
   def perform_now(*)
     super
   rescue ActiveJob::DeserializationError => e
