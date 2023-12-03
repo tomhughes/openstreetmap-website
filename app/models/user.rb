@@ -124,16 +124,27 @@ class User < ApplicationRecord
     display_name
   end
 
+  def self.lookup(options)
+    user = find_by("email = ? OR display_name = ?", options[:username].strip, options[:username])
+
+    if user.nil?
+      users = where("LOWER(email) = LOWER(?) OR LOWER(display_name) = LOWER(?)", options[:username].strip, options[:username])
+
+      user = users.first if users.count == 1
+    end
+
+    if user &&
+       (user.status == "deleted" ||
+         (user.status == "pending" && !options[:pending]) ||
+         (user.status == "suspended" && !options[:suspended]))
+      user = nil
+    end
+
+    user
+  end
+
   def self.authenticate(options)
-    if options[:username] && options[:password]
-      user = find_by("email = ? OR display_name = ?", options[:username].strip, options[:username])
-
-      if user.nil?
-        users = where("LOWER(email) = LOWER(?) OR LOWER(display_name) = LOWER(?)", options[:username].strip, options[:username])
-
-        user = users.first if users.count == 1
-      end
-
+    if options[:user] && options[:password]
       if user && PasswordHash.check(user.pass_crypt, user.pass_salt, options[:password])
         if PasswordHash.upgrade?(user.pass_crypt, user.pass_salt)
           user.pass_crypt, user.pass_salt = PasswordHash.create(options[:password])
@@ -145,13 +156,6 @@ class User < ApplicationRecord
     elsif options[:token]
       token = UserToken.find_by(:token => options[:token])
       user = token.user if token
-    end
-
-    if user &&
-       (user.status == "deleted" ||
-         (user.status == "pending" && !options[:pending]) ||
-         (user.status == "suspended" && !options[:suspended]))
-      user = nil
     end
 
     token.update(:expiry => 1.week.from_now) if token && user

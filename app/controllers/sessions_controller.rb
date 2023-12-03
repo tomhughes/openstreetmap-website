@@ -47,12 +47,16 @@ class SessionsController < ApplicationController
   ##
   # handle password authentication
   def password_authentication(username, password)
+    # user = User.lookup(:username => username)
+
     if (user = User.authenticate(:username => username, :password => password))
       successful_login(user)
     elsif (user = User.authenticate(:username => username, :password => password, :pending => true))
       unconfirmed_login(user)
     elsif User.authenticate(:username => username, :password => password, :suspended => true)
       failed_login({ :partial => "sessions/suspended_flash" }, username)
+    elsif User.lookup(:username => username)
+      redirect_to user_forgot_password_path, :notice => t("need_to_reset")
     else
       failed_login t("sessions.new.auth failure"), username
     end
