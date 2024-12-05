@@ -6,12 +6,12 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 env:
-  os: ubuntu-22.04
+  os: ubuntu-24.04
   ruby: '3.1'
 jobs:
   rubocop:
     name: RuboCop
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Check out code
       uses: actions/checkout@v4
@@ -25,7 +25,7 @@ jobs:
       run: bundle exec rubocop --format fuubar
   erblint:
     name: ERB Lint
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Check out code
       uses: actions/checkout@v4
@@ -39,7 +39,7 @@ jobs:
       run: bundle exec erb_lint .
   eslint:
     name: ESLint
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Check out code
       uses: actions/checkout@v4
@@ -64,7 +64,7 @@ jobs:
       run: bundle exec rails eslint
   brakeman:
     name: Brakeman
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Check out code
       uses: actions/checkout@v4
@@ -80,7 +80,7 @@ jobs:
     env:
       RAILS_ENV: test
     name: Rails Annotate Models
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Check out code
       uses: actions/checkout@v4
