@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  var params = OSM.params();
+  const params = OSM.params();
 
-  var url = "/note/new";
+  let url = "/note/new";
   if (params.lat && params.lon) {
     params.lat = parseFloat(params.lat);
     params.lon = parseFloat(params.lon);

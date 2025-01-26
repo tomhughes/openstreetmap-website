@@ -1,5 +1,5 @@
 function GraphHopperEngine(id, vehicleType) {
-  var GH_INSTR_MAP = {
+  const GH_INSTR_MAP = {
     "-3": 7, // sharp left
     "-2": 6, // left
     "-1": 5, // slight left
@@ -43,20 +43,20 @@ function GraphHopperEngine(id, vehicleType) {
             return callback(true);
           }
 
-          var path = data.paths[0];
-          var line = L.PolylineUtil.decode(path.points);
+          const path = data.paths[0];
+          const line = L.PolylineUtil.decode(path.points);
 
-          var steps = [];
-          var len = path.instructions.length;
-          for (var i = 0; i < len; i++) {
-            var instr = path.instructions[i];
-            var instrCode = (i === len - 1) ? 14 : GH_INSTR_MAP[instr.sign];
-            var instrText = "<b>" + (i + 1) + ".</b> ";
+          const steps = [];
+          const len = path.instructions.length;
+          for (let i = 0; i < len; i++) {
+            const instr = path.instructions[i];
+            const instrCode = (i === len - 1) ? 14 : GH_INSTR_MAP[instr.sign];
+            let instrText = "<b>" + (i + 1) + ".</b> ";
             instrText += instr.text;
-            var latLng = line[instr.interval[0]];
-            var distInMeter = instr.distance;
-            var lineseg = [];
-            for (var j = instr.interval[0]; j <= instr.interval[1]; j++) {
+            const latLng = line[instr.interval[0]];
+            const distInMeter = instr.distance;
+            const lineseg = [];
+            for (let j = instr.interval[0]; j <= instr.interval[1]; j++) {
               lineseg.push({ lat: line[j][0], lng: line[j][1] });
             }
             steps.push([

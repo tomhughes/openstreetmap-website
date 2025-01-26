@@ -2,7 +2,7 @@
 // Doesn't yet support hints
 
 function FOSSGISOSRMEngine(id, vehicleType) {
-  var cachedHints = [];
+  let cachedHints = [];
 
   return {
     id: id,
@@ -10,7 +10,7 @@ function FOSSGISOSRMEngine(id, vehicleType) {
     draggable: true,
 
     _transformSteps: function (input_steps, line) {
-      var INSTRUCTION_TEMPLATE = {
+      const INSTRUCTION_TEMPLATE = {
         "continue": "javascripts.directions.instructions.continue",
         "merge right": "javascripts.directions.instructions.merge_right",
         "merge left": "javascripts.directions.instructions.merge_left",
@@ -37,7 +37,7 @@ function FOSSGISOSRMEngine(id, vehicleType) {
         "depart": "javascripts.directions.instructions.start",
         "arrive": "javascripts.directions.instructions.destination"
       };
-      var ICON_MAP = {
+      const ICON_MAP = {
         "continue": 0,
         "merge right": 21,
         "merge left": 20,
@@ -64,11 +64,11 @@ function FOSSGISOSRMEngine(id, vehicleType) {
         "depart": 8,
         "arrive": 14
       };
-      var numToWord = function (num) {
+      const numToWord = function (num) {
         return ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"][num - 1];
       };
-      var transformed_steps = input_steps.map(function (step, idx) {
-        var maneuver_id;
+      const transformed_steps = input_steps.map(function (step, idx) {
+        let maneuver_id;
 
         // special case handling
         switch (step.maneuver.type) {
@@ -96,17 +96,17 @@ function FOSSGISOSRMEngine(id, vehicleType) {
             maneuver_id = "turn " + step.maneuver.modifier;
             break;
         }
-        var template = INSTRUCTION_TEMPLATE[maneuver_id];
+        let template = INSTRUCTION_TEMPLATE[maneuver_id];
 
         // convert lat,lng pairs to LatLng objects
-        var step_geometry = L.PolylineUtil.decode(step.geometry, { precision: 5 }).map(function (a) { return L.latLng(a); });
+        const step_geometry = L.PolylineUtil.decode(step.geometry, { precision: 5 }).map(function (a) { return L.latLng(a); });
         // append step_geometry on line
         Array.prototype.push.apply(line, step_geometry);
 
-        var instText = "<b>" + (idx + 1) + ".</b> ";
-        var destinations = "<b>" + step.destinations + "</b>";
-        var namedRoad = true;
-        var name;
+        let instText = "<b>" + (idx + 1) + ".</b> ";
+        const destinations = "<b>" + step.destinations + "</b>";
+        let namedRoad = true;
+        let name;
 
         if (step.name && step.ref) {
           name = "<b>" + step.name + " (" + step.ref + ")</b>";
@@ -132,7 +132,7 @@ function FOSSGISOSRMEngine(id, vehicleType) {
             instText += I18n.t(template + "_without_exit", { name: name });
           }
         } else if (step.maneuver.type.match(/^(on ramp|off ramp)$/)) {
-          var params = {};
+          const params = {};
           if (step.exits && step.maneuver.type.match(/^(off ramp)$/)) params.exit = step.exits;
           if (step.destinations) params.directions = destinations;
           if (namedRoad) params.directions = name;
@@ -150,7 +150,7 @@ function FOSSGISOSRMEngine(id, vehicleType) {
     },
 
     getRoute: function (points, callback) {
-      var params = [
+      const params = [
         { name: "overview", value: "false" },
         { name: "geometries", value: "polyline" },
         { name: "steps", value: true }
@@ -164,13 +164,13 @@ function FOSSGISOSRMEngine(id, vehicleType) {
         cachedHints = [];
       }
 
-      var encoded_coords = points.map(function (p) {
+      const encoded_coords = points.map(function (p) {
         return p.lng + "," + p.lat;
       }).join(";");
 
-      var req_url = OSM.FOSSGIS_OSRM_URL + "routed-" + vehicleType + "/route/v1/driving/" + encoded_coords;
+      const req_url = OSM.FOSSGIS_OSRM_URL + "routed-" + vehicleType + "/route/v1/driving/" + encoded_coords;
 
-      var onResponse = function (data) {
+      const onResponse = function (data) {
         if (data.code !== "Ok") {
           return callback(true);
         }
@@ -179,12 +179,12 @@ function FOSSGISOSRMEngine(id, vehicleType) {
           return wp.hint;
         });
 
-        var line = [];
-        var transformLeg = function (leg) {
+        const line = [];
+        const transformLeg = function (leg) {
           return this._transformSteps(leg.steps, line);
         };
 
-        var steps = [].concat.apply([], data.routes[0].legs.map(transformLeg.bind(this)));
+        const steps = [].concat.apply([], data.routes[0].legs.map(transformLeg.bind(this)));
 
         callback(false, {
           line: line,

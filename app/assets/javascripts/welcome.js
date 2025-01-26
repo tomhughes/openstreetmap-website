@@ -1,12 +1,12 @@
 $(document).ready(function () {
-  var params = OSM.params();
+  const params = OSM.params();
 
   if (params.lat && params.lon) {
     params.lat = parseFloat(params.lat);
     params.lon = parseFloat(params.lon);
     params.zoom = params.zoom || 17;
 
-    var url = "/edit";
+    let url = "/edit";
 
     if (params.editor) {
       url += "?editor=" + params.editor;
@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     $(".start-mapping").attr("href", url);
   } else {
-    var geoSuccess = function (position) {
+    const geoSuccess = function (position) {
       window.location = "/edit" + OSM.formatHash({
         zoom: 17,
         lat: position.coords.latitude,

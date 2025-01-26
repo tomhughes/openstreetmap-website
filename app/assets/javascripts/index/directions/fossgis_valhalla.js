@@ -1,5 +1,5 @@
 function FOSSGISValhallaEngine(id, costing) {
-  var INSTR_MAP = [
+  const INSTR_MAP = [
     0, // kNone = 0;
     8, // kStart = 1;
     8, // kStartRight = 2;
@@ -64,23 +64,23 @@ function FOSSGISValhallaEngine(id, costing) {
         },
         dataType: "json",
         success: function (data) {
-          var trip = data.trip;
+          const trip = data.trip;
 
           if (trip.status === 0) {
-            var line = [];
-            var steps = [];
-            var distance = 0;
-            var time = 0;
+            let line = [];
+            const steps = [];
+            let distance = 0;
+            let time = 0;
 
             trip.legs.forEach(function (leg) {
-              var legLine = L.PolylineUtil.decode(leg.shape, {
+              const legLine = L.PolylineUtil.decode(leg.shape, {
                 precision: 6
               });
 
               line = line.concat(legLine);
 
               leg.maneuvers.forEach(function (manoeuvre, idx) {
-                var point = legLine[manoeuvre.begin_shape_index];
+                const point = legLine[manoeuvre.begin_shape_index];
 
                 steps.push([
                   { lat: point[0], lng: point[1] },

@@ -1,14 +1,14 @@
 //= require qs/dist/qs
 
 OSM.NewNote = function (map) {
-  var noteLayer = map.noteLayer,
-      content = $("#sidebar_content"),
-      page = {},
-      addNoteButton = $(".control-note .control-button"),
-      newNoteMarker,
+  const noteLayer = map.noteLayer,
+        content = $("#sidebar_content"),
+        page = {},
+        addNoteButton = $(".control-note .control-button");
+  let newNoteMarker,
       halo;
 
-  var noteIcons = {
+  const noteIcons = {
     "new": L.icon({
       iconUrl: OSM.NEW_NOTE_MARKER,
       iconSize: [25, 40],
@@ -50,7 +50,7 @@ OSM.NewNote = function (map) {
   }
 
   function addCreatedNoteMarker(feature) {
-    var marker = L.marker(feature.geometry.coordinates.reverse(), {
+    const marker = L.marker(feature.geometry.coordinates.reverse(), {
       icon: noteIcons[feature.properties.status],
       opacity: 0.9,
       interactive: true
@@ -133,8 +133,8 @@ OSM.NewNote = function (map) {
 
     map.addLayer(noteLayer);
 
-    var params = Qs.parse(path.substring(path.indexOf("?") + 1));
-    var markerLatlng;
+    const params = Qs.parse(path.substring(path.indexOf("?") + 1));
+    let markerLatlng;
 
     if (params.lat && params.lon) {
       markerLatlng = L.latLng(params.lat, params.lon);
@@ -163,7 +163,7 @@ OSM.NewNote = function (map) {
 
       createNote(location, text, (feature) => {
         if (typeof OSM.user === "undefined") {
-          var anonymousNotesCount = Number(Cookies.get("_osm_anonymous_notes_count")) || 0;
+          const anonymousNotesCount = Number(Cookies.get("_osm_anonymous_notes_count")) || 0;
           Cookies.set("_osm_anonymous_notes_count", anonymousNotesCount + 1, { secure: true, expires: 30, path: "/", samesite: "lax" });
         }
         content.find("textarea").val("");

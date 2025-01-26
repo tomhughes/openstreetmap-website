@@ -45,41 +45,42 @@
  */
 window.updateLinks = function (loc, zoom, layers, object) {
   $(".geolink").each(function (index, link) {
-    var href = link.href.split(/[?#]/)[0],
-        args = Qs.parse(link.search.substring(1)),
-        editlink = $(link).hasClass("editlink");
+    let href = link.href.split(/[?#]/)[0];
 
-    delete args.node;
-    delete args.way;
-    delete args.relation;
-    delete args.changeset;
-    delete args.note;
+    const queryArgs = Qs.parse(link.search.substring(1)),
+          editlink = $(link).hasClass("editlink");
+
+    delete queryArgs.node;
+    delete queryArgs.way;
+    delete queryArgs.relation;
+    delete queryArgs.changeset;
+    delete queryArgs.note;
 
     if (object && editlink) {
-      args[object.type] = object.id;
+      queryArgs[object.type] = object.id;
     }
 
-    var query = Qs.stringify(args);
+    const query = Qs.stringify(queryArgs);
     if (query) href += "?" + query;
 
-    args = {
+    const hashArgs = {
       lat: loc.lat,
       lon: "lon" in loc ? loc.lon : loc.lng,
       zoom: zoom
     };
 
     if (layers && !editlink) {
-      args.layers = layers;
+      hashArgs.layers = layers;
     }
 
-    href += OSM.formatHash(args);
+    href += OSM.formatHash(hashArgs);
 
     link.href = href;
   });
 
   // Disable the button group and also the buttons to avoid
   // inconsistent behaviour when zooming
-  var editDisabled = zoom < 13;
+  const editDisabled = zoom < 13;
   $("#edit_tab")
     .tooltip({ placement: "bottom" })
     .tooltip(editDisabled ? "enable" : "disable")
@@ -93,11 +94,11 @@ $(document).ready(function () {
   // See https://turbo.hotwired.dev/reference/drive#turbo.session.drive
   Turbo.session.drive = false;
 
-  var headerWidth = 0,
+  let headerWidth = 0,
       compactWidth = 0;
 
   function updateHeader() {
-    var windowWidth = $(window).width();
+    const windowWidth = $(window).width();
 
     if (windowWidth < compactWidth) {
       $("body").removeClass("compact-nav").addClass("small-nav");

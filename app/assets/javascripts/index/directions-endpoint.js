@@ -1,5 +1,5 @@
 OSM.DirectionsEndpoint = function Endpoint(map, input, iconUrl, dragCallback, changeCallback) {
-  var endpoint = {};
+  const endpoint = {};
 
   endpoint.marker = L.marker([0, 0], {
     icon: L.icon({
@@ -34,7 +34,7 @@ OSM.DirectionsEndpoint = function Endpoint(map, input, iconUrl, dragCallback, ch
   };
 
   function markerDragListener(e) {
-    var latlng = convertLatLngToZoomPrecision(e.target.getLatLng());
+    const latlng = convertLatLngToZoomPrecision(e.target.getLatLng());
 
     setLatLng(latlng);
     setInputValueFromLatLng(latlng);
@@ -48,7 +48,7 @@ OSM.DirectionsEndpoint = function Endpoint(map, input, iconUrl, dragCallback, ch
 
   function inputChangeListener(e) {
     // make text the same in both text boxes
-    var value = e.target.value;
+    const value = e.target.value;
     endpoint.setValue(value);
   }
 
@@ -68,8 +68,8 @@ OSM.DirectionsEndpoint = function Endpoint(map, input, iconUrl, dragCallback, ch
   };
 
   function getGeocode() {
-    var viewbox = map.getBounds().toBBoxString(); // <sw lon>,<sw lat>,<ne lon>,<ne lat>
-    var geocodeUrl = OSM.NOMINATIM_URL + "search?q=" + encodeURIComponent(endpoint.value) + "&format=json&viewbox=" + viewbox;
+    const viewbox = map.getBounds().toBBoxString(); // <sw lon>,<sw lat>,<ne lon>,<ne lat>
+    const geocodeUrl = OSM.NOMINATIM_URL + "search?q=" + encodeURIComponent(endpoint.value) + "&format=json&viewbox=" + viewbox;
 
     if (endpoint.geocodeRequest) endpoint.geocodeRequest.abort();
     endpoint.geocodeRequest = $.getJSON(geocodeUrl, function (json) {
@@ -110,7 +110,7 @@ OSM.DirectionsEndpoint = function Endpoint(map, input, iconUrl, dragCallback, ch
   }
 
   function convertLatLngToZoomPrecision(latlng) {
-    var precision = OSM.zoomPrecision(map.getZoom());
+    const precision = OSM.zoomPrecision(map.getZoom());
 
     return L.latLng(latlng.lat.toFixed(precision), latlng.lng.toFixed(precision));
   }
