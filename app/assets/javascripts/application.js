@@ -19,7 +19,6 @@
 
   I18n.default_locale = OSM.DEFAULT_LOCALE;
   I18n.locale = application_data.locale;
-  I18n.fallbacks = true;
 
   OSM.preferred_editor = application_data.preferredEditor;
   OSM.preferred_languages = application_data.preferredLanguages;
