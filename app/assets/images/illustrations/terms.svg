@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="530" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="165">
   <defs>
     <clipPath id="A">
       <path transform="matrix(1.454546 0 0 1.454546 -622.81822 -83.09091)" d="M 1126,118.99999 A 110,110 0 0 1 1346,119" fill="#c5c5d7" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="4"/>
@@ -64,7 +64,7 @@
     <path id="b" d="M1185.356-475.87q0-5.684 1.802-8.511 1.802-2.842 5.42-2.842 3.633 0 5.435 2.827 1.802 2.827 1.802 8.525 0 5.684-1.802 8.511-1.802 2.827-5.435 2.827-3.618 0-5.42-2.827-1.802-2.842-1.802-8.511zm5.039 5.845q.688 1.831 2.183 1.831 1.509 0 2.197-1.831.688-1.831.688-5.845 0-1.523-.102-2.725l-5.112 8.145q.073.234.147.425zm2.183-13.535q-1.494 0-2.183 1.831-.688 1.831-.688 5.859 0 1.245.058 2.271l5.039-8.042q-.015-.044-.029-.088-.688-1.831-2.197-1.831z"/>
     <path id="c" d="M1330.8-356.266h4.834v-14.194l-4.497 1.113v-3.896l4.526-1.084h4.175v18.062h4.834v3.809H1330.8z"/>
   </defs>
-  <g transform="translate(-840 -742.362)">
+  <g transform="translate(-940 -777.362)">
     <use xlink:href="#L" transform="matrix(1.5 0 0 1.5 -649.00018 763.86218)" fill="url(#E)"/>
     <use xlink:href="#L" transform="matrix(1.454546 0 0 1.454546 -592.81822 769.27127)" fill="url(#C)"/>
     <g transform="translate(19 1303.362)" clip-path="url(#D)" opacity=".25">
