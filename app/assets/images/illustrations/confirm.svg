@@ -1,38 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="165">
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="165">
   <defs>
     <filter id="A" color-interpolation-filters="sRGB" x="-.046" y="-.087" width="1.091" height="1.174">
       <feGaussianBlur stdDeviation="5.813"/>
     </filter>
-    <linearGradient id="B" x1="1225.688" y1="36.5" x2="1225.688" y2="119" xlink:href="#J">
+    <linearGradient id="B" x1="1225.688" y1="36.5" x2="1225.688" y2="119" href="#J">
       <stop offset="0" stop-color="#b2dbea"/>
       <stop offset="1" stop-color="#7092ff"/>
     </linearGradient>
-    <radialGradient id="C" cx="1218.2" cy="124.603" fx="1218.2" fy="124.603" r="110" gradientTransform="matrix(1.3393856e-7,-1.640625,1.6406251,2.1914427e-6,1001.1457,2940.9704)" xlink:href="#J">
+    <radialGradient id="C" cx="1218.2" cy="124.603" fx="1218.2" fy="124.603" r="110" gradientTransform="matrix(1.3393856e-7,-1.640625,1.6406251,2.1914427e-6,1001.1457,2940.9704)" href="#J">
       <stop offset="0" stop-color="#ccf1ff" stop-opacity="0"/>
       <stop offset=".857" stop-color="#ccf1ff" stop-opacity="0"/>
       <stop offset="1" stop-color="#789afb"/>
     </radialGradient>
-    <linearGradient id="D" x1="1254.219" y1="789.359" x2="1254.219" y2="942.362" xlink:href="#J">
+    <linearGradient id="D" x1="1254.219" y1="789.359" x2="1254.219" y2="942.362" href="#J">
       <stop offset="0" stop-color="#222"/>
       <stop offset="1" stop-color="#adadc6" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="E" x1="284" y1="166" x2="284" y2="202.125" xlink:href="#J">
+    <linearGradient id="E" x1="284" y1="166" x2="284" y2="202.125" href="#J">
       <stop offset="0" stop-color="#a2c9ed"/>
       <stop offset="1" stop-color="#7a9dfc"/>
     </linearGradient>
-    <linearGradient id="F" x1="1103.75" y1="883.112" x2="1103.75" y2="905.884" xlink:href="#J">
+    <linearGradient id="F" x1="1103.75" y1="883.112" x2="1103.75" y2="905.884" href="#J">
       <stop offset="0" stop-color="#fff"/>
       <stop offset="1" stop-color="#ebf2fd"/>
     </linearGradient>
-    <linearGradient id="G" x1="1156.096" y1="942.612" x2="1144.038" y2="897.612" xlink:href="#J">
+    <linearGradient id="G" x1="1156.096" y1="942.612" x2="1144.038" y2="897.612" href="#J">
       <stop offset="0"/>
       <stop offset="1" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="H" x1="1127" y1="942.362" x2="1127" y2="802.63" xlink:href="#J">
+    <linearGradient id="H" x1="1127" y1="942.362" x2="1127" y2="802.63" href="#J">
       <stop offset="0" stop-color="#cbeea7"/>
       <stop offset="1" stop-color="#cee8c1"/>
     </linearGradient>
-    <linearGradient id="I" x1="1184" y1="-405" x2="1184" y2="-533.035" xlink:href="#J">
+    <linearGradient id="I" x1="1184" y1="-405" x2="1184" y2="-533.035" href="#J">
       <stop offset="0" stop-color="#fff"/>
       <stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
