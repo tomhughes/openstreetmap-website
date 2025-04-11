@@ -247,7 +247,7 @@ class ApplicationController < ActionController::Base
   # To work round this we call rewind on the body here, which is added
   # as a filter, to force it to be fetched from Apache into a file.
   def fetch_body
-    request.body.rewind
+    request.body&.rewind
   end
 
   def map_layout
