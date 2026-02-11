@@ -64,7 +64,7 @@ OSM.MapLibre.AttributionControl = class extends maplibregl.AttributionControl {
   _buildCreditHtml(credit) {
     const children = {};
     for (const childId in credit.children) {
-      children[childId] = OSM.MapLibre.AttributionControl._buildCreditHtml(credit.children[childId]);
+      children[childId] = this._buildCreditHtml(credit.children[childId]);
     }
 
     const text = OSM.i18n.t(`javascripts.map.${credit.id}`, children);

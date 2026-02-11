@@ -54,7 +54,7 @@ window.onload = function () {
 
   if (args.has("marker")) {
     const markerCoords = args.get("marker").split(",").map(parseFloat);
-    new maplibregl.Marker({ color: "#7ebc6f" })
+    new OSM.MapLibre.Marker({ color: "#9cef11" })
       .setLngLat([markerCoords[1], markerCoords[0]])
       .addTo(map);
   }
