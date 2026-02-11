@@ -84,19 +84,19 @@ L.OSM.Map = L.Map.extend({
         children[childId] = makeCredit(credit.children[childId]);
       }
       const text = OSM.i18n.t(`javascripts.map.${credit.id}`, children);
-      if (credit.href) {
-        const link = $("<a>", {
-          href: credit.href,
-          text: text
-        });
-        if (credit.donate) {
-          link.addClass("donate-attr");
-        } else {
-          link.attr("target", "_blank");
-        }
-        return link.prop("outerHTML");
+      if (!credit.href) {
+        return text;
       }
-      return text;
+      const link = $("<a>", {
+        href: credit.href,
+        text: text
+      });
+      if (credit.donate) {
+        link.addClass("donate-attr");
+      } else {
+        link.attr("target", "_blank");
+      }
+      return link.prop("outerHTML");
     }
   },
 
