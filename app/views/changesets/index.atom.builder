@@ -9,7 +9,7 @@ atom_feed(:language => I18n.locale, :schema_date => 2009,
 
   feed.updated @changesets.items.map { |e| [e.created_at, e.closed_at].max }.max
   feed.icon image_url("favicon.ico")
-  feed.logo image_url("mag_map-rss2.0.png")
+  feed.logo image_url("osm_logo_100.png")
 
   feed.rights :type => "xhtml" do |xhtml|
     xhtml.a "Open Data Commons Open Database License", :href => "https://opendatacommons.org/licenses/odbl/"
