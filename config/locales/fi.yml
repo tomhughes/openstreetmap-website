@@ -477,7 +477,7 @@ fi:
   feature_queries:
     show:
       title: Ominaisuuskysely
-      introduction: Napsauta karttaa löytääksesi lähistön karttakohteita.
+      introduction: Tutustu alueen karttakohteisiin napsauttamalla karttaa.
       nearby: Lähistön karttakohteet
       enclosing: Ympäröivät karttakohteet
   old_elements:
@@ -512,6 +512,15 @@ fi:
       changes:
         one: '%{count} muutos'
         other: '%{count} muutosta'
+      n_elements_created:
+        one: '%{count} kohde luotu'
+        other: '%{count} kohdetta luotu'
+      n_elements_modified:
+        one: '%{count} kohdetta muokattu'
+        other: '%{count} kohdetta muokattu'
+      n_elements_deleted:
+        one: '%{count} kohde poistettu'
+        other: '%{count} kohdetta poistettu'
     index:
       title: Muutoskokoelmat
       title_user: Käyttäjän %{user} muutoskokoelmat
@@ -973,7 +982,7 @@ fi:
           bus_stop: Bussipysäkki
           construction: Rakenteilla oleva tie
           corridor: käytävä
-          crossing: Suojatie
+          crossing: Tienylityspaikka
           cycleway: Pyörätie
           elevator: Hissi
           emergency_access_point: Hätätilapaikka
@@ -1539,6 +1548,7 @@ fi:
       download: Lataa reitti GeoJSON-muodossa
       filename: reitti
       directions_courtesy_html: Reittiohjeet tarjoaa %{link}
+      check_demo_html: 'Yksityiskohtaisempi versio: %{link}'
   issues:
     index:
       title: Tapaukset
@@ -1640,87 +1650,120 @@ fi:
       search_language: Hae...
       languages:
         af: Afrikaans
-        az: Azeri
-        id: Indonesia
-        ms: Malaiji
-        bs: Bosnia
-        br: Breton
-        ca: Katalaani
-        cs: Tšekki
-        cy: Kymri
-        da: Tanska
-        de: Saksa
-        et: Viro
-        en: Englanti
-        en-GB: Englanti (UK)
-        es: Espanja
-        eo: Esperanto
-        eu: Baski
-        fr: Ranska
-        ga: Iiri
-        gl: Galego
-        hr: Kroaatti
+        gsw: alemannimurteet
+        frp: arpitaani
+        ast: asturia
+        az: azeri
+        id: indonesia
+        ms: malaiji
+        bcl: keskibikol
+        bs: bosnia
+        br: bretoni
+        ca: katalaani
+        cs: tšekki
+        cy: kymri
+        da: tanska
+        de: saksa
+        dsb: alasorbi
+        et: viro
+        en: englanti
+        en-GB: englanti (Yhdistynyt kuningaskunta)
+        es: espanja
+        eo: esperanto
+        eu: baski
+        fr: ranska
+        fy: länsifriisi
+        fur: friisi
+        ga: iiri
+        gd: gaeli
+        gl: galicia
+        aln: gegi
+        hsb: yläsorbi
+        hr: kroaatti
         ia: Interlingua
-        is: Islanti
-        it: Italia
-        ku-Latn: Kurdi (latina)
-        lv: Latvia
-        lb: Luxemburg
-        lt: Liettua
-        hu: Unkari
-        fit: Tornionlaakson suomi
-        nl: Hollanti
-        nds: Alasaksa
-        pl: Puola
-        pt-PT: Portugali
-        pt: Portugali (Brasilia)
-        ro: Romania
-        sc: Sardi
-        sco: Skotti
-        sq: Albania
-        sk: Slovakki
-        sl: Sloveeni
-        sr-Latn: Serbi (latina)
-        fi: Suomi
-        sv: Ruotsi
-        tl: Tagalog
-        vi: Vietnam
-        tr: Turkki
-        yo: Joruba
-        el: Kreikka
-        ba: Baškiiri
-        be: Valkovenäjä
-        bg: Bulgaria
-        mk: Makedonia
-        ce: Tšetšeeni
-        ru: Venäjä
-        sr: Serbi (kyrillinen)
-        tt: Tataari (kyrillinen)
-        uk: Ukraina
-        yi: Jiddiš
-        he: Heprea
-        ar: Arabia
-        fa: Persia
+        is: islanti
+        it: italia
+        gcf: guadeloupen kreoli
+        ku-Latn: kurdi (latinalainen)
+        lv: latvia
+        lb: luxemburg
+        lkt: lakota
+        lt: liettua
+        hu: unkari
+        fit: meänkieli
+        nl: hollanti
+        nb: norja (kirjanorja)
+        nn: norja (uusnorja)
+        oc: oksitaani
+        nds: alasaksa
+        pl: puola
+        pt-PT: portugali
+        pt: portugali (Brasilia)
+        ksh: kölsch
+        ro: romania
+        sc: sardi
+        sco: skotti
+        sq: albania
+        scn: sisilia
+        sk: slovakki
+        sl: sloveeni
+        sr-Latn: serbi (latinalainen)
+        sh: serbokroatia (latinalainen)
+        fi: suomi
+        sv: ruotsi
+        tl: tagalog
+        kab: kabyyli
+        vi: vietnam
+        tr: turkki
+        yo: joruba
+        diq: dimli
+        el: kreikka
+        ba: baškiiri
+        be: valkovenäjä
+        be-Tarask: valkovenäjä (taraškievicilainen)
+        bg: bulgaria
+        mk: makedonia
+        mo: moldova
+        ce: tšetšeeni
+        ru: venäjä
+        sr: serbi (kyrillinen)
+        tt: tataari (kyrillinen)
+        uk: ukraina
+        kk-cyrl: kazakki
+        yi: jiddiš
+        he: heprea
+        ar: arabia
+        skr-arab: saraiki
+        fa: persia
         arz: Egyptin arabia
-        ne: Nepali
-        hi: Hindi
-        pa: Punjabi
-        gu: Gudžarati
-        ta: Tamili
-        te: Telugu
-        kn: Kannada
-        th: Thai
-        my: Burma
-        ka: Georgia
-        km: Khmer
-        zh-CN: Kiina (yksinkertaistettu)
-        zh-TW: Kiina (perinteinen)
-        zh-HK: Kiina (Hongkong)
-        ja: Japani
-        ko: Korea
+        pnb: länsipandžabi
+        ps: paštu
+        nqo: n'ko
+        ne: nepali
+        mr: marathi
+        hi: hindi
+        bn: bengali
+        pa: pandžabi
+        gu: gudžarati
+        ta: tamili
+        te: telugu
+        kn: kannada
+        th: thai
+        my: burma
+        shn: shan
+        xmf: mingreli
+        ka: georgia
+        km: khmer
+        sat: santali
+        zh-CN: kiina (yksinkertaistettu)
+        zh-TW: kiina (perinteinen)
+        zh-HK: kiina (Hongkong)
+        ja: japani
+        ko: korea
   layouts:
     logo:
       alt_text: OpenStreetMap-logo
+    layer_info: Tasotiedot
     start_mapping: Liity mukaan
     intro_header: Tervetuloa OpenStreetMapiin!
     intro_text: OpenStreetMap on vapaaehtoisten luoma maailmankartta, jota voi käyttää
@@ -1736,6 +1779,7 @@ fi:
       about: Tietoja
       communities: Yhteisöt
       copyright: Tekijänoikeudet
+      donate: Lahjoita
       edit: Muokkaa
       edit_with: 'Muokkaa: %{editor}'
       export: Vienti
@@ -1744,13 +1788,14 @@ fi:
       history: Historia
       home: Siirry kotipaikkaan
       issues: Ilmiannot
-      loading: Ladataan...
       log_out: Kirjaudu ulos
       log_in: Kirjaudu sisään
       more: Lisää
       select_language: Valitse kieli
       sign_up: Rekisteröidy
       user_diaries: Päiväkirjamerkinnät
+    meta:
+      openstreetmap_search: OpenStreetMap-haku
     select_language_button:
       title: Valitse kieli
   user_mailer:
@@ -1982,11 +2027,11 @@ fi:
   passwords:
     new:
       title: Unohtunut salasana
-      heading: Unohditko salasanasi?
+      heading: Unohditko salasanan?
       email address: Sähköpostiosoite
       new password button: Lähetä salasanan palautusohjeet
-      help_text: Kirjoita alapuolelle kirjautumissähköpostiosoitteesi. Osoitteeseen
-        lähetetään salasanan palautusohjeet.
+      help_text: Kirjoita kirjautumiseen käytettävä sähköpostiosoite. Salasanan palautusohjeet
+        lähetetään tähän osoitteeseen.
     create:
       send_paranoid_instructions: Jos sähköpostiosoitteesi on tietokannassamme, saat
         muutamassa minuutissa sähköpostin, jossa on ohjeet salasanan palautukseen.
@@ -2096,7 +2141,7 @@ fi:
       email or username: Sähköpostiosoite tai käyttäjätunnus
       password: Salasana
       remember: Pidä minut sisäänkirjautuneena
-      lost password link: Unohditko salasanasi?
+      lost password link: Unohditko salasanan?
       login_button: Kirjaudu sisään
       with external: 'tai kirjaudu jonkun muun palvelun tunnuksilla:'
       or: tai
@@ -2197,6 +2242,14 @@ fi:
       legal_1_1_terms_of_use: käyttöehtoja
       legal_1_1_aup: sallitun käytön käytäntöjä
       legal_1_1_privacy_policy: tietosuojakäytäntöä
+      legal_1_2_html: Jos käytät OpenStreetMap-karttoja tai -aineistoa, muista mainita
+        OpenStreetMap lähteenä – lisätietoja on sivulla %{attribution_guidelines_link}.
+      legal_attribution_guidelines_title: nimeämisohjeistus
+      legal_1_3_html: Pelkästään OpenStreetMapista otetun näyttökuvan käyttämiseen
+        sellaisenaan kirjassa, julkaisussa, elokuvassa tai TV-ohjelmassa ei tarvitse
+        pyytää lupaa, koska OpenStreetMapin tiedot ovat kaikkien käytettävissä. Lisätietoja
+        on sivulla %{attribution_guidelines_link} ja esimerkkejä sivuilla %{attribution_example_film}
+        ja %{attribution_example_tv}.
       legal_2_1_html: Lisätietoja lisensoinnista, tekijänoikeuksista ja muista oikeudellisista
         kysymyksistä saa %{contact_the_osmf_link}.
       legal_2_1_contact_the_osmf: OSM-säätiöltä
@@ -2206,7 +2259,7 @@ fi:
     copyright:
       title: Tekijänoikeus ja lisenssi
       foreign:
-        title: Tietoa tästä käännöksestä
+        title: Huomautus tästä käännöksestä
         html: Jos tämän käännetyn sivun ja %{english_original_link} välillä on eroja,
           englanninkielinen sivu on aina etusijalla.
         english_link: englanninenkielisen alkuperäisversion
@@ -2507,6 +2560,11 @@ fi:
         Ryhmät voivat olla muodollisia tai epävirallisia.
       local_chapters:
         title: Paikalliset osastot
+        about_text: Paikalliset osastot ovat maa- tai aluetason ryhmiä, jotka ovat
+          perustaneet muodollisesti päteviä voittoa tavoittelemattomia oikeushenkilöitä.
+          Ne edustavat alueensa karttaa ja kartoittajia paikallishallinnon, yritysten
+          ja median suuntaan. Ne ovat sopineet yhteydestä OpenStreetMap-säätiöön (OSMF),
+          mikä antaa niille yhteyden laki- ja tekijänoikeuselimeen.
       other_groups:
         title: Muut ryhmät
         communities_wiki: Yhteisöjen wiki-sivu
@@ -2607,7 +2665,7 @@ fi:
         bicycle_parking: Pyöräparkki
         bicycle_parking_small: Pieni pyöräparkki
         toilets: Vessat
-      see_external_legend: Laajempi kartan selite toisessa palvelussa
+      see_external_legend: Laajempi kartan selite ulkoisessa palvelussa
   share_panes:
     show:
       link: Linkki tai HTML-koodi
@@ -2893,6 +2951,7 @@ fi:
         html: Osoitetta ei näytetä julkisesti, lisätietoja on sivulla %{privacy_policy_link}.
       or: tai
       use external auth: Kirjaudu toisen palvelun tunnuksilla
+      verify_human: Vahvista olevasi oikea ihminen
     no_such_user:
       title: Haettua käyttäjää ei ole olemassa
       heading: Käyttäjää %{user} ei ole olemassa

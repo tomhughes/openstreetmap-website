@@ -33,6 +33,7 @@
 # Author: McDutchie
 # Author: Meno25
 # Author: Mido
+# Author: Mo.Hajeer
 # Author: Mohammed Qays
 # Author: Mohammed Qubati
 # Author: Mutarjem horr
@@ -99,6 +100,10 @@ ar:
       models:
         user_mute:
           is_already_muted: تمت كتم الصوت بالفعل
+        social_link:
+          attributes:
+            url:
+              http_parse_error: يجب أن يبدأ URL مع http:// أو https://
     models:
       acl: لائحة التحكم بالوصول
       changeset: حزمة التغييرات
@@ -187,6 +192,7 @@ ar:
         company: شركة
         home_lat: خط العرض
         home_lon: خط الطول
+        home_location_name: اسم الموقع الرئيس
         languages: اللغات المفضلة
         preferred_editor: المحرر المفضل
         pass_crypt: كلمة السر
@@ -1596,7 +1602,6 @@ ar:
       history: تاريخ
       home: اذهب إلى الصفحة الرئيسية
       issues: المشاكل
-      loading: تحميل...
       log_out: تسجيل الخروج
       log_in: تسجيل الدخول
       more: المزيد

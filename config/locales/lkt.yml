@@ -269,6 +269,8 @@ lkt:
     unsubscribe:
       heading: Aŋpél'okigwapi wóakhiye kiŋ le otȟáyapȟa-alúštaƞ yačhíƞ he?
       button: Wóakhiye otȟápȟa-ayúštaƞ yo/ye
+    navigation:
+      my_diary: Aŋpél'okigwapi Mitȟáwa
     profile_diaries:
       comments_label: Wówapi
       date_label: Wíyawapi
@@ -284,6 +286,7 @@ lkt:
     search_osm_nominatim:
       prefix:
         aeroway:
+          helipad: Máza-thuswéčha-oínažiŋ
           runway: Kiƞyékhiyapi-oíƞyaƞke
           taxilane: Kiƞyékhiyapi-čhaƞkú
           taxiway: Kiƞyékhiyapi-čhaƞkú
@@ -1226,8 +1229,8 @@ lkt:
     show:
       filename: 'Wópȟaȟta-čhažé:'
       download: khulwókšu wo/we
-      map: makȟówapi
-      edit: yutȟókeča
+      map: makȟówapi ogná owáŋka waŋyáŋka
+      edit: mas'yútȟokeča ogná yuǧáƞ
       description: 'Wóyakapi:'
       none: Waníča
     trace:

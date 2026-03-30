@@ -323,7 +323,7 @@ be-Tarask:
         read and accept with tou: Калі ласка, прачытайце пагадненьне ўдзельніцтва
           й умовы ўжываньня, потым пастаўце абедзьве птушачкі і націсьніце кнопку
           працягнуць.
-        contributor_terms_explain: Гэтае пагадненьне рэгулюе ўмовы вашага існуючага
+        contributor_terms_explain: Гэтае пагадненьне вызначае ўмовы вашага існуючага
           ці будучага ўнёску.
         read_ct: Я прачытаў(-ла) і згодны(-на) з вышэйзгаданымі ўмовамі ўдзельніцтва
         tou_explain:
@@ -444,10 +444,10 @@ be-Tarask:
       wiki_link:
         key: Старонка вікі, што апісвае тэґ %{key}
         tag: Старонка вікі, што апісвае тэґ %{key}=%{value}
-      wikidata_link: '%{page} аб''ект на Wikidata'
+      wikidata_link: '%{page} аб''ект Вікізьвестак'
       wikidata_preview:
-        one: прагляд аб'екту Wikidata
-        other: прагляд аб'ектаў Wikidata
+        one: прагляд аб'екту Вікізьвестак
+        other: прагляд аб'ектаў Вікізьвестак
       wikipedia_link: Артыкул %{page} у Вікіпэдыі
       wikimedia_commons_link: Элемэнт %{page} на Wikimedia Commons
       telephone_link: Тэлефанаваць %{phone_number}
@@ -993,7 +993,7 @@ be-Tarask:
           office: Офісны будынак
           public: Грамадзкі будынак
           residential: Жылы будынак
-          retail: Будынак розьнічнага ґандлю
+          retail: Будынак розьнічнага гандлю
           roof: Дах
           ruins: Разбураны будынак
           school: Школьны будынак
@@ -1097,7 +1097,7 @@ be-Tarask:
           track: Ґрунтовая дарога
           traffic_mirror: Люстра дарожнае
           traffic_signals: Сьвятлафор
-          trailhead: Пачатак маршруту
+          trailhead: Пачатак трэйлу
           trunk: Шаша
           trunk_link: Шаша
           turning_circle: Разваротнае кола
@@ -1179,7 +1179,7 @@ be-Tarask:
           reservoir: Вадасховішча
           reservoir_watershed: Зона вадазбору
           residential: Жылы раён
-          retail: Ґандлёвая зона
+          retail: Гандлёвая зона
           village_green: Гарадзкі парк
           vineyard: Вінаграднік
           "yes": Землекарыстаньне
@@ -1321,7 +1321,7 @@ be-Tarask:
           sand: Пясок
           scree: Каменны схіл
           scrub: Хмызьняк
-          shingle: Галька
+          shingle: Ґалька
           spring: Крыніца
           stone: Камень
           strait: Пратока
@@ -1920,7 +1920,6 @@ be-Tarask:
       history: Гісторыя
       home: Перайсьці дамоў
       issues: Праблемы
-      loading: Ладаваньне...
       log_out: Выйсьці
       log_in: Увайсьці
       more: Яшчэ
@@ -2466,7 +2465,7 @@ be-Tarask:
         або іншыя юрыдычныя пытаньні.'
       legal_2_1_contact_the_osmf: Кантакты для сувязі з OSMF
       legal_2_2_html: OpenStreetMap, лягатып з лупай і State of the Map ёсьць %{registered_trademarks_link}.
-      legal_2_2_registered_trademarks: зарэґістраванымі ґандлёвымі знакамі OSMF
+      legal_2_2_registered_trademarks: зарэґістраванымі гандлёвымі знакамі OSMF
       partners_title: Партнэры
     copyright:
       title: Аўтарскія правы і ліцэнзія
@@ -2551,11 +2550,11 @@ be-Tarask:
           ласка, зьвярніцеся да нашай %{takedown_procedure_link} або проста на %{online_filing_page_link}.
         infringement_2_1_takedown_procedure: працэдуры выдаленьня
         infringement_2_1_online_filing_page: старонцы анлайн падачы
-        trademarks_title: Ґандлёвыя знакі
+        trademarks_title: Гандлёвыя знакі
         trademarks_1_1_html: "OpenStreetMap, лягатып з лупай і State of the Map ёсьць
-          зарэґістраванымі ґандлёвымі знакамі фундацыі OpenStreetMap. Калі ёсьць пытаньні
+          зарэґістраванымі гандлёвымі знакамі фундацыі OpenStreetMap. Калі ёсьць пытаньні
           пра ўжытак гэтых знакаў, да прагляду нашая \n%{trademark_policy_link}."
-        trademarks_1_1_trademark_policy: Палітыка ґандлёвага знаку
+        trademarks_1_1_trademark_policy: Палітыка гандлёвага знаку
         services_title_html: Дадатковыя паслугі
         services_1_html: Нягледзячы на тое, што OpenStreetMap месьціць вольныя зьвесткі,
           мы ня можам прадастаўляць дармавы API мапы ці тайлы мапы трэцім асобам.
@@ -2894,7 +2893,7 @@ be-Tarask:
         common: Грамадзкая зямля
         built_up: Зона забудовы
         resident: Жылы раён
-        retail: Ґандлёвы раён
+        retail: Гандлёвы раён
         industrial: Прамысловы раён
         commercial: Камэрцыйны раён
         heathland: Верасовая зямля

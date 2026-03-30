@@ -1966,7 +1966,6 @@ sl:
       history: Zgodovina
       home: Domov
       issues: Težave
-      loading: Nalaganje ...
       log_out: Odjava
       log_in: Prijava
       more: Več
@@ -2733,7 +2732,7 @@ sl:
       not_public_description_html: Urejanje zemljevida ni mogoče dokler vaši prispevki
         niso javni. Označite jih lahko kot javne na %{user_page}.
       user_page_link: strani vašega uporabniškega računa
-      anon_edits_link_text: Pojasnilo zakaj je temu tako.
+      anon_edits_link_text: Pojasnilo, zakaj je tako.
     export:
       title: Izvozi
       manually_select: Ročno izberite drugo območje
