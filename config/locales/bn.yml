@@ -665,8 +665,6 @@ bn:
         one: '%{count}টি মন্তব্য'
         other: '%{count}টি মন্তব্য'
       title_label: ডাইরির ভুক্তি
-      comments_label: মন্তব্য
-      date_label: তারিখ
   doorkeeper:
     flash:
       applications:

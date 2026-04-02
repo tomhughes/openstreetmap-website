@@ -13,7 +13,7 @@
 ia:
   date:
     formats:
-      heatmap: '%-d de %B'
+      contribution_calendar: '%-d de %B'
   time:
     formats:
       friendly: '%e de %B %Y a %H:%M'
@@ -727,8 +727,6 @@ ia:
         one: '%{count} commento'
         other: '%{count} commentos'
       title_label: Entrata del diario
-      comments_label: Commentos
-      date_label: Data
   diary_comments:
     new:
       heading: Adder un commento al sequente discussion de entrata de diario?
@@ -2268,7 +2266,6 @@ ia:
         image: Imagine
         company: Compania
         location: Loco
-        heatmap: Carta de calor
     descriptions:
       show:
         title: Modificar profilo
@@ -2330,7 +2327,6 @@ ia:
     heatmaps:
       show:
         title: Configurar le carta de calor
-        show_heatmap_in_public: Monstrar le carta de calor sur tu pagina de profilo
         save: Actualisar le configuration del carta de calor
         cancel: Cancellar
       update:
@@ -3318,7 +3314,6 @@ ia:
       change_image: Cambiar imagine
       edit_company: Modificar compania
       edit_location: Modificar loco
-      edit_heatmap: Configurar le carta de calor
       contributions:
         one: '%{count} contribution in the le ultime anno'
         other: '%{count} contributiones in le ultime anno'
@@ -3818,7 +3813,7 @@ ia:
     home:
       marker_title: Mi loco de residentia
       not_set: Le loco de residentia non es definite pro tu conto
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Necun contribution le %{date}
         contributions:

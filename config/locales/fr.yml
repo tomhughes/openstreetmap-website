@@ -139,7 +139,7 @@ fr:
     dir: ltr
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y à %-H h %M'
@@ -874,8 +874,6 @@ fr:
         one: Un commentaire
         other: '%{count} commentaires'
       title_label: Entrée du journal
-      comments_label: Commentaires
-      date_label: Date
   diary_comments:
     new:
       heading: Ajouter un commentaire à cette discussion d’entrée de journal ?
@@ -2422,7 +2420,6 @@ fr:
         image: Image
         company: Entreprise
         location: Emplacement
-        heatmap: carte thermique
     descriptions:
       show:
         title: Modifier le profil
@@ -2486,7 +2483,6 @@ fr:
     heatmaps:
       show:
         title: Configurer la carte thermique
-        show_heatmap_in_public: Afficher la carte thermique sur votre page de profil
         save: Mettre à jour de la configuration de la carte thermique
         cancel: Annuler
       update:
@@ -3525,7 +3521,6 @@ fr:
       change_image: Changer l’image
       edit_company: Modifier l’entreprise
       edit_location: Modifier l’emplacement
-      edit_heatmap: Configurer la carte thermique
       contributions:
         one: Une contribution au cours de la dernière année
         other: '%{count} contributions au cours de la dernière année'
@@ -4035,7 +4030,7 @@ fr:
     home:
       marker_title: Emplacement de mon domicile
       not_set: L’emplacement du domicile n’est pas défini pour votre compte
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Pas de contributions le %{date}
         contributions:

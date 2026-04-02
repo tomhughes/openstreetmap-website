@@ -62,7 +62,7 @@
 fi:
   date:
     formats:
-      heatmap: '%-d. %B'
+      contribution_calendar: '%-d. %B'
   time:
     formats:
       friendly: '%e. %Bta %Y klo %H.%M'
@@ -687,8 +687,6 @@ fi:
         one: '%{count} kommentti'
         other: '%{count} kommenttia'
       title_label: Päiväkirjamerkintä
-      comments_label: Kommentit
-      date_label: Päiväys
   doorkeeper:
     flash:
       applications:
@@ -3481,7 +3479,7 @@ fi:
     home:
       marker_title: Kotipaikka
       not_set: Tilille ei ole asetettu kotipaikkaa
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Ei muokkauksia %{date}
         contributions:

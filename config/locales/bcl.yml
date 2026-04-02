@@ -8,7 +8,7 @@
 bcl:
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y at %H:%M'
@@ -723,8 +723,6 @@ bcl:
         one: '%{count} komento'
         other: '%{count} mga komento'
       title_label: Entrada sa Talaaldawan
-      comments_label: Mga komento
-      date_label: Petsa
   diary_comments:
     new:
       heading: Magdugang nin komento sa minasunod na pag-urolay sa entrada sa talaarawan?
@@ -2150,7 +2148,6 @@ bcl:
         image: Ladawan
         company: Kompanya
         location: Kinamumugtakan
-        heatmap: Heatmap
     descriptions:
       show:
         title: Liwaton an Profile
@@ -3203,7 +3200,6 @@ bcl:
       change_image: Ribayan an Ladawan
       edit_company: Liwaton an Kompanya
       edit_location: Liwaton an Kinamumugtakan
-      edit_heatmap: I-configure an Heatmap
       contributions:
         one: '%{count} kontribusyon sa nakaaging taon'
         other: '%{count} mga kontribusyon sa nakaaging taon'
@@ -3703,7 +3699,7 @@ bcl:
     home:
       marker_title: An kinamumugtakan kan sakuyang irukan
       not_set: An kinamumugtakan kan iniirukan dai nakabugtak para sa saimong account
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Mayo nin mga kontribusyon kan %{date}
         contributions:

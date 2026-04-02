@@ -23,7 +23,7 @@
 gl:
   date:
     formats:
-      heatmap: '%-d de %B'
+      contribution_calendar: '%-d de %B'
   time:
     formats:
       friendly: '%e de %B de %Y ás %H:%M'
@@ -742,8 +742,6 @@ gl:
         one: '%{count} comentario'
         other: '%{count} comentarios'
       title_label: Entrada no diario
-      comments_label: Comentarios
-      date_label: Data
   diary_comments:
     new:
       heading: Queres engadir un comentario á seguinte conversa sobre a entrada no
@@ -1917,6 +1915,9 @@ gl:
       e outros %{partners}.
     partners_corpmembers: membros corporativos da OSMF
     partners_partners: socios
+    welcome_tou_notice_html: Ao utilizares este sitio web ou outra infraestrutura
+      proporcionada pola Fundación OpenStreetMap, aceptas os %{terms_link}.
+    terms_of_use: termos de uso
     tou: termos de uso
     nothing_to_preview: Non hai nada que previsualizar.
     learn_more: Máis información
@@ -2282,7 +2283,7 @@ gl:
         image: Imaxe
         company: Empresa
         location: Localización
-        heatmap: Mapa de calor
+        contribution_calendar: Calendario de contribucións
     descriptions:
       show:
         title: Editar o perfil
@@ -2344,13 +2345,14 @@ gl:
         failure: Non se puido actualizar a localización do perfil.
     heatmaps:
       show:
-        title: Configurar o mapa de calor
-        show_heatmap_in_public: Mostrar o mapa de calor no teu perfil
-        save: Actualizar a configuración do mapa de calor
+        title: Configurar o calendario de contribucións
+        show_contribution_calendar_in_public: Mostrar o calendario de contribucións
+          na túa páxina de perfil
+        save: Actualizar a configuración do calendario de contribucións
         cancel: Cancelar
       update:
-        success: Actualizouse o mapa de calor.
-        failure: Non se puido actualizar o mapa de calor.
+        success: Actualizouse o calendario de contribucións.
+        failure: Non se puido actualizar o calendario de contribucións.
   sessions:
     new:
       tab_title: Iniciar a sesión
@@ -3374,7 +3376,7 @@ gl:
       change_image: Cambiar a imaxe
       edit_company: Editar a empresa
       edit_location: Editar a localización
-      edit_heatmap: Configurar o mapa de calor
+      edit_contribution_calendar: Configurar o calendario de contribucións
       contributions:
         one: '%{count} contribución no último ano'
         other: '%{count} contribucións no último ano'
@@ -3875,7 +3877,7 @@ gl:
     home:
       marker_title: Localización da miña casa
       not_set: A localización da túa casa non está configurada para a túa conta
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Non hai contribucións o %{date}
         contributions:

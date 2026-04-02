@@ -511,8 +511,6 @@ sq:
     profile_diaries:
       latest_diaries: Ditarët më të fundit
       title_label: Shënim ditari
-      comments_label: Komentet
-      date_label: Data
   diary_comments:
     new:
       heading: Të shtohet komenti te diskutimi i mëposhtëm i shënimeve të ditarit?

@@ -80,7 +80,7 @@
 pt:
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e de %B de %Y às %H:%M'
@@ -795,8 +795,6 @@ pt:
         one: '%{count} comentário'
         other: '%{count} comentários'
       title_label: Entrada do diário
-      comments_label: Comentários
-      date_label: Data
   diary_comments:
     new:
       heading: Deseja adicionar um comentário na seguinte discussão sobre a entrada
@@ -1972,6 +1970,9 @@ pt:
       e outros %{partners}.
     partners_corpmembers: Membros corporativos OSMF
     partners_partners: parceiros
+    welcome_tou_notice_html: Ao utilizar este site ou qualquer outra infraestrutura
+      fornecida pela Fundação OpenStreetMap, você concorda com os %{terms_link}.
+    terms_of_use: Termos de uso
     tou: Termo de uso
     nothing_to_preview: Nada para pré-visualizar.
     learn_more: Saiba Mais
@@ -2332,7 +2333,7 @@ pt:
         image: Imagem
         company: Empresa
         location: Localização
-        heatmap: Mapa de calor
+        contribution_calendar: Calendário de contribuições
     descriptions:
       show:
         title: Editar perfil
@@ -2393,13 +2394,14 @@ pt:
         failure: Não foi possível atualizar a localização do perfil.
     heatmaps:
       show:
-        title: Configurar mapa de calor
-        show_heatmap_in_public: Mostrar o mapa de calor na sua página de perfil
-        save: Atualizar configuração do mapa de calor
+        title: Configurar o calendário de contribuições
+        show_contribution_calendar_in_public: Mostrar o calendário de contribuições
+          na sua página de perfil
+        save: Atualizar a configuração do calendário de contribuições
         cancel: Cancelar
       update:
-        success: Mapa de calor atualizado.
-        failure: Não foi possível atualizar o mapa de calor.
+        success: Calendário de contribuições atualizado.
+        failure: Não foi possível atualizar o calendário de contribuições.
   sessions:
     new:
       tab_title: Entrar
@@ -3413,7 +3415,7 @@ pt:
       change_image: Alterar imagem
       edit_company: Editar empresa
       edit_location: Editar localização
-      edit_heatmap: Configurar mapa de calor
+      edit_contribution_calendar: Configurar o calendário de contribuições
       contributions:
         one: '%{count} contribuição no último ano'
         other: '%{count} contribuições no último ano'
@@ -3914,7 +3916,7 @@ pt:
     home:
       marker_title: Localização da minha casa
       not_set: Localização da casa não está definida para sua conta
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Sem contribuições em %{date}
         contributions:

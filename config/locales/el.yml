@@ -767,8 +767,6 @@ el:
         one: '%{count} σχόλιο'
         other: '%{count} σχόλια'
       title_label: Καταχώριση ημερολογίου
-      comments_label: Σχόλια
-      date_label: Ημερομηνία
   diary_comments:
     new:
       heading: Προσθήκη σχολίου στην ακόλουθη συζήτηση καταχώρισης ημερολογίου;
@@ -1949,6 +1947,9 @@ el:
       και άλλους %{partners}.
     partners_corpmembers: εταιρικά μέλη του OSMF
     partners_partners: συνεργάτες
+    welcome_tou_notice_html: Χρησιμοποιώντας αυτόν τον ιστότοπο ή άλλη υποδομή που
+      παρέχεται από το Ίδρυμα OpenStreetMap, συμφωνείτε με τους %{terms_link}.
+    terms_of_use: όρους χρήσης
     tou: Όροι Χρήσης
     nothing_to_preview: Τίποτα για προεπισκόπηση.
     learn_more: Μάθετε περισσότερα
@@ -2320,7 +2321,7 @@ el:
         image: Εικόνα
         company: Εταιρεία
         location: Τοποθεσία
-        heatmap: Θερμικός χάρτης
+        contribution_calendar: Ημερολόγιο συνεισφορών
     descriptions:
       show:
         title: Επεξεργασία προφίλ
@@ -2381,13 +2382,14 @@ el:
         failure: Δεν ήταν δυνατή η ενημέρωση της τοποθεσίας του προφίλ.
     heatmaps:
       show:
-        title: Διαμόρφωση θερμικού χάρτη
-        show_heatmap_in_public: Εμφάνιση του θερμικού χάρτη στη σελίδα προφίλ σας
-        save: Ενημέρωση διαμόρφωσης θερμικού χάρτη
+        title: Διαμόρφωση ημερολογίου συνεισφορών
+        show_contribution_calendar_in_public: Εμφάνιση του ημερολογίου συνεισφορών
+          στη σελίδα του προφίλ σας
+        save: Ενημέρωση διαμόρφωσης ημερολογίου συνεισφορών
         cancel: Ακύρωση
       update:
-        success: Ο θερμικός χάρτης ενημερώθηκε.
-        failure: Δεν ήταν δυνατή η ενημέρωση του θερμικού χάρτη.
+        success: Το ημερολόγιο συνεισφορών ενημερώθηκε.
+        failure: Δεν ήταν δυνατή η ενημέρωση του ημερολογίου συνεισφορών.
   sessions:
     new:
       tab_title: Σύνδεση
@@ -3414,7 +3416,7 @@ el:
       change_image: Αλλαγή εικόνας
       edit_company: Επεξεργασία εταιρείας
       edit_location: Επεξεργασία τοποθεσίας
-      edit_heatmap: Διαμόρφωση θερμικού χάρτη
+      edit_contribution_calendar: Διαμόρφωση ημερολογίου συνεισφορών
       contributions:
         one: '%{count} συνεισφορά τον τελευταίο χρόνο'
         other: '%{count} συνεισφορές τον τελευταίο χρόνο'
@@ -3924,7 +3926,7 @@ el:
     home:
       marker_title: Τοποθεσία του σπιτιού μου
       not_set: Η τοποθεσία του σπιτιού δεν έχει οριστεί για τον λογαριασμό σας
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Δεν υπάρχουν συνεισφορές στις %{date}
         contributions:

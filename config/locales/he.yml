@@ -47,7 +47,7 @@ he:
     dir: rtl
   date:
     formats:
-      heatmap: '%-d ב%B'
+      contribution_calendar: '%-d ב%B'
   time:
     formats:
       friendly: '%e ב%B %Y בשעה %H:%M'
@@ -774,8 +774,6 @@ he:
         many: '%{count} הערות'
         other: '%{count} הערות'
       title_label: רשומת יומן
-      comments_label: הערות
-      date_label: תאריך
   diary_comments:
     new:
       heading: להוסיף הערה לדיון ברשומת היומן הבאה?
@@ -2279,7 +2277,6 @@ he:
         image: תמונה
         company: חברה
         location: מקום
-        heatmap: מפת חום
     descriptions:
       show:
         title: עריכת פרופיל
@@ -2340,7 +2337,6 @@ he:
     heatmaps:
       show:
         title: הגדרת מפת חום
-        show_heatmap_in_public: הצגת מפת החום בדף הפרופיל שלך
         save: עדכון הגדרות מפת חום
         cancel: ביטול
       update:
@@ -3285,7 +3281,6 @@ he:
       change_image: החלפת תמונה
       edit_company: עריכת חברה
       edit_location: עריכת מקום
-      edit_heatmap: הגדרת מפת חום
       contributions:
         one: תרומה בשנה האחרונה
         two: שתי תרומות בשנה האחרונה
@@ -3790,7 +3785,7 @@ he:
     home:
       marker_title: מיקום הבית שלי
       not_set: מיקום הבית לא מוגדר עבור החשבון שלך
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: אין תרומות ב־%{date}
         contributions:

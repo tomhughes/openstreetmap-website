@@ -22,7 +22,7 @@
 br:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y da %H:%M'
@@ -708,8 +708,6 @@ br:
         few: '%{count} evezhiadenn'
         many: '%{count} evezhiadenn'
         other: '%{count} evezhiadenn'
-      comments_label: Evezhiadennoù
-      date_label: Deiziad
   doorkeeper:
     flash:
       applications:
@@ -3536,7 +3534,7 @@ br:
     home:
       marker_title: Lec'hiadur ma zi
       not_set: N'haller ket kaout lec'hiadur ho ti war ar gont-mañ
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Degasadenn ebet d'an %{date}
         contributions:

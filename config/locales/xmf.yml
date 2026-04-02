@@ -9,7 +9,7 @@ xmf:
     dir: ltr
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%დ %თ %წ at %ს:%წ'
@@ -541,9 +541,6 @@ xmf:
     navigation:
       my_diary: ჩქიმი დღარი
       new: დღარს ახალი დინნაჭარაშ კეთება
-    profile_diaries:
-      comments_label: კომენტარეფი
-      date_label: თარიღი
   doorkeeper:
     flash:
       applications:

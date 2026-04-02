@@ -42,7 +42,7 @@
 da:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e. %B %Y kl. %H:%M'
@@ -750,8 +750,6 @@ da:
         one: '%{count} kommentar'
         other: '%{count} kommentarer'
       title_label: Blogindlæg
-      comments_label: Kommentarer
-      date_label: Dato
   diary_comments:
     new:
       heading: Vil du tilføje en kommentar til følgende blogindlægsdiskussion?
@@ -1919,6 +1917,9 @@ da:
       %{partners}.
     partners_corpmembers: OSMF virksomhedsmedlemmer
     partners_partners: partnere
+    welcome_tou_notice_html: Ved at bruge dette websted eller anden infrastruktur
+      leveret af OpenStreetMap Foundation accepterer du %{terms_link}.
+    terms_of_use: vilkårene for anvendelse
     tou: Vilkår for anvendelse
     nothing_to_preview: Intet at forhåndsvise
     learn_more: Lær mere
@@ -2279,7 +2280,7 @@ da:
         image: Billede
         company: Virksomhed
         location: Placering
-        heatmap: Varmekort
+        contribution_calendar: Bidragskalender
     descriptions:
       show:
         title: Rediger profil
@@ -2339,13 +2340,13 @@ da:
         failure: Kunne ikke opdatere profilplacering.
     heatmaps:
       show:
-        title: Konfigurer varmekort
-        show_heatmap_in_public: Vis varmekortet på din profilside
-        save: Opdater konfiguration af varmekort
+        title: Konfigurer bidragskalender
+        show_contribution_calendar_in_public: Vis bidragskalenderen på din profilside
+        save: Opdater konfiguration af bidragskalender
         cancel: Annuller
       update:
-        success: Varmekort opdateret.
-        failure: Kunne ikke opdatere varmekortet.
+        success: Bidragskalender opdateret.
+        failure: Bidragskalenderen kunne ikke opdateres.
   sessions:
     new:
       tab_title: Log ind
@@ -2627,6 +2628,8 @@ da:
         contributors_hr_croatia: Kroatien
         contributors_hr_dgu: Kroatiens statsgeodætiske administration
         contributors_hr_open_data_portal: Den nationale portal for åbne data
+        contributors_nl_credit_new_html: '%{netherlands}: Indeholder &copy; AND-data,
+          2007'
         contributors_nl_netherlands: Holland
         contributors_nz_credit_html: '%{new_zealand}: Indeholder data fra %{linz_data_service_link}
           som er licenseret til anvendelse under %{cc_by_link}.'
@@ -3328,7 +3331,7 @@ da:
       change_image: Skift billede
       edit_company: Rediger virksomhed
       edit_location: Rediger placering
-      edit_heatmap: Konfigurer varmekort
+      edit_contribution_calendar: Konfigurer bidragskalender
       contributions:
         one: '%{count} bidrag i det seneste år'
         other: '%{count} bidrag i det seneste år'
@@ -3420,7 +3423,7 @@ da:
       index:
         title: Kommentarer til blogindlæg tilføjet af %{user}
       page:
-        post: Indsend
+        post: Indlæg
         when: Hvornår
         comment: Kommentar
     suspended:
@@ -3831,7 +3834,7 @@ da:
     home:
       marker_title: Mit hjemsted
       not_set: Hjemsted er ikke angivet for din konto
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Ingen bidrag %{date}
         contributions:

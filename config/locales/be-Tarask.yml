@@ -14,7 +14,7 @@
 be-Tarask:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y а %H:%M'
@@ -729,8 +729,6 @@ be-Tarask:
         one: '%{count} камэнтар'
         other: '%{count} камэнтароў'
       title_label: Допіс у дзёньнік
-      comments_label: Камэнтары
-      date_label: Дата
   diary_comments:
     new:
       heading: Дадаць камэнтар да абмяркаваньня допісу ў дзёньніку?
@@ -1395,7 +1393,7 @@ be-Tarask:
           buffer_stop: Буфэрны прыпынак
           construction: Будаўніцтва чыгункі
           disused: Нядзейная чыгунка
-          funicular: Фунікулёр
+          funicular: Фунікулер
           halt: Чыгуначны прыпынак
           junction: Чыгуначны вузел
           level_crossing: Чыгуначны пераезд
@@ -1904,6 +1902,9 @@ be-Tarask:
       іншымі %{partners}.
     partners_corpmembers: членамі карпарацыі OSMF
     partners_partners: партнэрамі
+    welcome_tou_notice_html: Карыстаючы гэты сайт ці іншую інфраструктуру, забясьпечаную
+      Фундацыяй OpenStreetMap, вы згаджаецеся з %{terms_link}.
+    terms_of_use: Умовамі ўжываньня
     tou: Умовы ўжываньня
     nothing_to_preview: Няма чаго паказываць.
     learn_more: Даведацца болей
@@ -2260,7 +2261,7 @@ be-Tarask:
         image: Выява
         company: Кампанія
         location: Лякацыя
-        heatmap: Цяпельная мапа
+        contribution_calendar: Каляндар унёскаў
     descriptions:
       show:
         title: Рэдагаваць профіль
@@ -2320,13 +2321,14 @@ be-Tarask:
         failure: Не атрымалася абнавіць лякацыю профіля.
     heatmaps:
       show:
-        title: Налады цяпельнай мапы
-        show_heatmap_in_public: Паказваць цяпельную мапу на старонцы профілю
-        save: Абнавіць налады цяпельнай мапы
+        title: Наладзіць каляндар унёскаў
+        show_contribution_calendar_in_public: Паказваць каляндар унёскаў на старонцы
+          вашага профілю
+        save: Абнавіць налады календару ўнёскаў
         cancel: Скасаваць
       update:
-        success: Цяпельная мапа абноўлена.
-        failure: Не атрымалася абнавіць цяпельную мапу.
+        success: Каляндар унёскаў абноўлены.
+        failure: Не атрымалася абнавіць каляндар унёскаў.
   sessions:
     new:
       tab_title: Уваход
@@ -3301,7 +3303,7 @@ be-Tarask:
       change_image: Зьмяніць выяву
       edit_company: Зьмена кампаніі
       edit_location: Зьмена лякацыі
-      edit_heatmap: Налады цяпельнай мапы
+      edit_contribution_calendar: Наладзіць каляндар унёскаў
       contributions:
         one: '%{count} унёсак летась'
         other: '%{count} унёску летась'
@@ -3808,7 +3810,7 @@ be-Tarask:
     home:
       marker_title: Мая хатняя лякацыя
       not_set: Хатняя лякацыя не пазначана для гэтага рахунку
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Няма ўнёску %{date}
         contributions:

@@ -791,8 +791,6 @@ it:
         one: '%{count} commento'
         other: '%{count} commenti'
       title_label: Voce del diario
-      comments_label: Commenti
-      date_label: Data
   diary_comments:
     new:
       heading: Aggiungere un commento alla discussione sulla seguente voce del diario?
@@ -1959,6 +1957,7 @@ it:
       e da altri %{partners}.
     partners_corpmembers: Membri aziendali dell'OSMF
     partners_partners: partner
+    terms_of_use: Condizioni d'uso
     tou: Condizioni d'uso
     nothing_to_preview: Niente da visualizzare in anteprima.
     learn_more: Ulteriori informazioni
@@ -2323,7 +2322,6 @@ it:
         image: Immagine
         company: Azienda
         location: Posizione
-        heatmap: Heatmap
     descriptions:
       show:
         title: Modifica profilo
@@ -2383,13 +2381,12 @@ it:
         failure: Impossibile aggiornare la posizione del profilo.
     heatmaps:
       show:
-        title: Configura la heatmap
-        show_heatmap_in_public: Mostra la heatmap sulla pagina del tuo profilo
-        save: Aggiorna la configurazione della heatmap
+        title: Configura il calendario dei contributi
+        save: Aggiorna la configurazione del calendario dei contributi
         cancel: Annulla
       update:
-        success: Heatmap aggiornata.
-        failure: Impossibile aggiornare la heatmap.
+        success: Calendario dei contributi aggiornato.
+        failure: Impossibile aggiornare il calendario dei contributi.
   sessions:
     new:
       tab_title: Entra
@@ -3396,7 +3393,6 @@ it:
       change_image: Cambia immagine
       edit_company: Modifica azienda
       edit_location: Modifica posizione
-      edit_heatmap: Configura la heatmap
       contributions:
         one: '%{count} contributo nell’ultimo anno'
         other: '%{count} contributi nell’ultimo anno'
@@ -3898,7 +3894,7 @@ it:
     home:
       marker_title: La mia posizione di casa
       not_set: La posizione di casa non è impostata per la tua utenza
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Nessun contributo il %{date}
         contributions:

@@ -12,7 +12,7 @@
 mk:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y г. во %H:%M ч.'
@@ -717,8 +717,6 @@ mk:
         one: '%{count} коментар'
         other: '%{count} коментари'
       title_label: Ставка во дневник
-      comments_label: Коментари
-      date_label: Датум
   diary_comments:
     new:
       heading: Ставате коментар во следниов разговор за дневничка ставка?
@@ -2245,7 +2243,6 @@ mk:
         image: Слика
         company: Фирма
         location: Местоположба
-        heatmap: Топлинска карта
     descriptions:
       show:
         title: Уреди профил
@@ -2308,8 +2305,6 @@ mk:
     heatmaps:
       show:
         title: Намести топлинска карта
-        show_heatmap_in_public: Прикажувај ја топлинската карта на мојата профилна
-          страница
         save: Измени поставки за топлинска карта
         cancel: Откажи
       update:
@@ -3312,7 +3307,6 @@ mk:
       change_image: Смени слика
       edit_company: Уреди фирма
       edit_location: Уреди местоположба
-      edit_heatmap: Намести топлинска карта
       contributions:
         one: '%{count} придонес во минатата година'
         other: '%{count} придонеси во минатата година'
@@ -3811,7 +3805,7 @@ mk:
     home:
       marker_title: Моја домашна местоположба
       not_set: На вашата сметка нема зададено домашна местоположба
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Нема придонеси на %{date}
         contributions:

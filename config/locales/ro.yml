@@ -770,8 +770,6 @@ ro:
         few: '%{count} comentarii'
         other: '%{count} de comentarii'
       title_label: Înregistrare în jurnal
-      comments_label: Comentarii
-      date_label: Dată
   diary_comments:
     new:
       heading: Adaugi un comentariu la următoarea discuție de intrare a jurnalului?

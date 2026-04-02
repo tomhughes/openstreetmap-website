@@ -594,8 +594,6 @@ sc:
       new_title: Cumpone un'intrada noa in su diàriu de utente meu
     profile_diaries:
       title_label: Intrada in su diàriu
-      comments_label: Cummentos
-      date_label: Data
   doorkeeper:
     errors:
       messages:

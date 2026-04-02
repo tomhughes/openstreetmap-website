@@ -602,9 +602,6 @@ eu:
       my_diary: Nire egunerokoa
       new: Eguneroko sarrera berria
       new_title: Nire erabiltzaile egunerokoan sarrera berri bat sortu
-    profile_diaries:
-      comments_label: Iruzkinak
-      date_label: Data
   doorkeeper:
     errors:
       messages:

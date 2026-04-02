@@ -6,7 +6,7 @@
 lkt:
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y %H:%M hé eháŋ'
@@ -271,9 +271,6 @@ lkt:
       button: Wóakhiye otȟápȟa-ayúštaƞ yo/ye
     navigation:
       my_diary: Aŋpél'okigwapi Mitȟáwa
-    profile_diaries:
-      comments_label: Wówapi
-      date_label: Wíyawapi
   doorkeeper:
     scopes:
       email: Wakȟáƞgli wóyakapi makȟóčhažeyate waŋgláka yo/ye
@@ -851,8 +848,8 @@ lkt:
       greeting: Hau/Haƞ,
       hopefully_you: Openstreetmap.org el, wakȟáƞgli wóyakapi makȟóčhažeyate tȟačháže-oyáŋke
         ogná tuwá (he niyé he?) iyówiƞkhiya-wičhóiye uŋyúthečapi kiŋ uŋkílapi.
-      click_the_link: He uŋyákilapi ehaŋtaŋš, wóičhikȟoyake kiŋ le akákpi  yo/ye.
-        Héčhel iyówiƞkhiya-wičhóiye yaglútȟeča kte.
+      click_the_link: He uŋyákilapi ehaŋtaŋš, wóičhikȟoyake kiŋ le akákpi yo/ye. Héčhel
+        iyówiƞkhiya-wičhóiye yaglútȟeča kte.
     note_comment_notification:
       description: 'OpenStreetMap Wóeye #%{id}'
       anonymous: Tuwá čhažé-wanílya uŋ waŋ

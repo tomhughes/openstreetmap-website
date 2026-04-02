@@ -63,7 +63,7 @@
 cs:
   date:
     formats:
-      heatmap: '%-d. %-m.'
+      contribution_calendar: '%-d. %-m.'
   time:
     formats:
       friendly: '%e. %m. %Y v %H:%M'
@@ -810,8 +810,6 @@ cs:
         many: '%{count} komentáře'
         other: '%{count} komentářů'
       title_label: Deníkový záznam
-      comments_label: Komentáře
-      date_label: Datum
   diary_comments:
     new:
       heading: Přidat komentář do následující diskuse k deníkovému záznamu?
@@ -1986,6 +1984,9 @@ cs:
       %{partners}.
     partners_corpmembers: firemní členové OSMF
     partners_partners: partneři
+    welcome_tou_notice_html: Používáním těchto webových stránek nebo další infrastruktury
+      poskytované OpenStreetMap Foundation souhlasíte s %{terms_link}.
+    terms_of_use: Podmínkami užití
     tou: Podmínky užití
     nothing_to_preview: Není k čemu zobrazovat náhled.
     learn_more: Více informací
@@ -2351,7 +2352,7 @@ cs:
         image: Obrázek
         company: Firma
         location: Poloha
-        heatmap: Teplotní mapa
+        contribution_calendar: Kalendář příspěvků
     descriptions:
       show:
         title: Upravit profil
@@ -2412,13 +2413,14 @@ cs:
         failure: Nepodařilo se aktualizovat profilovou polohu.
     heatmaps:
       show:
-        title: Konfigurace teplotní mapy
-        show_heatmap_in_public: Zobrazit teplotní mapu na stránce vašeho profilu
-        save: Uložit konfiguraci teplotní mapy
+        title: Konfigurace kalendáře příspěvků
+        show_contribution_calendar_in_public: Na stránce vašeho profilu zobrazovat
+          kalendář příspěvků
+        save: Uložit konfiguraci kalendáře příspěvků
         cancel: Storno
       update:
-        success: Teplotní mapa aktualizována.
-        failure: Nepodařilo se aktualizovat teplotní mapu.
+        success: Kalendář příspěvků aktualizován.
+        failure: Nepodařilo se aktualizovat kalendář příspěvků.
   sessions:
     new:
       tab_title: Přihlášení
@@ -3410,7 +3412,7 @@ cs:
       change_image: Změnit obrázek
       edit_company: Upravit firmu
       edit_location: Upravit polohu
-      edit_heatmap: Konfigurace teplotní mapy
+      edit_contribution_calendar: Konfigurace kalendáře příspěvků
       contributions:
         one: '%{count} příspěvek za poslední rok'
         few: '%{count} příspěvky za poslední rok'
@@ -3927,7 +3929,7 @@ cs:
     home:
       marker_title: Poloha mého domova
       not_set: Ve vašem účtu není nastavena poloha domova
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Dne %{date} žádné úpravy
         contributions:

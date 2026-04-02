@@ -63,7 +63,7 @@ ar:
     dir: rtl
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y في %H:%M'
@@ -687,8 +687,6 @@ ar:
       new_title: تأليف إدخال جديد في مذكرات المستخدم الخاصة بي
     profile_diaries:
       title_label: مدخلة يومية
-      comments_label: تعليقات
-      date_label: التاريخ
   doorkeeper:
     errors:
       messages:

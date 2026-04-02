@@ -26,7 +26,7 @@
 sl:
   date:
     formats:
-      heatmap: '%-d. %B'
+      contribution_calendar: '%-d. %B'
   time:
     formats:
       friendly: '%e. %B %Y, ob %H:%M'
@@ -772,8 +772,6 @@ sl:
         few: '%{count} komentarji'
         other: '%{count} komentarjev'
       title_label: Dnevniški vpis
-      comments_label: Komentarji
-      date_label: Datum
   diary_comments:
     new:
       heading: Želite dodati komentar k sledečemu dnevniškemu vpisu?
@@ -2320,7 +2318,6 @@ sl:
         image: Slika
         company: Podjetje
         location: Lokacija
-        heatmap: Toplotni zemljevid
     descriptions:
       show:
         title: Uredi profil
@@ -2381,7 +2378,6 @@ sl:
     heatmaps:
       show:
         title: Nastavi toplotni zemljevid
-        show_heatmap_in_public: Pokaži toplotni zemljevid na moji uporabniški strani
         save: Posodobi nastavitve toplotnega zemljevida
         cancel: Prekliči
       update:
@@ -3385,7 +3381,6 @@ sl:
       change_image: Spremeni sliko
       edit_company: Uredi podjetje
       edit_location: Uredi lokacijo
-      edit_heatmap: Nastavi toplotni zemljevid
       contributions:
         one: '%{count} prispevek v zadnjem letu'
         two: '%{count} prispevka v zadnjem letu'
@@ -3904,7 +3899,7 @@ sl:
     home:
       marker_title: Moja domača lokacija
       not_set: Domača lokacija za vaš račun ni nastavljena
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Brez prispevkov dne %{date}
         contributions:

@@ -13,7 +13,7 @@ skr-arab:
     dir: rtl
   date:
     formats:
-      heatmap: '%B %-d%B %-d'
+      contribution_calendar: '%B %-d%B %-d'
   time:
     formats:
       friendly: '%e %B %Yتے %H:%M'
@@ -708,8 +708,6 @@ skr-arab:
         one: '%{count} کمنٹ'
         other: '%{count} کمنٹس'
       title_label: ڈائری دی انٹری
-      comments_label: تبصرے
-      date_label: تریخ
   diary_comments:
     new:
       heading: اِیں ڈائری انٹری دی بحث وچ ہک رائے شامل کرݨی ہے؟
@@ -1824,6 +1822,7 @@ skr-arab:
       طرفوں سپورٹ کیتی ویندی ہے.
     partners_corpmembers: او ایس ایم ایف دے کاروباری رُکن
     partners_partners: بھائیوال
+    terms_of_use: ورتݨ شرطاں
     tou: ورتݨ شرطاں
     nothing_to_preview: کوئی ݙیکھݨ نئیں
     learn_more: ٻیا سِکھو
@@ -3737,7 +3736,7 @@ skr-arab:
     home:
       marker_title: میݙے گھر دی لوکیشن
       not_set: تہاݙے اکاؤنٹ کیتے گھر دی لوکیشن مقرر نئیں کیتی ڳئی۔
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: '%{date} تے کوئی حصہ داری کائنی۔'
         contributions:

@@ -36,7 +36,7 @@
 vi:
   date:
     formats:
-      heatmap: '%-d tháng %-m'
+      contribution_calendar: '%-d tháng %-m'
   time:
     formats:
       friendly: '%e tháng %-m năm %Y lúc %H:%M'
@@ -718,8 +718,6 @@ vi:
       comments:
         other: '%{count} bình luận'
       title_label: Mục Nhật ký
-      comments_label: Bình luận
-      date_label: Ngày tháng
   diary_comments:
     new:
       heading: Thêm bình luận vào cuộc thảo luận về mục nhật ký sau đây?
@@ -2143,7 +2141,6 @@ vi:
         image: Hình
         company: Công ty
         location: Vị trí
-        heatmap: Bản đồ nhiệt
     descriptions:
       show:
         title: Sửa đổi Hồ sơ
@@ -2206,7 +2203,6 @@ vi:
     heatmaps:
       show:
         title: Thiết lập Bản đồ nhiệt
-        show_heatmap_in_public: Hiển thị bản đồ nhiệt trên trang hồ sơ của bạn
         save: Cập nhật Cấu hình Bản đồ nhiệt
         cancel: Hủy bỏ
       update:
@@ -3189,7 +3185,6 @@ vi:
       change_image: Sửa đổi Hình ảnh
       edit_company: Sửa đổi Công ty
       edit_location: Sửa đổi Vị trí
-      edit_heatmap: Thiết lập Bản đồ nhiệt
       contributions:
         other: Đóng góp %{count} lần trong năm qua
       title:
@@ -3678,7 +3673,7 @@ vi:
     home:
       marker_title: Vị trí nhà ở của tôi
       not_set: Tài khoản của bạn chưa đặt vị trí nhà ở
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Không đóng góp vào %{date}
         contributions:

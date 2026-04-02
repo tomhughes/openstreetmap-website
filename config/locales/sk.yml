@@ -37,7 +37,7 @@
 sk:
   date:
     formats:
-      heatmap: '%-d. %B'
+      contribution_calendar: '%-d. %B'
   time:
     formats:
       friendly: '%e. %B %Y o %H:%M'
@@ -784,8 +784,6 @@ sk:
         many: '%{count} komentárov}'
         other: '%{count} komentárov'
       title_label: Záznam denníka
-      comments_label: Komentáre
-      date_label: Dátum
   diary_comments:
     new:
       heading: Pridať komentár k diskusii v denníku sledujúceho?
@@ -2264,7 +2262,6 @@ sk:
         image: Obrázok
         company: Spoločnosť
         location: Poloha
-        heatmap: Teplotná mapa
     descriptions:
       show:
         title: Upraviť profil
@@ -2326,7 +2323,6 @@ sk:
     heatmaps:
       show:
         title: Nastaviť teplotnú mapu
-        show_heatmap_in_public: Zobraziť teplotnú mapu na vašej profilovej stránke
         save: Aktualizovať nastavenie teplotnej mapy
         cancel: Zrušiť
       update:
@@ -3333,7 +3329,6 @@ sk:
       change_image: Zmeniť obrázok
       edit_company: Upraviť spoločnosť
       edit_location: Upraviť polohu
-      edit_heatmap: Nastaviť teplotnú mapu
       contributions:
         one: '%{count} príspevok za posledný rok'
         few: '%{count} príspevky za posledný rok'
@@ -3861,7 +3856,7 @@ sk:
     home:
       marker_title: Moja domovská poloha
       not_set: Vo vašom účte nie je nastavená domovská poloha
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Žiadne príspevky dňa %{date}
         contributions:

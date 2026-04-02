@@ -525,9 +525,6 @@ nn:
       my_diary: Dagboka mi
       new: Ny dagbokoppføring
       new_title: Skriv ei ny oppføring i dagboka di
-    profile_diaries:
-      comments_label: Kommentarar
-      date_label: Dato
   errors:
     contact:
       contact: kontakt

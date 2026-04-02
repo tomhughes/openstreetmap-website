@@ -669,8 +669,6 @@ th:
       comments:
         other: '%{count} ความคิดเห็น'
       title_label: รายการบันทึก
-      comments_label: ความคิดเห็น
-      date_label: วันที่
   diary_comments:
     new:
       heading: เพิ่มความคิดเห็นในการสนทนารายการบันทึกนี้?
@@ -3287,7 +3285,7 @@ th:
     home:
       marker_title: ตำแหน่งบ้านของฉัน
       not_set: ตำแหน่งบ้านไม่ได้ถูกตั้งค่าสำหรับบัญชีของคุณ
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: ไม่มีส่วนร่วมใน %{date}
         contributions:

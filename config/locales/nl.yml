@@ -76,7 +76,7 @@
 nl:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y om %H:%M'
@@ -789,8 +789,6 @@ nl:
         one: '%{count} reactie'
         other: '%{count} reacties'
       title_label: Dagboekbericht
-      comments_label: Reacties
-      date_label: Datum
   diary_comments:
     new:
       heading: Een reactie toevoegen aan de volgende dagboekaantekening?
@@ -2331,7 +2329,6 @@ nl:
         image: Afbeelding
         company: Bedrijf
         location: Locatie
-        heatmap: Heatmap
     descriptions:
       show:
         title: Profiel wijzigen
@@ -2394,7 +2391,6 @@ nl:
     heatmaps:
       show:
         title: Heatmap instellingen
-        show_heatmap_in_public: Heatmap weergeven op uw profielpagina.
         save: Instellingen voor Heatmap bijwerken
         cancel: Annuleren
       update:
@@ -3407,7 +3403,6 @@ nl:
       change_image: Afbeelding wijzigen
       edit_company: Bedrijf bewerken
       edit_location: Locatie bewerken
-      edit_heatmap: Heatmap instellingen
       contributions:
         one: '%{count} bijdrage in het afgelopen jaar'
         other: '%{count} bijdragen in het afgelopen jaar'
@@ -3912,7 +3907,7 @@ nl:
     home:
       marker_title: Mijn thuislocatie
       not_set: De thuislocatie is niet ingesteld voor uw account
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Geen bijdragen op %{date}
         contributions:

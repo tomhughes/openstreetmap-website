@@ -30,7 +30,7 @@
 lv:
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y @ %H:%M'
@@ -623,8 +623,6 @@ lv:
       new_title: Izveidot jaunu ierakstu manā lietotāja dienasgrāmatā
     profile_diaries:
       title_label: Dienasgrāmatas ieraksts
-      comments_label: Komentāri
-      date_label: Datums
   diary_comments:
     new:
       heading: Pievienot komentāru šai dienasgrāmatas ieraksta diskusijai?
@@ -2709,7 +2707,6 @@ lv:
       change_image: Mainīt attēlu
       edit_company: Rediģēt uzņēmumu
       edit_location: Rediģēt atrašanās vietu
-      edit_heatmap: Konfigurēt Heatmap
       title:
         administrator: Šis lietotājs ir administrators
         moderator: Šis lietotājs ir moderators

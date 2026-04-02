@@ -21,7 +21,7 @@
 az:
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y  %H:%M'
@@ -727,8 +727,6 @@ az:
         one: '%{count} şərh'
         other: '%{count} şərh'
       title_label: Gündəlik yazısı
-      comments_label: Şərhlər
-      date_label: Tarix
   diary_comments:
     new:
       heading: Aşağıdakı gündəlik yazısı müzakirəsinə şərh əlavə olunsun?

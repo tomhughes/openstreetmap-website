@@ -636,7 +636,6 @@ lb:
       new_title: Blogantrag erstellen
     profile_diaries:
       title_label: Blog-Antrag
-      date_label: Datum
   doorkeeper:
     flash:
       applications:
@@ -3030,7 +3029,7 @@ lb:
     home:
       marker_title: Mäin Doheem
       not_set: Fir Äre Kont ass keen Doheem definéiert
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Keng Kontributioune vum %{date}
         contributions:

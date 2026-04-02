@@ -12,7 +12,7 @@
 hsb:
   date:
     formats:
-      heatmap: '%-d. %B'
+      contribution_calendar: '%-d. %B'
   time:
     formats:
       friendly: '%e. %B %Y %H:%M'
@@ -729,8 +729,6 @@ hsb:
         few: '%{count} komentary'
         other: '%{count} komentarow'
       title_label: Dźenikowy zapisk
-      comments_label: Komentary
-      date_label: Datum
   diary_comments:
     new:
       heading: Slědowacej diskusiji wo dźenikowym zapisku komentar přidać?
@@ -2196,7 +2194,6 @@ hsb:
         image: Wobraz
         company: Předewzaće
         location: Městno
-        heatmap: Ćopłotna karta
     descriptions:
       show:
         title: Profil wobdźěłać
@@ -2257,13 +2254,12 @@ hsb:
         failure: Profilowe stejnišćo njeda so aktualizować.
     heatmaps:
       show:
-        title: Ćopłotnu kartu konfigurować
-        show_heatmap_in_public: Ćopłotnu kartu na wašej profilowej stronje pokazać
-        save: Konfiguraciju ćopłotneje karty aktualizować
+        title: Protyku přinoškow konfigurować
+        save: Konfiguraciju protyki přinoškow aktualizować
         cancel: Přetorhnyć
       update:
-        success: Ćopłotna karta je so zaktualizowała.
-        failure: Ćopłotna karta njeda so aktualizować.
+        success: Protyka přinoškow je so zaktualizowała.
+        failure: Protyka přinoškow njeda so aktualizować.
   sessions:
     new:
       tab_title: Přizjewić
@@ -3453,7 +3449,7 @@ hsb:
       centre_map: Kartu tu srjedźić
     home:
       marker_title: Moje domjace stejnišćo
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Žane přinoški dnja %{date}
     edit:

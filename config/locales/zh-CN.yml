@@ -108,7 +108,7 @@
 zh-CN:
   date:
     formats:
-      heatmap: '%-m月%-d日'
+      contribution_calendar: '%-m月%-d日'
   time:
     formats:
       friendly: '%Y年%m月%e日 %H:%M'
@@ -757,8 +757,6 @@ zh-CN:
       latest_diaries: 最新日记
       comments: '%{count}条评论'
       title_label: 日记条目
-      comments_label: 评论
-      date_label: 日期
   diary_comments:
     new:
       heading: 在以下日记条目的讨论中留言吗？
@@ -1917,6 +1915,8 @@ zh-CN:
     hosting_partners_2024_html: 由%{fastly}、%{corpmembers}，以及其他%{partners}支持托管。
     partners_corpmembers: OSMF 企业会员
     partners_partners: 合作伙伴
+    welcome_tou_notice_html: 通过使用本网站或OpenStreetMap基金会提供的其他基础设施，您同意%{terms_link}。
+    terms_of_use: 使用条款
     tou: 使用条款
     nothing_to_preview: 无可预览内容。
     learn_more: 了解更多
@@ -2213,7 +2213,7 @@ zh-CN:
         image: 图像
         company: 公司
         location: 位置
-        heatmap: 热图
+        contribution_calendar: 贡献日历
     descriptions:
       show:
         title: 编辑个人资料
@@ -2274,13 +2274,13 @@ zh-CN:
         failure: 无法更新个人位置。
     heatmaps:
       show:
-        title: 配置热图
-        show_heatmap_in_public: 在您的个人资料页面上显示热图
-        save: 更新热图配置
+        title: 配置贡献日历
+        show_contribution_calendar_in_public: 在您的个人资料页面上显示贡献日历
+        save: 更新贡献日历配置
         cancel: 取消
       update:
-        success: 热图已更新。
-        failure: 无法更新热图。
+        success: 贡献日历已更新。
+        failure: 无法更新贡献日历。
   sessions:
     new:
       tab_title: 登录
@@ -3130,7 +3130,7 @@ zh-CN:
       change_image: 更改图片
       edit_company: 编辑公司
       edit_location: 编辑位置
-      edit_heatmap: 配置热图
+      edit_contribution_calendar: 配置贡献日历
       contributions: 去年有%{count}贡献
       title:
         administrator: 此用户是管理员
@@ -3591,7 +3591,7 @@ zh-CN:
     home:
       marker_title: 我的家庭地址
       not_set: 您的账户尚未设置家庭地址
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: '%{date}未有贡献'
         contributions: '%{date}有%{count}贡献'

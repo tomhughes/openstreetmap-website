@@ -32,7 +32,7 @@
 sr:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y у %H:%M'
@@ -540,9 +540,6 @@ sr:
       my_diary: Мој дневник
       new: Нови унос у дневнику
       new_title: Састави нови унос у мом дневнику
-    profile_diaries:
-      comments_label: Коментари
-      date_label: Датум
   doorkeeper:
     scopes:
       address: Види своју физичку адресу
@@ -1452,6 +1449,7 @@ sr:
     hosting_partners_2024_html: Хостинг пружају %{fastly}, %{corpmembers}, и други
       %{partners}.
     partners_partners: партнери
+    terms_of_use: Услови коришћења
     tou: Услови коришћења
     nothing_to_preview: Ништа за преглед.
     learn_more: Детаљније

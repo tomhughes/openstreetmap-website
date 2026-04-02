@@ -475,9 +475,6 @@ ms:
       my_diary: Diari Saya
       new: Catatan Diari Baru
       new_title: Karang catatan baru dalam diari pengguna anda
-    profile_diaries:
-      comments_label: Komen
-      date_label: Tarikh
   doorkeeper:
     flash:
       applications:

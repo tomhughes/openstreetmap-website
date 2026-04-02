@@ -57,7 +57,7 @@
 ca:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y a les %H.%M'
@@ -765,8 +765,6 @@ ca:
         one: '%{count} comentari'
         other: '%{count} comentaris'
       title_label: Entrada al diari
-      comments_label: Comentaris
-      date_label: Data
   diary_comments:
     new:
       heading: Voleu afegir un comentari a la següent entrada del debat?
@@ -2301,7 +2299,6 @@ ca:
         image: Imatge
         company: Empresa
         location: Ubicació
-        heatmap: Mapa de calor
     descriptions:
       show:
         title: Edita el perfil
@@ -2363,7 +2360,6 @@ ca:
     heatmaps:
       show:
         title: Configura el mapa de calor
-        show_heatmap_in_public: Mostra el mapa de calor a la vostra pàgina de perfil
         save: Actualitza la configuració del mapa de calor
         cancel: Cancel·la
       update:
@@ -3355,7 +3351,6 @@ ca:
       change_image: Canviar la imatge
       edit_company: Editar l'empresa
       edit_location: Editar la ubicació
-      edit_heatmap: Configura el mapa de calor
       contributions:
         one: '%{count} contribució en l''últim any'
         other: '%{count} contribucions en l''últim any'
@@ -3857,7 +3852,7 @@ ca:
     home:
       marker_title: La vostra ubicació
       not_set: La vostra ubicació no està definida per al vostre compte.
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Cap contribució el dia %{date}
         contributions:

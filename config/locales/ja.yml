@@ -694,8 +694,6 @@ ja:
     profile_diaries:
       latest_diaries: 最新の日記
       title_label: 日記エントリ
-      comments_label: コメント
-      date_label: 日付
   diary_comments:
     new:
       heading: この日記エントリの議論にコメントを追加しますか？

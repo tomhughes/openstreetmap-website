@@ -207,6 +207,8 @@ kab:
       current email address: Tansa imayl n tura
       contributor_terms:
         heading: 'Tiwtilin n iwiziw:'
+      terms_of_use:
+        heading: Tiwtilin n useqdec
       save changes button: Sekles asnifel
       delete_account: Kkes amiḍan...
     go_public:
@@ -214,6 +216,8 @@ kab:
       make_edits_public_button: Err akk tiẓrigin-iw s tizuyaz
     update:
       success: Talɣut n useqdac tettwasnifel akken iwata
+    destroy:
+      success: Yettwakkes umiḍan.
     deletions:
       show:
         title: Kkes amiḍan-iw
@@ -222,8 +226,10 @@ kab:
         cancel: Semmet
     terms:
       show:
-        title: Tiwtilin n iwiziw
-        heading: Tiwtilin n iwiziw
+        title: Tiwtilin
+        heading: Tiwtilin
+        tou_explain:
+          tou: Tiwtilin n useqdec
         continue: Kemmel
         cancel: Semmet
         legale_select: 'Tamurt n tnezduɣt:'
@@ -293,6 +299,12 @@ kab:
       telephone_link: Siwel ar %{phone_number}
       colour_preview: Taskant n yini %{colour_value}
       email_link: Imayl %{email}
+    versions_navigation:
+      node: Tikerrist
+      way: Abrid
+      history: Amazray
+      version: 'Lqem #%{version}'
+      versions_label: 'Ileqman:'
   feature_queries:
     show:
       title: Tuttriwin ɣef tɣawsiwin
@@ -367,6 +379,7 @@ kab:
     popup:
       your location: Adig-ik
     show:
+      title: Tafelwit-iw n usenqed
       nearby users: Iseqdacen-nniḍen iqeṛben
       nearby_changesets: Ihrawen n usnifel n iseqdacen iqeṛben
       nearby_diaries: Inekcam n uɣmis n iseqdacen iqeṛben
@@ -390,6 +403,8 @@ kab:
     show:
       title: Aɣmis n %{user} | %{title}
       user_title: Aɣmis n %{user}
+      discussion: Asqerdec
+      subscribe: Jerred
       leave_a_comment: Eǧǧ-d awennit
       login_to_leave_a_comment_html: '%{login_link} akken ad teǧǧeḍ awennit'
       login: Qqen
@@ -406,6 +421,7 @@ kab:
         zero: Ulac awennit
         one: '%{count} n uwennit'
         other: '%{count} n iwenniten'
+      no_comments: Ulac iwenniten
       edit_link: Ẓreg anekcam-agi
       hide_link: Ffer anekcam-agi
       unhide_link: Sken anekcum-a
@@ -433,6 +449,10 @@ kab:
       my_diary: Aɣmis-iw
       new: Anekcam amaynut n uɣmis
       new_title: Aru anekcam amaynut deg uɣmis-ik n useqdac
+  follows:
+    show:
+      follow:
+        button: Ḍfer aseqdac
   geocoder:
     search_osm_nominatim:
       prefix:
@@ -555,6 +575,7 @@ kab:
           viaduct: Tiqenṭaṛt
           "yes": Tiqenṭert
         building:
+          house: Axxam
           "yes": Akerrus
         craft:
           brewery: Tberna
@@ -737,6 +758,21 @@ kab:
   directions:
     show:
       time: Akud
+  issues:
+    index:
+      search: Nadi
+    helper:
+      reportable_title:
+        note: 'Tazmilt #%{note_id}'
+  languages_panes:
+    select_language_list:
+      search_language: Nadi...
+      languages:
+        en: Taglizit
+        oc: Tuksiṭanit
+        kab: Taqbaylit
+        ar: Taɛṛabt
+        ja: Tajapunit
   layouts:
     logo:
       alt_text: Alugu n OpenStreetMap
@@ -745,10 +781,13 @@ kab:
     intro_text: OpenStreetMap d takarḍa n umadal, rnna-tt yemdanen am kečč d tilellit
       i useqdec ddaw n turagt tilellit.
     partners_partners: imendiden
+    terms_of_use: Tiwtilin n useqdec
+    tou: Tiwtilin n useqdec
     learn_more: Issin ugar
     header:
       about: Ɣef
       copyright: Izerfan n umeskar
+      donate: Mudd tawsa
       edit: Ẓreg
       edit_with: Ẓreg s %{editor}
       export: Sifeḍ
@@ -759,8 +798,13 @@ kab:
       log_out: Ffeɣ
       log_in: Qqen
       more: Ugar
+      select_language: Fren tutlayt
       sign_up: Jerred
       user_diaries: Iɣmisen n iseqdacen
+    meta:
+      openstreetmap_search: Anadi n OpenStreetMap
+    select_language_button:
+      title: Fren tutlayt
   user_mailer:
     diary_comment_notification:
       subject: '[OpenStreetMap] %{user} yuzen-d awennit ar umagrad n uɣmis'
@@ -768,6 +812,7 @@ kab:
       header: '%{from_user} yuzen-ad awennit ar umagrad n uɣmis OpenStreetMap s usentel
         %{subject} :'
     message_notification:
+      subject: '[OpenStreetMap] %{message_title}'
       hi: Azul %{to_user},
       header: '%{from_user} yuzen-ak-d izen si OpenStreetMap s usentel %{subject} :'
       footer_html: Tzemreḍ daɣen ad teɣreḍ izen di %{readurl} sakin ad tizmireḍ ad
@@ -775,10 +820,16 @@ kab:
     follow_notification:
       hi: Azul %{to_user},
       see_their_profile: 'Tzemred ad twaliḍ amaɣnu-is dagi : %{userurl}.'
+    gpx_details:
+      filename: Isem n ufaylu
+      url: Tansa URL
+      description: Aglam
     gpx_failure:
+      hi: Azul a %{to_user},
       failed_to_import: 'ur d-yettwakter ara. Hatta tuccḍa:'
       subject: '[OpenStreetMap] Akter GPX ur yeddi ara'
     gpx_success:
+      hi: Azul a %{to_user},
       subject: '[OpenStreetMap] Akter GPX yedda'
     signup_confirm:
       subject: '[OpenStreetMap] Anṣuf ar OpenStreetMap'
@@ -874,6 +925,7 @@ kab:
         to: I
         subject: Asentel
         date: Azemz
+        actions: Tigawin
       message:
         unread_button: Creḍ ur yettwaɣra ara
         read_button: Creḍ yettwaɣra
@@ -897,7 +949,7 @@ kab:
     new:
       title: Awal uffir iṛuḥ
       heading: Tettuḍ awal uffir?
-      email address: 'Tansa imayl:'
+      email address: Tansa imayl
       new password button: Ales awennez n wawal uffir
     edit:
       title: Ales awennez n wawal uffir
@@ -907,8 +959,20 @@ kab:
     update:
       flash changed: Awal-ik uffir ibeddel.
   preferences:
+    preferences:
+      navigation:
+        preferences: Ismenyifen
     basic_preferences:
       show:
+        preferred_language: Tutlayt tebɣiḍ
+        site_color_schemes:
+          auto: Awurman
+          light: Aceɛlal
+          dark: Ubrik
+        map_color_schemes:
+          auto: Am usmel Web
+          light: Aceɛlal
+          dark: Ubrik
         editor_color_schemes:
           auto: Am usmel Web
           light: Aceɛlal
@@ -916,18 +980,38 @@ kab:
   profiles:
     profile_sections:
       navigation:
-        image: 'Tugna:'
+        description: Aglam
+        links: Iseɣwan
+        image: Tugna
+        company: Taṛmist
+        location: Adig
+    descriptions:
+      show:
+        cancel: Semmet
+    links:
+      show:
+        title: Ẓreg amaɣnu
+        cancel: Semmet
+        social_links:
+          remove: Kkes
     images:
       show:
+        title: Ẓreg amaɣnu
+        cancel: Semmet
         gravatar:
           gravatar: Seqdec Gravatar
         new image: Rbu tugna
         delete image: Kkes tugna tamirant
         replace image: Semselsi tugna tamirant
+    companies:
+      show:
+        cancel: Semmet
     locations:
       show:
+        cancel: Semmet
         no home location: Ur tsekcemeḍ ara adig n uxxam-ik.
         update home location on click: Snifel adig n uxxam-ik ticki siteɣ ɣef tkarḍa?
+        delete: Kkes
   sessions:
     new:
       tab_title: Qqen
@@ -1140,10 +1224,25 @@ kab:
   oauth:
     permissions:
       missing: Ur teǧǧiḍ ara asnas akken ad yeqqen ar usebdded-agi
+  oauth2_applications:
+    application:
+      delete: Kkes
+      confirm_delete: Kkes asnas-a?
+    show:
+      delete: Kkes
   users:
     new:
       title: Jerred
+      tab_title: Jerred
+      about:
+        welcome: Ansuf ar OpenStreetMap
+      by_signing_up:
+        tou: Tiwtilin n useqdec
+        privacy_policy: tasertit n tbaḍnit
       continue: Jerred
+      email_help:
+        privacy_policy: tasertit n tbaḍnit
+      or: naɣ
     no_such_user:
       title: Ulac aseqdac
       deleted: yettwakkes
@@ -1154,7 +1253,10 @@ kab:
       my notes: Tizmilin-iw
       my messages: Iznan-iw
       my profile: Amaɣnu-iw
+      my_account: Amiḍan-iw
       my comments: Iwenniten-iw
+      my_preferences: Ismenyifen-iw
+      my_dashboard: Tafelwit-iw n usenqed
       blocks on me: Asewḥel i y-iɛnan
       blocks by me: Asewḥel sɣur-i
       send message: Azen izen
@@ -1175,12 +1277,15 @@ kab:
       activate_user: Rmed aseqdac-agi
       confirm_user: Sentem aseqdac-agi
       confirm: Sentem
+      change_image: Beddel tugna
       title:
         administrator: Aseqdac-agi d anedbal
       grant:
         administrator: Mudd izerfan n unedbal
       revoke:
         administrator: Kkes izerfan n unedbal
+    sidebar_section:
+      company: Taṛmist
     issued_blocks:
       show:
         title: Asewḥel sɣuṛ %{name}
@@ -1194,6 +1299,11 @@ kab:
       show:
         title: Iseqdacen
         heading: Iseqdacen
+        states:
+          active: D urmid
+          deleted: Yettwakkes
+        name_or_email: Isem neɣ Imayl
+        search: Nadi
       page:
         confirm: Sentem iseqdacen yettwafernen
         empty: Ulac aseqdac d-yefɣen deg unadi
@@ -1207,6 +1317,8 @@ kab:
     diary_comments:
       page:
         post: Amagrad
+        when: Melmi
+        comment: Awennit
     suspended:
       title: Amiḍan yettwaseḥbes
       heading: Amiḍan yettwaseḥbes
@@ -1238,6 +1350,8 @@ kab:
   user_mutes:
     index:
       table:
+        thead:
+          actions: Tigawin
         tbody:
           send_message: Azen izen
   notes:
@@ -1254,6 +1368,7 @@ kab:
       open_title: 'Tazmilt ur yefrin ara  #%{note_name}'
       closed_title: 'Tazmilt ur yefrin ara #%{note_name}'
       hidden_title: 'Tazmilt yeffren #%{note_name}'
+      description_when_author_is_deleted: yettwakkes
       report: Sillef tazmilt agi
       hide: Ffer
       resolve: Fru

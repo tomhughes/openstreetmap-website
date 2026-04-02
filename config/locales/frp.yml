@@ -9,7 +9,7 @@
 frp:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y a %H:%M'
@@ -730,8 +730,6 @@ frp:
         one: '%{count} comentèro'
         other: '%{count} comentèros'
       title_label: Entrâye du jornâl
-      comments_label: Comentèros
-      date_label: Dâta
   diary_comments:
     new:
       heading: Apondre un comentèro a ceta discussion d'entrâye de jornâl ?
@@ -2268,7 +2266,6 @@ frp:
         image: Émâge
         company: Entreprêsa
         location: Emplacement
-        heatmap: Mapa de chalor
     descriptions:
       show:
         title: Changiér lo profil
@@ -2331,7 +2328,6 @@ frp:
     heatmaps:
       show:
         title: Configurar la mapa de chalor
-        show_heatmap_in_public: Montrar la mapa de chalor sur voutra pâge d'usanciér
         save: Betar a jorn la configuracion de la mapa de chalor
         cancel: Anular
       update:
@@ -3324,7 +3320,6 @@ frp:
       change_image: Changiér l'émâge
       edit_company: Changiér l'entreprêsa
       edit_location: Changiér lo luè
-      edit_heatmap: Configurar la mapa de chalor
       contributions:
         one: Una contribucion pendent l'an passâ
         other: '%{count} contribucions pendent l''an passâ'
@@ -3827,7 +3822,7 @@ frp:
     home:
       marker_title: Luè de rèsidence
       not_set: Lo luè de rèsidence est pas dèfeni por voutron compto
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Gins de contribucions lo %{date}
         contributions:

@@ -62,7 +62,7 @@
 ko:
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%Y년 %B %e일 %H:%M'
@@ -708,8 +708,6 @@ ko:
       comments:
         other: 댓글 %{count}개
       title_label: 일기 항목
-      comments_label: 의견
-      date_label: 날짜
   diary_comments:
     new:
       heading: 댓글을 추가하는 동시에 다음 일기의 토론을 구독하시겠습니까?
@@ -2152,7 +2150,6 @@ ko:
         image: 이미지
         company: 기업
         location: 위치
-        heatmap: 히트맵
     descriptions:
       show:
         title: 프로필 수정
@@ -3086,7 +3083,6 @@ ko:
       change_image: 이미지 변경
       edit_company: 회사 편집
       edit_location: 위치 편집
-      edit_heatmap: 히트맵 구성
       title:
         administrator: 이 사용자는 관리자입니다
         moderator: 이 사용자는 운영자입니다
@@ -3514,7 +3510,7 @@ ko:
     home:
       marker_title: 내 집 위치
       not_set: 이 계정에서는 내 집 위치가 설정되지 않았습니다.
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: '%{date}에느 기여가 없습니다'
     remote_edit:

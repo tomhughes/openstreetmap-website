@@ -134,7 +134,7 @@
 ru:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y в %H:%M'
@@ -890,8 +890,6 @@ ru:
         few: '%{count} комментария'
         many: '%{count} комментариев'
         other: ""
-      comments_label: Комментарии
-      date_label: Дата
   diary_comments:
     new:
       heading: Добавить комментарий к следующему обсуждению записи в дневнике?
@@ -2302,7 +2300,6 @@ ru:
         image: Изображение
         company: Компания
         location: Местоположение
-        heatmap: Тепловая карта
     descriptions:
       show:
         title: Редактирование профиля
@@ -3655,7 +3652,7 @@ ru:
     home:
       marker_title: Мой домашний адрес
       not_set: Установка места нахождения не установлена для вашей учётной записи
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Нет правок %{date}
         contributions:

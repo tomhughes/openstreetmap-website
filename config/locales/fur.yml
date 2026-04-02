@@ -11,7 +11,7 @@
 fur:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e di %B %Y a lis %H:%M'
@@ -552,8 +552,6 @@ fur:
         one: '%{count} coment'
         other: '%{count} coments'
       title_label: Vôs dal diari
-      comments_label: Coments
-      date_label: Date
   doorkeeper:
     flash:
       applications:
@@ -1998,7 +1996,7 @@ fur:
       show_address: Mostre l'indiriç
       query_features: Domande ce ch'al è intun lûc
       centre_map: Centre la mape culì
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Nissun contribût ai %{date}
         contributions:

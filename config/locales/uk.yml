@@ -59,7 +59,7 @@
 uk:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y в %H:%M'
@@ -824,8 +824,6 @@ uk:
         many: '%{count} коментарів'
         other: ""
       title_label: Запис щоденника
-      comments_label: Коментарі
-      date_label: Дата
   diary_comments:
     new:
       heading: Додати коментар до обговорення запису в щоденнику?
@@ -2369,7 +2367,6 @@ uk:
         image: Зображення
         company: Компанія
         location: Розташування
-        heatmap: Теплова карта
     descriptions:
       show:
         title: Редагування профілю
@@ -2432,7 +2429,6 @@ uk:
     heatmaps:
       show:
         title: Налаштувати теплову карту
-        show_heatmap_in_public: Показувати теплову карту на сторінці вашого профілю
         save: Оновити конфігурацію теплової карти
         cancel: Скасувати
       update:
@@ -3442,7 +3438,6 @@ uk:
       change_image: Змінити зображення
       edit_company: Редагувати компанію
       edit_location: Редагувати розташування
-      edit_heatmap: Налаштувати теплову карту
       contributions:
         one: Кількість редагувань за останній рік — %{count} елемент
         few: Кількість редагувань за останній рік — %{count} елементи
@@ -3970,7 +3965,7 @@ uk:
     home:
       marker_title: Моє розташування
       not_set: Для вашого облікового запису не вказано його розташування
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Немає внесків станом на %{date}
         contributions:

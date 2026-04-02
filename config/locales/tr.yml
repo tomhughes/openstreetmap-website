@@ -63,7 +63,7 @@
 tr:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y (saat %H.%M)'
@@ -765,8 +765,6 @@ tr:
         one: '%{count} yorum'
         other: '%{count} yorum'
       title_label: Günlük Girdisi
-      comments_label: Yorumlar
-      date_label: Tarih
   diary_comments:
     new:
       heading: Aşağıdaki günlük girdisinin tartışmasına bir yorum ekle?
@@ -1940,6 +1938,9 @@ tr:
       diğer %{partners} sağlamaktadır.
     partners_corpmembers: OSMF kurumsal üyeleri
     partners_partners: iş birlikçiler
+    welcome_tou_notice_html: OpenStreetMap Vakfı tarafından sağlanan bu web sitesini
+      veya diğer altyapıları kullanarak %{terms_link} koşullarını kabul etmiş olursunuz.
+    terms_of_use: Kullanım Şartları
     tou: Kullanım Şartları
     nothing_to_preview: Önizlenecek bir şey yok.
     learn_more: Daha Fazla Bilgi
@@ -2310,7 +2311,7 @@ tr:
         image: Resim
         company: Şirket
         location: Konum
-        heatmap: Isı haritası
+        contribution_calendar: Katkı Takvimi
     descriptions:
       show:
         title: Profili Düzenle
@@ -2371,13 +2372,13 @@ tr:
         failure: Profil konumu güncellenemedi.
     heatmaps:
       show:
-        title: Isı haritasını yapılandır
-        show_heatmap_in_public: Isı haritasını profil sayfanızda gösterin
-        save: Isı Haritası Yapılandırmasını Güncelle
+        title: Katkı Takvimini Yapılandır
+        show_contribution_calendar_in_public: Katkı takvimini profil sayfasında göster
+        save: Katkı Takvimi Yapılandırmasını Güncelle
         cancel: İptal
       update:
-        success: Isı haritası güncellendi.
-        failure: Isı haritası güncellenemedi.
+        success: Katkı takvimi güncelleştirildi.
+        failure: Katkı takvimi güncellenemedi.
   sessions:
     new:
       tab_title: Oturum Aç
@@ -3386,7 +3387,7 @@ tr:
       change_image: Görüntüyü Değiştir
       edit_company: Şirketi Düzenle
       edit_location: Konumu Düzenle
-      edit_heatmap: Isı haritasını yapılandır
+      edit_contribution_calendar: Katkı Takvimini Yapılandır
       contributions:
         one: 'Son yıldaki katkı sayısı: %{count}'
         other: 'Son yıldaki katkı sayısı: %{count}'
@@ -3891,7 +3892,7 @@ tr:
     home:
       marker_title: Bulunduğum konum
       not_set: Hesabınız için bulunduğunuz konum ayarlanmamış
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: '%{date} tarihinde hiç katkı yapmadı'
         contributions:

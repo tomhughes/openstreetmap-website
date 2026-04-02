@@ -10,7 +10,7 @@
 ga:
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y ag %H:%M'
@@ -805,8 +805,6 @@ ga:
         many: '%{count} tráchtanna'
         other: '%{count} tráchtanna'
       title_label: Iontráil Dialainne
-      comments_label: Tráchtanna
-      date_label: Dáta
   diary_comments:
     new:
       heading: Cuir trácht leis an bplé seo a leanas faoin iontráil dialainne?
@@ -1984,6 +1982,9 @@ ga:
       eile leis an óstáil.
     partners_corpmembers: Baill chorparáideacha OSMF
     partners_partners: comhpháirtithe
+    welcome_tou_notice_html: Trí úsáid a bhaint as an suíomh gréasáin seo nó as bonneagar
+      eile arna sholáthar ag Fondúireacht OpenStreetMap, aontaíonn tú leis na %{terms_link}.
+    terms_of_use: Téarmaí Úsáide
     tou: Téarmaí Úsáide
     nothing_to_preview: Níl aon rud le réamhamharc.
     learn_more: Tuilleadh Eolais
@@ -2366,7 +2367,7 @@ ga:
         image: Íomhá
         company: Comhlacht
         location: Suíomh
-        heatmap: Léarscáil Teasa
+        contribution_calendar: Féilire Ranníocaíochta
     descriptions:
       show:
         title: Cuir Próifíl in Eagar
@@ -2427,13 +2428,14 @@ ga:
         failure: Níorbh fhéidir suíomh an phróifíle a nuashonrú.
     heatmaps:
       show:
-        title: Cumraigh Léarscáil Teasa
-        show_heatmap_in_public: Taispeáin an léarscáil teasa ar do leathanach próifíle
-        save: Nuashonraigh Cumraíocht Léarscáil Teasa
+        title: Cumraigh Féilire Ranníocaíochta
+        show_contribution_calendar_in_public: Taispeáin an féilire ranníocaíochta
+          ar do leathanach próifíle
+        save: Nuashonraigh Cumraíocht Féilire Ranníocaíochtaí
         cancel: Cealaigh
       update:
-        success: Léarscáil teasa nuashonraithe.
-        failure: Níorbh fhéidir an léarscáil teasa a nuashonrú.
+        success: Féilire ranníocaíochta nuashonraithe.
+        failure: Níorbh fhéidir an féilire ranníocaíochta a nuashonrú.
   sessions:
     new:
       tab_title: Logáil Isteach
@@ -3462,7 +3464,7 @@ ga:
       change_image: Athraigh Íomhá
       edit_company: Cuir Comhlacht in Eagar
       edit_location: Cuir Suíomh in Eagar
-      edit_heatmap: Cumraigh Léarscáil Teasa
+      edit_contribution_calendar: Cumraigh Féilire Ranníocaíochta
       contributions:
         one: '%{count} ranníocaíocht sa bhliain seo caite '
         two: '{count} ranníocaíochtaí sa bhliain seo caite'
@@ -4002,7 +4004,7 @@ ga:
     home:
       marker_title: Mo shuíomh baile
       not_set: Níl suíomh baile socraithe do do chuntas
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Gan aon ranníocaíochtaí ar %{date}
         contributions:

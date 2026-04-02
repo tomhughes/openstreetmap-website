@@ -723,8 +723,6 @@ shn:
         one: '%{count} ၶေႃႈႁၼ်'
         other: '%{count} ၶေႃႈႁၼ်'
       title_label: ၶေႃႈမုၼ်း တၢႆႇယႃႇရီႇ
-      comments_label: ၶေႃႈႁၼ်
-      date_label: ဝၼ်းထိ
   diary_comments:
     new:
       heading: ထႅမ်ပၼ်ၶေႃႈႁၼ်ထိုင် တီႈပၢင်ဢုပ်ႇၵုမ် လွင်ႈၶဝ်ႈၼႂ်း တၢႆႇယႃႇရီႇ ပႃႈတႂ်ႈၼႆႉႁႃႉ?
@@ -3804,7 +3802,7 @@ shn:
     home:
       marker_title: ဢွင်ႈတီႈႁိူၼ်းၵဝ်ၶႃႈ
       not_set: ဢွင်ႈတီႈႁိူၼ်း ဢမ်ႇလႆႈတင်ႈဝႆႉ တွၼ်ႈတႃႇ ဢၵွင်ႉၸဝ်ႈၵဝ်ႇ
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: ဢမ်ႇမီးလွင်ႈႁူမ်ႈသၢင်ႈ တီႈ %{date}
         contributions:

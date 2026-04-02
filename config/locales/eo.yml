@@ -34,7 +34,7 @@
 eo:
   date:
     formats:
-      heatmap: la %-d-a de %B
+      contribution_calendar: la %-d-a de %B
   time:
     formats:
       friendly: '%e %B %Y je %H:%M'
@@ -742,8 +742,6 @@ eo:
         one: '%{count} komento'
         other: '%{count} komentoj'
       title_label: Taglibra skribaĵo
-      comments_label: Komentoj
-      date_label: Dato
   diary_comments:
     new:
       heading: Ĉu aldoni komenton al la diskuto pri tiu ĉi taglibra afiŝo?
@@ -2256,7 +2254,6 @@ eo:
         image: Profilbildo
         company: Firmao
         location: Loko
-        heatmap: Oftecmapo
     descriptions:
       show:
         title: Redakti profilon
@@ -2318,7 +2315,6 @@ eo:
     heatmaps:
       show:
         title: Agordi oftecmapon
-        show_heatmap_in_public: Montri la oftecmapon sur mia profila paĝo
         save: Konservi
         cancel: Nuligi
       update:
@@ -3296,7 +3292,6 @@ eo:
       change_image: Ŝanĝi bildon
       edit_company: Redakti firmaon
       edit_location: Redakti lokon
-      edit_heatmap: Agordi oftecmapon
       contributions:
         one: '%{count} kontribuo dum la antaŭa jaro'
         other: '%{count} kontribuoj dum la antaŭa jaro'
@@ -3795,7 +3790,7 @@ eo:
     home:
       marker_title: Mia hejmloko
       not_set: Hejmloko ne estas agordita por via konto
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: neniu kontribuo je %{date}
         contributions:

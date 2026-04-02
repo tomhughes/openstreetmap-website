@@ -15,7 +15,7 @@
 scn:
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y ê %H:%M'

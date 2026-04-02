@@ -66,7 +66,7 @@
 sv:
   date:
     formats:
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y kl. %H:%M'
@@ -771,8 +771,6 @@ sv:
         one: '%{count} kommentar'
         other: '%{count} kommentarer'
       title_label: Dagboksinlägg
-      comments_label: Kommentarer
-      date_label: Datum
   diary_comments:
     new:
       heading: Lägg en kommentar på följande diskussion om dagboksinlägg?
@@ -2302,7 +2300,6 @@ sv:
         image: Bild
         company: Företag
         location: Plats
-        heatmap: Värmekarta
     descriptions:
       show:
         title: Redigera profil
@@ -2363,7 +2360,6 @@ sv:
     heatmaps:
       show:
         title: Konfigurera värmekarta
-        show_heatmap_in_public: Visa värmekartan på din profilsida
         save: Uppdatera värmekartakonfiguration
         cancel: Avbryt
       update:
@@ -3363,7 +3359,6 @@ sv:
       change_image: Ändra bild
       edit_company: Redigera företag
       edit_location: Redigera plats
-      edit_heatmap: Konfigurera värmekarta
       contributions:
         one: '%{count} bidrag under det senaste året'
         other: '%{count} bidrag under det senaste året'
@@ -3860,7 +3855,7 @@ sv:
     home:
       marker_title: Min hemort
       not_set: Hemort har inte angetts för ditt konto
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Inga bidrag på %{date}
         contributions:

@@ -85,7 +85,7 @@ pl:
     dir: ltr
   date:
     formats:
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y o %H:%M'
@@ -850,8 +850,6 @@ pl:
         many: '%{count} komentarzy'
         other: '%{count} komentarzy'
       title_label: Wpis do dziennika
-      comments_label: Komentarze
-      date_label: Data
   diary_comments:
     new:
       heading: Czy dodać komentarz do tej dyskusji o wpisie dziennika?
@@ -2398,7 +2396,6 @@ pl:
         image: Obraz
         company: Firma
         location: Położenie
-        heatmap: mapa cieplna
     descriptions:
       show:
         title: Edycja profilu
@@ -2460,7 +2457,6 @@ pl:
     heatmaps:
       show:
         title: Konfiguracja mapy cieplnej
-        show_heatmap_in_public: Pokazuj mapę cieplną na swoim profilu
         save: Zapisz zmiany
         cancel: Anuluj
       update:
@@ -3487,7 +3483,6 @@ pl:
       change_image: Zmień obraz
       edit_company: Edytuj firmę
       edit_location: Edytuj położenie
-      edit_heatmap: Konfiguruj mapę cieplną
       contributions:
         one: '%{count} edytowany obiekt w ciągu ostatniego roku'
         few: '%{count} edytowane obiekty w ciągu ostatniego roku'
@@ -4022,7 +4017,7 @@ pl:
     home:
       marker_title: Położenie domu
       not_set: Położenie domu nie jest ustawione w twoim profilu
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Brak edycji %{date}
         contributions:

@@ -771,8 +771,6 @@ pt-PT:
         one: '%{count} comentário'
         other: '%{count} comentários'
       title_label: Publicação no diário
-      comments_label: Comentários
-      date_label: Data
   diary_comments:
     new:
       heading: Adicionar um comentário à seguinte discussão de entrada no diário?
@@ -2308,7 +2306,6 @@ pt-PT:
         image: Imagem
         company: Empresa
         location: Localização
-        heatmap: Mapa de calor
     descriptions:
       show:
         title: Editar Perfil
@@ -2370,7 +2367,6 @@ pt-PT:
     heatmaps:
       show:
         title: Configurar mapa de calor
-        show_heatmap_in_public: Mostra o mapa de calor na página de perfil
         save: Atualizar configuração do mapa de calor
         cancel: Cancelar
       update:
@@ -3355,7 +3351,6 @@ pt-PT:
       change_image: Alterar imagem
       edit_company: Editar empresa
       edit_location: Editar localização
-      edit_heatmap: Configurar mapa de calor
       contributions:
         one: '%{count} contribuição no ano passado'
         other: '%{count} contribuições no ano passado'
@@ -3863,7 +3858,7 @@ pt-PT:
     home:
       marker_title: A minha localização base
       not_set: A localização base não está definida para a tua conta
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Sem contribuições em %{date}
         contributions:
