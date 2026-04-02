@@ -469,7 +469,9 @@ kk-cyrl:
       comments:
         one: '%{count} комментарий'
         other: '%{count} комментарий'
-      changes: '{{PLURAL|one=%{count} өзгеріс|%{count} өзгеріс'
+      changes:
+        one: '%{count} өзгеріс'
+        other: '%{count} өзгеріс'
       n_elements_created:
         one: '%{count} элемент құрылды'
         other: '%{count} элемент құрылды'
