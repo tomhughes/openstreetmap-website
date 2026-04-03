@@ -673,16 +673,16 @@ tr.turn {
   bottom: 0;
 
   &.new-user-main {
-    background-image: image-url("sign-up-illustration.svg");
+    background-image: image-url("illustrations/sign-up.svg");
     background-position-x: 70px;
   }
 
   &.confirm-main {
-    background-image: image-url("confirm-illustration.svg");
+    background-image: image-url("illustrations/confirm.svg");
   }
 
   &.new-user-terms {
-    background-image: image-url("terms-illustration.svg");
+    background-image: image-url("illustrations/terms.svg");
   }
 }
 
