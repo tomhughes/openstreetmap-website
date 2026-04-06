@@ -17,7 +17,7 @@ modified_yml_files = git.modified_files.select do |file|
 end
 
 # Report if some translation file (except en.yml) is modified
-if modified_yml_files.empty?
+if modified_yml_files.empty? || github.pr_author == "translatewiki"
   auto_label.remove("inappropriate-translations")
 else
   modified_files_str = modified_yml_files.map { |file| "`#{file}`" }.join(", ")
