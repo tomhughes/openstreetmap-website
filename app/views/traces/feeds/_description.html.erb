@@ -1,6 +1,6 @@
 <%# locals: (trace:) %>
 
-<%= image_tag trace_icon_url(trace.user, trace) %>
+<%= image_tag trace_icon_url(trace.user, trace), :alt => "" %>
 <% if trace.size -%>
 <%= t ".description_with_count", :count => trace.size, :user => trace.user.display_name %>
 <% else -%>
