@@ -401,10 +401,10 @@
   resolved "https://registry.yarnpkg.com/@maptiler/maplibre-gl-omt-language/-/maplibre-gl-omt-language-0.0.3.tgz#3069f4522e911e341d6b79b09ce2943c71b6ffd7"
   integrity sha512-Rv5IaFyh9GuFu2BEAGvVvlVGmXt5Jbjd0XhIu0D4Tek81DPQEQryIIwDFTDR27W4NyAtozy8QltB+8SFr2C7mQ==
 
-"@openstreetmap/id@2.39.5":
-  version "2.39.5"
-  resolved "https://registry.yarnpkg.com/@openstreetmap/id/-/id-2.39.5.tgz#78a7d60d852d2169d6fe6c8e5d9bc55868b45852"
-  integrity sha512-9YbqvlJyJGnu5xwmuVoL+8IBTqjv+L0TiuH5RCuWpQKF8rqlvyYNNgPXog8T6yUIVLyRCRmY50oFDlQhRsveDw==
+"@openstreetmap/id@2.39.6":
+  version "2.39.6"
+  resolved "https://registry.yarnpkg.com/@openstreetmap/id/-/id-2.39.6.tgz#02cf3d5262510a6977ab70f8b8888731bf1ce513"
+  integrity sha512-yvqfueqU6B2EgMMLLy2DLTJ9HZ2p3ExVCbpB6JBJcvevwpDg5KFDYz5Y44mxOzcVy6nVs4/7voz7Y2DWASNGjg==
   dependencies:
     "@mapbox/geojson-area" "^0.2.2"
     "@mapbox/sexagesimal" "1.2.0"
