@@ -2,8 +2,9 @@ name: Development Container
 
 on:
   push:
-    branches:
-      - master
+    branches-ignore:
+      - "dependabot/**"
+      - translatewiki
   pull_request:
 
 concurrency:
