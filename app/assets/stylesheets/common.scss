@@ -70,10 +70,8 @@ time[title] {
 
 /* Rules for the header */
 
-#menu-icon svg {
-  fill: var(--bs-emphasis-color);
-  stroke: var(--bs-body-bg);
-  opacity: 0.6;
+#menu-icon i.bi {
+  font-size: 30px;
 }
 
 header {
