@@ -66,6 +66,7 @@ lb:
       message: Message
       node: Knuet
       node_tag: Knuet-Tag
+      note: Notiz
       old_node: Ale Knuet
       old_node_tag: Ale Knuet-Tag
       old_relation: Al Relatioun
@@ -289,6 +290,7 @@ lb:
         cancel: Ofbriechen
     terms:
       show:
+        title: Bedingungen
         heading: Bedingungen
         tou_explain:
           tou: Benotzungskonditiounen
@@ -538,6 +540,8 @@ lb:
       unsubscribe:
         heading: Déi follgend Ännerungssaz-Diskussioun ofbestellen?
         button: Diskussioun ofbestellen
+    heading:
+      title: Ännerungssaz %{id}
     no_such_entry:
       heading: 'Keen Antrag mat der ID: %{id}'
   dashboards:
@@ -1462,6 +1466,8 @@ lb:
     show:
       title:
         latlon: Intern
+        nominatim: Nominatim
+        nominatim_reverse: Nominatim
     queries:
       create:
         no_results: Näischt fonnt
@@ -1675,6 +1681,7 @@ lb:
     intro_text: OpenStreetMap ass eng Kaart vun der Welt, déi vu Leit wéi Iech gemaach
       gouf an déi fräi ënner enger oppener Lizenz benotzt ka ginn.
     partners_partners: Partneren
+    terms_of_use: Benotzungsbedingungen
     tou: Benotzungs-Bedéngungen
     learn_more: Méi gewuer ginn
     header:
@@ -2001,6 +2008,9 @@ lb:
         preferred_map_color_scheme: Preferéiert Faarfscheema fir d'Kaarten
         map_color_schemes:
           auto: Automatesch
+          light: Hell
+          dark: Däischter
+        editor_color_schemes:
           light: Hell
           dark: Däischter
         save: Benotzerastellungen aktualiséieren

@@ -31,6 +31,7 @@
 # Author: Imperadeiro90
 # Author: Imperadeiro98
 # Author: Indech
+# Author: Iohanen
 # Author: Isabelle Belato
 # Author: JPLSilva
 # Author: JasonZe
@@ -146,7 +147,7 @@ pt:
       relation: Relação
       relation_member: Membro da relação
       relation_tag: Etiqueta de relação
-      report: Denunciar
+      report: Reportar
       session: Sessão
       trace: Trilha
       tracepoint: Ponto de trilha
@@ -1286,7 +1287,7 @@ pt:
           sports_centre: Centro/Clube Esportivo
           stadium: Estádio
           swimming_pool: Piscina
-          track: Pista de Corrida
+          track: Pista de corrida (veículos não motorizados)
           water_park: Parque Aquático
           "yes": Lazer
         lock:
@@ -2700,6 +2701,8 @@ pt:
         contributors_hr_croatia: Croácia
         contributors_hr_dgu: Administração Geodésica Estatal da Croácia
         contributors_hr_open_data_portal: Portal Nacional de Dados Abertos
+        contributors_nl_credit_new_html: '%{netherlands}: Contém dados de AND &copy;
+          2007'
         contributors_nl_netherlands: Países Baixos
         contributors_nz_credit_html: |-
           %{new_zealand}: Contém dados provenientes do %{linz_data_service_link}
@@ -3073,6 +3076,8 @@ pt:
   webgl_error_panes:
     show:
       compact_message: É necessário ter o WebGL para visualizar este mapa.
+      description_html: Nos desculpe, mas parece que %{your_browser_does_not_support_webgl},
+        uma tecnologia para renderizar gráficos 3D na web.
       your_browser_does_not_support_webgl: Seu navegador não é compatível com WebGL
       webgl_is_required_for_this_map: É necessário ter o WebGL para visualizar este
         mapa.
@@ -3320,8 +3325,8 @@ pt:
       signup_to_authorize_html: Cadastre-se no OpenStreetMap para acessar %{client_app_name}.
       no_auto_account_create: Infelizmente no momento não podemos criar uma conta
         para você automaticamente.
-      please_contact_support_html: Por favor, contacte %{support_link} para pedir
-        a criação de uma conta - tentaremos tratar do pedido o mais rapidamente possível.
+      please_contact_support_html: Por favor, contate %{support_link} para obter ajuda
+        - tentaremos tratar do pedido o mais rapidamente possível.
       support: suporte
       about:
         header: Livre e editável.
@@ -3757,6 +3762,10 @@ pt:
       tooltip: Legenda
       tooltip_disabled: Legenda não disponível para esta camada
     map:
+      map:
+        title: Mapa
+        marker:
+          title: Marcador no mapa
       popup:
         close: Fechar
       navigation_control:
@@ -3771,6 +3780,8 @@ pt:
         feetPopup:
           one: Você está dentro de %{count} pé deste ponto
           other: Você está dentro %{count} pés deste ponto
+      attribution_control:
+        toggle_attribution: Alternar atribuição
       base:
         standard: Padrão
         cycle_map: Ciclístico

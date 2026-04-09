@@ -79,7 +79,7 @@ mk:
       relation: Однос
       relation_member: Член на однос
       relation_tag: Ознака за однос
-      report: Пријави
+      report: Пријава
       session: Седница
       trace: Трага
       tracepoint: Точка на трага
@@ -1887,6 +1887,9 @@ mk:
       и други %{partners}.
     partners_corpmembers: Корпоративни членови на OSMF
     partners_partners: партнери
+    welcome_tou_notice_html: Користејќи го ова мрежно место и другата инфраструктура
+      овозможена од Задолжбината OpenStreetMap, се согласувате со %{terms_link}.
+    terms_of_use: Условите на употреба
     tou: Услови на употреба
     nothing_to_preview: Нема што да се прегледа.
     learn_more: Дознајте повеќе
@@ -2243,6 +2246,7 @@ mk:
         image: Слика
         company: Фирма
         location: Местоположба
+        contribution_calendar: Календар на придонеси
     descriptions:
       show:
         title: Уреди профил
@@ -2304,12 +2308,14 @@ mk:
         failure: Не можев да ја подновам местоположбата на профилот.
     heatmaps:
       show:
-        title: Намести топлинска карта
-        save: Измени поставки за топлинска карта
+        title: Постави календар на придонеси
+        show_contribution_calendar_in_public: Прикажувај календар на придонеси во
+          профилната страница
+        save: Измени поставеност на календарот на придонеси
         cancel: Откажи
       update:
-        success: Топлинската карта е подновена.
-        failure: Не можев да ја подновам топлинската карта.
+        success: Календарот на придонеси е подновен.
+        failure: Не можев да го подновам календарот на придонеси.
   sessions:
     new:
       tab_title: Најава
@@ -3307,6 +3313,7 @@ mk:
       change_image: Смени слика
       edit_company: Уреди фирма
       edit_location: Уреди местоположба
+      edit_contribution_calendar: Постави го Календарот на придонеси
       contributions:
         one: '%{count} придонес во минатата година'
         other: '%{count} придонеси во минатата година'
@@ -3647,6 +3654,10 @@ mk:
       tooltip: Легенда
       tooltip_disabled: Легендата не е достапна за овој слој
     map:
+      map:
+        title: Карта
+        marker:
+          title: Обележувач на карта
       popup:
         close: Затвори
       navigation_control:
@@ -3661,6 +3672,8 @@ mk:
         feetPopup:
           one: Се наоѓате на  %{count} стапка од оваа точка
           other: Се наоѓате на %{count} стапки од оваа точка
+      attribution_control:
+        toggle_attribution: Вкл./Искл. припис
       base:
         standard: Стандардна
         cycle_map: Велосипедска

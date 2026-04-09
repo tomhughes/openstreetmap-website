@@ -8,6 +8,7 @@
 # Author: Fanjiayi
 # Author: Gravitystorm
 # Author: GretaDoci
+# Author: INNERLMNT
 # Author: Kosovastar
 # Author: Liridon
 # Author: Macofe
@@ -2032,6 +2033,12 @@ sq:
       showing_page: Faqe %{page}
   javascripts:
     map:
+      map:
+        title: Harta
+        marker:
+          title: Shënues i hartës
+      attribution_control:
+        toggle_attribution: Aktivizo atribuimin
       layers:
         gps: Gjurmët publike GPS
     site:

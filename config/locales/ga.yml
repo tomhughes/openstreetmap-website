@@ -3838,6 +3838,10 @@ ga:
       tooltip: Finscéal
       tooltip_disabled: Níl finscéal ar fáil don chiseal seo
     map:
+      map:
+        title: Léarscáil
+        marker:
+          title: Marcóir léarscáile
       popup:
         close: Dún
       navigation_control:
@@ -3858,6 +3862,8 @@ ga:
           few: Tá tú laistigh de %{count} troigh ón bpointe seo
           many: Tá tú laistigh de %{count} troigh ón bpointe seo
           other: Tá tú laistigh de %{count} troigh ón bpointe seo
+      attribution_control:
+        toggle_attribution: Athraigh an tAttribution
       base:
         standard: Caighdeánach
         cycle_map: Léarscáil Rothaíochta

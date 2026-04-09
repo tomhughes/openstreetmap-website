@@ -9,6 +9,7 @@
 # Author: Gravitystorm
 # Author: KWiki
 # Author: Macofe
+# Author: Maro21
 # Author: Maxmus
 # Author: Obsuser
 # Author: Palapa
@@ -1153,7 +1154,7 @@ bs:
       to: Do
       where_am_i: Gdje sam?
       where_am_i_title: Opišite trenutnu lokaciju koristeći pretraživač
-      submit_text: Idi
+      submit_text: Pokreni
     welcome:
       title: Dobrodošli!
       basic_terms:

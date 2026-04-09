@@ -1962,6 +1962,10 @@ nl:
       en andere %{partners}.
     partners_corpmembers: OSMF-bedrijfsleden
     partners_partners: partners
+    welcome_tou_notice_html: Door gebruik te maken van deze website of andere infrastructuur
+      die door de OpenStreetMap Foundation wordt aangeboden, gaat u akkoord met de
+      %{terms_link}.
+    terms_of_use: Gebruiksvoorwaarden
     tou: Gebruiksvoorwaarden
     nothing_to_preview: Er is geen voorvertoning.
     learn_more: Meer lezen
@@ -2329,6 +2333,7 @@ nl:
         image: Afbeelding
         company: Bedrijf
         location: Locatie
+        contribution_calendar: Bijdragekalender
     descriptions:
       show:
         title: Profiel wijzigen
@@ -2390,12 +2395,13 @@ nl:
         failure: Locatie-informatie op profiel kon niet bijgewerkt worden.
     heatmaps:
       show:
-        title: Heatmap instellingen
-        save: Instellingen voor Heatmap bijwerken
+        title: Bijdragekalender instellen
+        show_contribution_calendar_in_public: Bijdragekalender weergeven op uw profielpagina
+        save: Instellingen voor Bijdragekalender bijwerken
         cancel: Annuleren
       update:
-        success: Heatmap bijgewerkt.
-        failure: De heatmap kon niet worden bijgewerkt.
+        success: Bijdragekalender bijgewerkt.
+        failure: De bijdragekalender kon niet worden bijgewerkt.
   sessions:
     new:
       tab_title: Aanmelden
@@ -3403,6 +3409,7 @@ nl:
       change_image: Afbeelding wijzigen
       edit_company: Bedrijf bewerken
       edit_location: Locatie bewerken
+      edit_contribution_calendar: Bijdragekalender instellen
       contributions:
         one: '%{count} bijdrage in het afgelopen jaar'
         other: '%{count} bijdragen in het afgelopen jaar'
@@ -3750,6 +3757,10 @@ nl:
       tooltip: Legenda
       tooltip_disabled: Er is geen legenda beschikbaar voor deze laag
     map:
+      map:
+        title: Kaart
+        marker:
+          title: Kaartmarkering
       popup:
         close: Sluiten
       navigation_control:
@@ -3764,6 +3775,8 @@ nl:
         feetPopup:
           one: U bevindt zich binnen %{count} voet van dit punt
           other: U bevindt zich binnen %{count} voet van dit punt
+      attribution_control:
+        toggle_attribution: Attributie weergeven of verbergen
       base:
         standard: Standaard
         cycle_map: Fietskaart

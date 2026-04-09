@@ -3026,7 +3026,7 @@ tr:
   share_panes:
     show:
       link: Bağlantı veya HTML
-      include_marker: İşaret ekle
+      include_marker: İmleç ekle
       long_link: Bağlantı
       short_link: Kısa Bağlantı
       embed: HTML
@@ -3730,6 +3730,10 @@ tr:
       tooltip: Lejant
       tooltip_disabled: Bu katman için lejant kullanılamıyor
     map:
+      map:
+        title: Harita
+        marker:
+          title: Harita imleci
       popup:
         close: Kapat
       navigation_control:
@@ -3744,6 +3748,8 @@ tr:
         feetPopup:
           one: Bu noktanın %{count} adım içindesiniz
           other: Bu noktanın %{count} adım içindesiniz
+      attribution_control:
+        toggle_attribution: Atıf Anahtarı
       base:
         standard: Standart
         cycle_map: Bisiklet Haritası

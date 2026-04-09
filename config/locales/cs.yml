@@ -3766,6 +3766,8 @@ cs:
       tooltip: Legenda
       tooltip_disabled: Pro tuto vrstvu není legenda dostupná
     map:
+      map:
+        title: Mapa
       popup:
         close: Zavřít
       navigation_control:

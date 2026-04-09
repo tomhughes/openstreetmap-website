@@ -49,6 +49,9 @@
 # Author: 아라
 ---
 el:
+  date:
+    formats:
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y στις %H:%M'
@@ -3763,6 +3766,10 @@ el:
       tooltip: Υπόμνημα
       tooltip_disabled: Το υπόμνημα δεν είναι διαθέσιμο σε αυτό το επίπεδο
     map:
+      map:
+        title: Χάρτης
+        marker:
+          title: Δείκτης χάρτη
       popup:
         close: Κλείσιμο
       navigation_control:
@@ -3777,6 +3784,8 @@ el:
         feetPopup:
           one: Είστε εντός %{count} ποδός από το σημείο
           other: Είστε εντός %{count} ποδιών από το σημείο
+      attribution_control:
+        toggle_attribution: Εναλλαγή αναφοράς δημιουργού
       base:
         standard: Κανονικό
         cyclosm: CyclOSM ποδηλασία
