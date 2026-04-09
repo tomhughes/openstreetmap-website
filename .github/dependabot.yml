@@ -4,25 +4,11 @@ updates:
     versioning-strategy: "increase-if-necessary"
     directory: "/"
     ignore:
-      - dependency-name: dalli
-        update-types:
-          - version-update:semver-major
-      - dependency-name: opentelemetry-*
-        update-types:
-          - version-update:semver-major
-          - version-update:semver-minor
-      - dependency-name: parallel
-        update-types:
-          - version-update:semver-major
       - dependency-name: rails
         update-types:
           - version-update:semver-major
           - version-update:semver-minor
       - dependency-name: sass-embedded
-      - dependency-name: strong_migrations
-        update-types:
-          - version-update:semver-major
-          - version-update:semver-minor
       - dependency-name: uri
     groups:
       rails:

@@ -20,8 +20,7 @@ jobs:
       - name: Setup ruby
         uses: ruby/setup-ruby@7372622e62b60b3cb750dcd2b9e32c247ffec26a # v1.302.0
         with:
-          ruby-version: 3.2
-          rubygems: 3.4.10
+          ruby-version: 3.3
           bundler-cache: true
       - name: Create base branch
         run: |
