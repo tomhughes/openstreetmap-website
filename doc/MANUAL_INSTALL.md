@@ -1,6 +1,6 @@
 # Manual Installation Guide
 
-These instructions are based on Ubuntu 24.04 LTS, though the OSMF servers are currently running Debian 12. The instructions also work, with only minor amendments, for all other current Ubuntu releases, Fedora and macOS.
+These instructions are based on Ubuntu 26.04 LTS, though the OSMF servers are currently running Debian 12. The instructions also work, with only minor amendments, for all other current Ubuntu releases, Fedora and macOS.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ Many of the dependencies are managed through the standard Ruby on Rails mechanis
 
 ## Step 1: Install System Dependencies
 
-### Ubuntu 24.04 LTS
+### Ubuntu 26.04 LTS
 
 ```bash
 sudo apt-get update
@@ -28,7 +28,7 @@ sudo npm install --global yarn
 ```
 
 > [!TIP]
-> On Ubuntu 24.04, you may need to start PostgreSQL:
+> On Ubuntu 26.04, you may need to start PostgreSQL:
 >
 > ```bash
 > sudo systemctl start postgresql.service
