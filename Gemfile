@@ -115,7 +115,7 @@ gem "maxminddb"
 gem "rotp"
 
 # Load memcache client in case we are using it
-gem "connection_pool", "< 3.0.0"
+gem "connection_pool", "< 4.0.0"
 gem "dalli", "< 5.0.0"
 
 # Load canonical-rails to generate canonical URLs
