@@ -180,7 +180,7 @@ group :test do
   gem "minitest"
   gem "minitest-focus", :require => false
   gem "minitest-mock"
-  gem "puma", "~> 7.1"
+  gem "puma", "~> 8.0"
   gem "rails-controller-testing"
   gem "rubocop"
   gem "rubocop-capybara"
