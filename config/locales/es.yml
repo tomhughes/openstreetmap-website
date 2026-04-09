@@ -74,6 +74,7 @@
 # Author: Luzcaru
 # Author: Macofe
 # Author: MarcoAurelio
+# Author: Maro21
 # Author: Marwin H.H.
 # Author: McDutchie
 # Author: Minh Nguyen
@@ -187,7 +188,7 @@ es:
       relation: Relación
       relation_member: Miembro de la relación
       relation_tag: Etiqueta de la relación
-      report: Denunciar
+      report: Informe
       session: Sesión
       trace: Traza
       tracepoint: Punto de la traza

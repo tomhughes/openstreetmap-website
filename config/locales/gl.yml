@@ -2485,7 +2485,7 @@ gl:
       legal_1_2_html: Se queres utilizar mapas ou datos do OpenStreetMap, asegúrate
         de atribuír ao OpenStreetMap; consulta as %{attribution_guidelines_link} para
         obter máis información.
-      legal_attribution_guidelines_title: directrices de atribución
+      legal_attribution_guidelines_title: directrices de recoñecemento
       legal_attribution_guidelines_url: https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines
       legal_1_3_html: Para empregar especificamente unha captura de pantalla do OpenStreetMap
         directamente no teu libro, publicación, película ou programa de televisión,
@@ -3716,6 +3716,10 @@ gl:
       tooltip: Lenda
       tooltip_disabled: Non está dispoñíbel a lenda para esta capa
     map:
+      map:
+        title: Mapa
+        marker:
+          title: Marcador de mapa
       popup:
         close: Pechar
       navigation_control:
@@ -3730,6 +3734,8 @@ gl:
         feetPopup:
           one: Estás a menos de %{count} pé deste punto
           other: Estás a menos de %{count} pés deste punto
+      attribution_control:
+        toggle_attribution: Activar/Desactivar o recoñecemento
       base:
         standard: Estándar
         cyclosm: CyclOSM

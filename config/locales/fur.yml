@@ -462,11 +462,14 @@ fur:
     popup:
       your location: La tô posizion
       nearby mapper: Mapadôr dongje
+      following: Daûr a seguî
     show:
       title: La mê pagjine iniziâl
       no_home_location_html: '%{edit_profile_link} e impueste il to lûc iniziâl par
         viodi utents dongje di te.'
       edit_your_profile: Cambie il to profîl
+      followings: Utents che tu seguissis
+      no followings: No tu seguissis ancjemò nissun utent.
       nearby users: Altris utents dongje
       no nearby users: Nol è ancjemò nissun utent che al declare di mapâ dongje di
         te.
@@ -569,7 +572,17 @@ fur:
   follows:
     show:
       follow:
+        heading: Vuelistu seguî %{user}?
         button: Seguî l'utent
+      unfollow:
+        heading: Vuelistu no seguî plui %{user}?
+        button: No sta plui seguî l'utent
+    create:
+      success: Cumò tu seguissis %{name}ǃ
+      already_followed: Tu seguissis za %{name}.
+    destroy:
+      success: Cumò no tu seguissis plui %{name}.
+      not_followed: No tu seguissis %{name}.
   geocoder:
     search_osm_nominatim:
       prefix:
@@ -683,6 +696,7 @@ fur:
           stable: Stale
           train_station: Edifici di une stazion de ferade
           university: Edifici universitari
+          warehouse: Magazen
           "yes": Edifici
         club:
           sport: Circul sportîf
@@ -698,6 +712,7 @@ fur:
           tailor: Sartôr
         emergency:
           access_point: Pont di acès
+          defibrillator: Defibriladôr
           fire_extinguisher: Estintôr
           phone: Telefon di emergjence
         highway:
@@ -763,6 +778,7 @@ fur:
           "yes": Lûc storic
         information:
           map: Mape
+          office: Ufizi turistic
         junction:
           "yes": Crosade
         landuse:
@@ -797,7 +813,7 @@ fur:
           sports_centre: Centri sportîf
           stadium: Stadi
           swimming_pool: Pissine
-          track: Piste pe corse
+          track: Piste pe corse (no pes machinis)
           water_park: Parc acuatic
         man_made:
           advertising: Publicitât
@@ -1047,16 +1063,23 @@ fur:
       languages:
         ast: Asturian
         ca: Catalan
+        da: Danês
         de: Todesc
         en: Inglês
         en-GB: Inglês (Ream Unît)
         es: Spagnûl
         fr: Francês
         fur: Furlan
+        hr: Cravuat
         it: Talian
+        oc: Ocitan
         pl: Polac
+        scn: Sicilian
+        sl: Sloven
+        tr: Turc
         el: Grec
         ru: Rus
+        ar: Arap
         ja: Gjaponês
         ko: Corean
   layouts:
@@ -1270,6 +1293,7 @@ fur:
       navigation:
         description: Descrizion
         image: Figure
+        location: Lûc
     descriptions:
       show:
         title: Cambie il profîl
@@ -1280,8 +1304,13 @@ fur:
     links:
       show:
         title: Cambie il profîl
+        save: Inzorne il profîl
+        cancel: Scancele
     images:
       show:
+        title: Cambie il profîl
+        save: Inzorne il profîl
+        cancel: Scancele
         gravatar:
           gravatar: Dopre Gravatar
           what_is_gravatar: Ce isal Gravatar?
@@ -1290,8 +1319,12 @@ fur:
         delete image: Gjave la figure di cumò
         replace image: Sostituìs la figure atuâl
         image size hint: (figuris cuadris di almancul 100x100 a van miôr)
+    companies:
+      show:
+        cancel: Scancele
     locations:
       show:
+        cancel: Scancele
         no home location: No tu âs configurât il lûc iniziâl.
         update home location on click: Aio di inzornâ il lûc iniziâl cuant che o frachi
           parsore de mape?
@@ -1546,8 +1579,8 @@ fur:
       points: 'Ponts:'
       start_coordinates: 'Coordenadis iniziâls:'
       coordinates_html: '%{latitude}; %{longitude}'
-      map: mape
-      edit: cambie
+      map: viôt il lûc te mape
+      edit: vierç tal editôr
       owner: 'Paron:'
       description: 'Descrizion:'
       tags: 'Etichetis:'
@@ -1564,8 +1597,8 @@ fur:
         other: '%{count} ponts'
       more: plui
       trace_details: Cjale i detais dal percors
-      view_map: Viôt mape
-      edit_map: Cambie mape
+      view_map: Viôt il lûc te mape
+      edit_map: Vierç tal editôr
       public: PUBLIC
       identifiable: IDENTIFICABIL
       private: PRIVÂT
@@ -1676,6 +1709,7 @@ fur:
       my notes: Lis mês notis
       my messages: I miei messaçs
       my profile: Il gno profîl
+      my_account: Il gno profîl
       my comments: I mei coments
       my_preferences: Preferencis
       my_dashboard: La mê pagjine iniziâl
@@ -1686,6 +1720,7 @@ fur:
       edits: Cambiaments
       traces: Percors
       notes: Notis ae mape
+      follow: Seguìs
       mapper since: 'Al mape dai:'
       last map edit: Ultin cambiament ae mapeː
       ct status: 'Tiermins par contribuî:'

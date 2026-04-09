@@ -3440,6 +3440,10 @@ zh-CN:
       tooltip: 图例
       tooltip_disabled: 图例不可用于此图层
     map:
+      map:
+        title: 地图
+        marker:
+          title: 地图标记
       popup:
         close: 关闭
       navigation_control:
@@ -3454,6 +3458,8 @@ zh-CN:
         feetPopup:
           one: 你就在这个位置的%{count}英尺范围内
           other: 你就在这个位置的%{count}英尺范围内
+      attribution_control:
+        toggle_attribution: 切换署名
       base:
         standard: 标准
         cyclosm: 自行车地图

@@ -74,6 +74,9 @@
 # Author: ZioNicco
 ---
 it:
+  date:
+    formats:
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y alle %H:%M'
@@ -2322,6 +2325,7 @@ it:
         image: Immagine
         company: Azienda
         location: Posizione
+        contribution_calendar: Calendario dei contributi
     descriptions:
       show:
         title: Modifica profilo
@@ -2382,6 +2386,8 @@ it:
     heatmaps:
       show:
         title: Configura il calendario dei contributi
+        show_contribution_calendar_in_public: Mostra il calendario dei contributi
+          sulla tua pagina del profilo
         save: Aggiorna la configurazione del calendario dei contributi
         cancel: Annulla
       update:
@@ -3393,6 +3399,7 @@ it:
       change_image: Cambia immagine
       edit_company: Modifica azienda
       edit_location: Modifica posizione
+      edit_contribution_calendar: Configura il calendario dei contributi
       contributions:
         one: '%{count} contributo nell’ultimo anno'
         other: '%{count} contributi nell’ultimo anno'
@@ -3735,6 +3742,8 @@ it:
       tooltip: Legenda
       tooltip_disabled: Legenda non disponibile per questo livello
     map:
+      map:
+        title: Mappa
       popup:
         close: Chiudi
       navigation_control:

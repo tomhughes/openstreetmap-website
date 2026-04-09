@@ -3567,6 +3567,8 @@ skr-arab:
       tooltip: نقشے دی کنجی
       tooltip_disabled: ایں لیئر کیتے نقشے دی کنجی دستیاب کائنی۔
     map:
+      map:
+        title: نقشہ
       popup:
         close: بند کرو
       navigation_control:

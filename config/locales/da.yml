@@ -3680,6 +3680,10 @@ da:
       tooltip: Kortforklaring
       tooltip_disabled: Kortforklaring findes ikke til dette lag
     map:
+      map:
+        title: Kort
+        marker:
+          title: Kortmarkør
       popup:
         close: Luk
       navigation_control:
@@ -3694,6 +3698,8 @@ da:
         feetPopup:
           one: Du er indenfor %{count} fod fra dette punkt
           other: Du er indenfor %{count} fod fra dette punkt
+      attribution_control:
+        toggle_attribution: Slå tilskrivning til/fra
       base:
         standard: Standard
         cycle_map: Cykelkort

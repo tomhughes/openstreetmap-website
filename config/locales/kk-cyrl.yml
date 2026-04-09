@@ -141,8 +141,8 @@ kk-cyrl:
         home_location_name: Үй мекенжайының атауы
         languages: Қолайлы тілдер
         preferred_editor: Қолайлы редактор
-        pass_crypt: Құпиясөз
-        pass_crypt_confirmation: Құпиясөзді растау
+        pass_crypt: Пароль
+        pass_crypt_confirmation: Парольді растау
     help:
       doorkeeper/application:
         confidential: Қолданба client secret конфиденциалды түрде сақталатын ортада
@@ -237,13 +237,13 @@ kk-cyrl:
         closed: (%{place} қасында) жабылған жазба
         reopened: (%{place} қасында) қайта активацияланған жазба
       entry:
-        comment: Пікір
+        comment: Комментарий
         full: Толық жазба
   accounts:
     show:
       title: Аккаунтты өңдеу
       my_account: Менің аккаунтым
-      current email address: Ағымдағы е-пошта мекенжайы
+      current email address: Қазіргі е-пошта мекенжайы
       external auth: Сыртқы аутентификация
       contributor_terms:
         heading: Жобаға қатысу шарттары
@@ -263,7 +263,7 @@ kk-cyrl:
       save changes button: Өзгерістерді сақтау
       delete_account: Тіркелгіні жою...
     go_public:
-      heading: Жария өңдеу
+      heading: Ашық өңдеу
       currently_not_public: Әзірше сіздің түзетулеріңіз анонимді, басқалар сізге хабарлама
         жібере алмайды, локацияңызды көрмейді. Сіз не түзеткеніңізді көрсету үшін,
         басқаларға сізбен вебсайт арқылы байланысуға рұқсат беру үшін төмендегі батырманы
@@ -280,13 +280,13 @@ kk-cyrl:
         поштаңызды растау үшін поштаңызды тексеріңіз.
       success: Қатысушы туралы ақпарат сәтті жаңартылды.
     destroy:
-      success: Тіркелгі жойылды.
+      success: Аккаунт өшірілді.
     deletions:
       show:
-        title: Тіркелгімді жою
+        title: Аккаунтымды өшіру
         warning: Ескерту! Есептік жазбаны жою түпкілікті болып табылады және кері
           қайтарылмайды.
-        delete_account: Тіркелгіні жою
+        delete_account: Аккаунтты өшіру
         delete_introduction: 'Сіз OpenStreetMap-тағы есептік жазбаңызды төмендегі
           батырма арқылы өшіре аласыз. Келесі мәліметтерді ескеріңіз:'
         delete_profile: Профиліңіздің ақпараты, аватар, сипаттама және үй мекенжайыңызбен
@@ -297,7 +297,7 @@ kk-cyrl:
           кейін де кейбір ақпараттарыңыз сақталады:'
         retain_edits: Карта дерекқорына сіз жасаған өзгертулер болса, олар сақталады
         retain_traces: Жүктеген тректеріңіз болса, олар сақталады
-        retain_email: Электронды поштаңыз сақталады
+        retain_email: Электронды поштаңыз сақталатын болады
         recent_editing_html: Жақында түзету енгізгендіктен, есептік жазбаңызды қазір
           өшіру мүмкін емес. Өшіру %{time} кейін мүмкін болады.
         confirm_delete: Сенімдісіз бе?
@@ -331,12 +331,12 @@ kk-cyrl:
       terms_declined_flash:
         terms_declined_html: Жаңа шарттарды қабылдамағаныңызға өкініш білдіреміз.
           Қосымша ақпарат үшін %{terms_declined_link} сілтемесін қараңыз.
-        terms_declined_link: Мына уики бет
+        terms_declined_link: мына уики бет
     pd_declarations:
       show:
         confirm: Құптау
   browse:
-    version: Нұсқасы
+    version: Версия
     in_changeset: Өңдеме дестесі
     anonymous: аноним
     no_comment: (Комментарий жоқ)
@@ -384,7 +384,7 @@ kk-cyrl:
     start_rjs:
       feature_warning: '%{num_features} нысанды жүктеп алғаннан кейін, браузеріңіз
         баяулап кетуі мүмкін. Осынша көп деректі шынымен көрсету керек пе?'
-      load_data: Дерек жүктеу
+      load_data: Деректерді жүктеу
       loading: Жүктелуде…
     tag_details:
       tags: Тэгтер
@@ -403,10 +403,10 @@ kk-cyrl:
       versions_label: 'Версиялары:'
   feature_queries:
     show:
-      title: Мында не бар?
+      title: Мұнда не бар?
       introduction: Жақын объектілерді табу үшін картаға басыңыз
       nearby: Маңайдағы нысандар
-      enclosing: Айналадағы объектілер
+      enclosing: Айналадағы нысандар
   old_elements:
     index:
       node:
@@ -919,7 +919,7 @@ kk-cyrl:
           commercial: Іскерлік аймақ
           conservation: Қорық
           construction: Құрылыс алаңы
-          farmland: ауылшаруашылық алқабы
+          farmland: Ауылшаруашылық алқабы
           farmyard: Ауылшаруашылық ауласы
           forest: Орман шаруашылығы
           garages: Гараждар
@@ -977,7 +977,7 @@ kk-cyrl:
           sports_centre: Спорт орталығы
           stadium: Стадион
           swimming_pool: Бассейн
-          track: Racetrack (Non-Motorsport)
+          track: Жарыс жолы
           water_park: Аквапарк
           "yes": Бос уақыт
         lock:
@@ -1240,14 +1240,22 @@ kk-cyrl:
           lock: Шлюз
           rapids: Шоңғал
           river: Өзен
+          stream: Жылға
+          wadi: Кеуіп қалған арна
           waterfall: Сарқырама
           weir: Суағар
+          "yes": Су жолы
       admin_levels:
-        level2: Мемлекет шекарасы
-        level5: Өңір шекарасы
-        level6: Аудан шекарасы
-        level8: Қала шекарасы
-        level9: Ауыл шекарасы
+        level2: Халықаралық шекара
+        level3: Әкімшілік-аумақтық шекара (3-деңгей)
+        level4: Әкімшілік-аумақтық шекара (4-деңгей)
+        level5: Әкімшілік-аумақтық шекара (5-деңгей)
+        level6: Әкімшілік-аумақтық шекара (6-деңгей)
+        level7: Әкімшілік-аумақтық шекара (7-деңгей)
+        level8: Әкімшілік-аумақтық шекара (8-деңгей)
+        level9: Әкімшілік-аумақтық шекара (9-деңгей)
+        level10: Әкімшілік-аумақтық шекара (10-деңгей)
+        level11: Әкімшілік-аумақтық шекара (11-деңгей)
   searches:
     show:
       title:
@@ -1257,7 +1265,10 @@ kk-cyrl:
         no_results: Ештеңе табылмады
   directions:
     show:
+      distance: Арақашықтық
       time: Уақты
+      ascend: Өр
+      descend: Еңіс
       kilometers: километр
   issues:
     index:
@@ -1285,7 +1296,7 @@ kk-cyrl:
       search_language: Ізделуде…
       languages:
         af: Африкаанс
-        az: Әзірбайжанша
+        az: Әзербайжанша
         et: Эстонша
         en: Ағылшынша
         en-GB: Ағылшынша (Ұлыбритания)
@@ -1326,7 +1337,8 @@ kk-cyrl:
   layouts:
     logo:
       alt_text: OpenStreetMap логотибі
-    intro_header: OpenStreetMap-қа қош келдіңіз!
+    start_mapping: Картаға түсіруді бастау
+    intro_header: OpenStreetMap-қа қош келдіңіз
     tou: Қолдану шарты
     nothing_to_preview: Алдын ала қарайтын дым жоқ.
     learn_more: Көбірек білу
@@ -1334,11 +1346,11 @@ kk-cyrl:
       about: Жоба туралы
       communities: Қауымдастықтар
       copyright: Авторлық құқықтар
-      donate: Жәрдем беру
+      donate: Қайырмалдық
       edit: Өңдеу
       edit_with: '%{editor} арқылы өңдеу'
       export: Экспорттау
-      gps_traces: GPS бағдарлары
+      gps_traces: GPS-тректер
       help: Көмек
       history: Тарих
       log_out: Шығу
@@ -1414,8 +1426,10 @@ kk-cyrl:
         unread_button: Оқылмаған деп белгілеу
         read_button: Оқылды деп белгілеу
         destroy_button: Өшіріп тастау
+        unmute_button: Кіріс хаттарына көшіру
     inboxes:
       show:
+        title: Кіріс қалтасы
         messages: Сізде %{new_messages} және %{old_messages}
         new_messages:
           one: '%{count} жаңа хабарлама'
@@ -1432,18 +1446,20 @@ kk-cyrl:
         destroy_button: Өшіріп тастау
   passwords:
     new:
-      heading: Пароліңді ұмытып қалдың ба?
+      title: Парольді қалпына келтіру
+      heading: Пароліңізді ұмытып қалдыңыз ба?
       email address: Эл. пошта мекенжайы
       new password button: Парольді жаңадан қою
     edit:
       title: Парольді жаңадан қою
+      heading: '%{user} қатысушысына парольді жаңадан қою'
       reset: Парольді жаңадан қою
     update:
       flash changed: Пароліңіз өзгертілді.
   preferences:
     basic_preferences:
       show:
-        title: Қалауларым
+        title: Қалайтындарым
         site_color_schemes:
           auto: Автоматты түрде
           light: Жарық
@@ -1530,12 +1546,15 @@ kk-cyrl:
   site:
     about_section:
       open_data_title: Ашық дерек
+      legal_attribution_example_film_title: Фильм
+      legal_attribution_example_tv_title: ТВ
     copyright:
       foreign:
         title: Бұл аударма туралы
         english_link: Ағылшынша түпнұсқасы
       native:
         title: Бұл бет туралы
+        mapping_link: картаға түсіруді бастау
       legal_babble:
         contributors_at_austria: Аустрия
         contributors_au_australia: Аустралия
@@ -1591,9 +1610,9 @@ kk-cyrl:
       search_results: Іздеу нәтижелері
     search:
       search: Іздеу
-      from: Кімнен
-      to: Кімге
-      where_am_i: Бұл қайда?
+      from: Қайдан
+      to: Қайда
+      where_am_i: Бұл қай жер?
       submit_text: Өту
       modes:
         bicycle: Велосипедпен
@@ -1649,7 +1668,7 @@ kk-cyrl:
         park: Саябақ
         resident: Тұрғын аудан
         retail: Сауда аймағы
-        industrial: Өнеркәсіп аймағы
+        industrial: Өнеркәсіптік аймақ
         lake: Көл
         farm: Ферма
         cemetery: Зират
@@ -1683,11 +1702,11 @@ kk-cyrl:
       download: Жүктеп алу
   traces:
     new:
-      visibility_help: Мынау нені білдіреді?
+      visibility_help: бұл не деген?
       help: Көмек
     edit:
       cancel: Болдырмау
-      visibility_help: Мынау нені білдіреді?
+      visibility_help: бұл не деген?
     update:
       updated: Бағдар жаңартылды
     show:
@@ -1698,8 +1717,8 @@ kk-cyrl:
       owner: 'Иесі:'
       tags: 'Тэгтер:'
       none: Жоқ
-      delete_trace: Осы бағдарды өшіріп тастау
-      trace_not_found: Бағдар табылмады!
+      delete_trace: Осы тректі өшіріп тастау
+      trace_not_found: Трек табылмады!
     trace:
       edit_map: Картаны өңдеу
     index:
@@ -1731,11 +1750,11 @@ kk-cyrl:
     application:
       edit: Өңдеу
       delete: Өшіріп тастау
-      confirm_delete: Бұл қосымшаны өшіргіңіз келе ме?
+      confirm_delete: Осы қосымшаны өшіргіңіз келе ме?
     show:
       edit: Өңдеу
       delete: Өшіріп тастау
-      confirm_delete: Бұл қосымшаны өшіргіңіз келе ме?
+      confirm_delete: Осы қосымшаны өшіргіңіз келе ме?
   oauth2_authorized_applications:
     index:
       permissions: Рұқсаттар
@@ -1753,15 +1772,15 @@ kk-cyrl:
       my notes: Ескертпелерім
       my messages: Хабарламаларым
       my profile: Профилім
-      my_preferences: Қалауларым
+      my_preferences: Қалайтындарым
       send message: Хабарлама жіберу
       diary: Күнделік
-      traces: Бағдарлары
+      traces: Тректер
       mapper since: 'Тіркелген күні:'
     lists:
       show:
-        title: Қолданушылар
-        heading: Қолданушылар
+        title: Қатысушылар
+        heading: Қатысушылар
         search: Іздеу
     changeset_comments:
       page:
@@ -1825,7 +1844,7 @@ kk-cyrl:
         header: Карта қабаттары
         title: Қабаттар
     site:
-      edit_disabled_tooltip: Картаны өңдеу үшін оны үлкейтіп жіберіңіз
+      edit_disabled_tooltip: Картаны өңдеу үшін, оны жақындатыңыз
       queryfeature_tooltip: Мұнда не бар?
       queryfeature_disabled_tooltip: Маңайдағы нысандарды көру үшін картаны жақындатыңыз
     directions:
@@ -1850,10 +1869,10 @@ kk-cyrl:
     context:
       directions_from: Осы жерден маршрут құру
       directions_to: Осы жерге маршрут құру
-      add_note: Мұнда ескертпе қосу
+      add_note: Осы жерге ескертпе қосу
       show_address: Мекенжайын көрсету
       query_features: Мұнда не бар?
-      centre_map: Карта ортасын мұнда жылжыту
+      centre_map: Картаны центрлендіру
   redactions:
     edit:
       heading: Түзетуді өңдеу

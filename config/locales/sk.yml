@@ -9,6 +9,7 @@
 # Author: Gravitystorm
 # Author: Helix84
 # Author: Jose1711
+# Author: KormiSK
 # Author: KuboF
 # Author: Kusavica
 # Author: Lesny skriatok
@@ -1902,6 +1903,9 @@ sk:
       a ďalší %{partners}.
     partners_corpmembers: firemní členovia OSMF
     partners_partners: partneri
+    welcome_tou_notice_html: Používaním tejto webovej stránky alebo inej infraštruktúry
+      poskytovanej nadáciou OpenStreetMap Foundation súhlasíte s %{terms_link}.
+    terms_of_use: Podmienky používania
     tou: Podmienky používania
     nothing_to_preview: Nič k náhľadu.
     learn_more: Viac info
@@ -2262,6 +2266,7 @@ sk:
         image: Obrázok
         company: Spoločnosť
         location: Poloha
+        contribution_calendar: Kalendár príspevkov
     descriptions:
       show:
         title: Upraviť profil
@@ -2322,12 +2327,14 @@ sk:
         failure: Nepodarilo sa aktualizovať polohu v profile.
     heatmaps:
       show:
-        title: Nastaviť teplotnú mapu
-        save: Aktualizovať nastavenie teplotnej mapy
+        title: Konfigurácia kalendára príspevkov
+        show_contribution_calendar_in_public: Zobraziť kalendár príspevkov na vašom
+          profile
+        save: Aktualizovať konfiguráciu kalendára príspevkov
         cancel: Zrušiť
       update:
-        success: Teplotná mapa aktualizovaná.
-        failure: Nepodarilo sa aktualizovať teplotnú mapu.
+        success: Kalendár príspevkov bol aktualizovaný.
+        failure: Nepodarilo sa aktualizovať kalendár príspevkov.
   sessions:
     new:
       tab_title: Prihlásenie
@@ -3329,6 +3336,7 @@ sk:
       change_image: Zmeniť obrázok
       edit_company: Upraviť spoločnosť
       edit_location: Upraviť polohu
+      edit_contribution_calendar: Konfigurácia kalendára príspevkov
       contributions:
         one: '%{count} príspevok za posledný rok'
         few: '%{count} príspevky za posledný rok'
@@ -3693,6 +3701,10 @@ sk:
       tooltip: Legenda
       tooltip_disabled: Legenda nie je dostupná pre túto vrstvu
     map:
+      map:
+        title: Mapa
+        marker:
+          title: Značka na mape
       popup:
         close: Zatvoriť
       navigation_control:
@@ -3711,6 +3723,8 @@ sk:
           few: Ste menej než %{count} stopy od tohto bodu
           many: Ste menej než %{count} stôp od tohto bodu
           other: Ste menej než %{count} stôp od tohto bodu
+      attribution_control:
+        toggle_attribution: Prepnúť uvádzanie pôvodu
       base:
         standard: Štandardná
         cycle_map: Cyklomapa

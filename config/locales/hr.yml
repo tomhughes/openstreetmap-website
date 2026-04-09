@@ -303,7 +303,7 @@ hr:
       email_not_revealed: Vaša e-mail adresa neće biti javno prikazana.
       not_reversible: Ovu radnju nije moguće poništiti i svi novi korisnici su sada
         javni prema zadanim postavkama.
-      make_edits_public_button: Napravite sva moja uređivanja javnim
+      make_edits_public_button: Označi sva moja uređivanja kao javna
     update:
       success_confirm_needed: Korisničke informacije su uspješno ažurirane. Provjerite
         vaš e-mail za poruku potvrde nove e-mail adrese.
@@ -1480,7 +1480,7 @@ hr:
           erotic: Erotska trgovina
           estate_agent: Agencija za nekretnine
           fabric: Trgovina tkaninama
-          farm: Poljo-apoteka
+          farm: prodaja na OPG-u
           fashion: Modna trgovina
           fishing: Trgovina ribolovnom opremom
           florist: Cvjećarnica
@@ -1920,6 +1920,9 @@ hr:
       %{partners}.
     partners_corpmembers: Korporativni članovi OSMF-a
     partners_partners: partneri
+    welcome_tou_notice_html: Korištenjem ove web stranice ili druge infrastrukture
+      koju pruža OpenStreetMap Foundation, prihvaćate uvjete %{terms_link}.
+    terms_of_use: Uvjeti uporabe
     tou: Uvjeti uporabe
     nothing_to_preview: Nema ništa za pregled.
     learn_more: Saznajte više
@@ -2284,6 +2287,7 @@ hr:
         image: Slika
         company: Tvrtka
         location: Lokacija
+        contribution_calendar: Kalendar doprinosa
     descriptions:
       show:
         title: Uredite profil
@@ -2344,12 +2348,14 @@ hr:
         failure: Nije moguće ažurirati lokaciju profila.
     heatmaps:
       show:
-        title: Konfiguriraj toplinsku kartu
-        save: Ažuriraj konfiguraciju toplinske karte
+        title: Konfiguriraj kalendar doprinosa
+        show_contribution_calendar_in_public: Prikaži kalendar doprinosa na stranici
+          svog profila
+        save: Ažuriranje konfiguracije kalendara doprinosa
         cancel: Otkaži
       update:
-        success: Toplinska karta ažurirana.
-        failure: Nije moguće ažurirati toplinsku kartu.
+        success: Kalendar doprinosa ažuriran.
+        failure: Nije moguće ažurirati kalendar doprinosa.
   sessions:
     new:
       tab_title: Prijavite se
@@ -3330,6 +3336,7 @@ hr:
       change_image: Promijenite sliku
       edit_company: Uredite tvrtku
       edit_location: Uredite lokaciju
+      edit_contribution_calendar: Konfiguriraj kalendar doprinosa
       contributions:
         one: '%{count} doprinos u prošloj godini '
         few: '%{count} doprinosa u prošloj godini'
@@ -3679,6 +3686,10 @@ hr:
       tooltip: Legenda
       tooltip_disabled: Legenda karte nije dostupna za ovaj sloj
     map:
+      map:
+        title: Karta
+        marker:
+          title: Oznaka karte
       popup:
         close: Zatvoriti
       navigation_control:
@@ -3695,6 +3706,8 @@ hr:
           one: Nalazite se unutar %{count} stope od ove točke
           few: 'nalazite se unutar %{count} stope od ove točke '
           other: Nalazite se unutar %{count} stopa od ove točke
+      attribution_control:
+        toggle_attribution: Uključivanje atribucije
       base:
         standard: Standardni
         cycle_map: Biciklistička karta

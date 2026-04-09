@@ -2430,9 +2430,9 @@ be-Tarask:
         Больш інфармацыі пра супольнасьць: %{osm_blog_link},
         %{user_diaries_link}, %{community_blogs_link}, ды сайт
         %{osm_foundation_link}.
-      community_driven_osm_blog: OpenStreetMap блёґ
+      community_driven_osm_blog: OpenStreetMap блоґ
       community_driven_user_diaries: дзёньнікі карыстальнікаў
-      community_driven_community_blogs: блёґі супольнасьці
+      community_driven_community_blogs: блоґі супольнасьці
       community_driven_osm_foundation: OSM Фундацыя
       open_data_title: Адкрытыя зьвесткі
       open_data_1_html: 'OpenStreetMap — гэта %{open_data}: іх можна спажываць як
@@ -2494,7 +2494,7 @@ be-Tarask:
           Дапамагчы праекту, далучыўшыся да %{osm_foundation_link} і %{making_donation_link}.
         lead_2_learn_more_about_osm: Пачытайце больш пра OpenStreetMap
         lead_2_get_started_mapping: пачынайце мапіць
-        lead_2_osm_blog: OpenStreetMap блёґу
+        lead_2_osm_blog: OpenStreetMap блоґу
         lead_2_weeklyosm: weeklyOSM
         lead_2_osm_community: OSM суполцы
         lead_2_osm_foundation: OSM Фундацыі
@@ -2935,7 +2935,7 @@ be-Tarask:
         bicycle_rental: Арэнда ровараў
         bicycle_parking: Роварная паркоўка
         bicycle_parking_small: Дробная роварная паркоўка
-        toilets: Прыбіральні
+        toilets: Туалет
       see_external_legend: Глядзець поўную леґенду на новай старонцы
   share_panes:
     show:
@@ -3654,6 +3654,10 @@ be-Tarask:
       tooltip: Леґенда
       tooltip_disabled: Няма леґенды на гэты пласт мапы
     map:
+      map:
+        title: Мапа
+        marker:
+          title: Маркер мапы
       popup:
         close: Закрыць
       navigation_control:
@@ -3668,6 +3672,8 @@ be-Tarask:
         feetPopup:
           one: вы ў межах %{count} футу ад гэтага пункту
           other: вы ў межах %{count} футаў ад гэтага пункту
+      attribution_control:
+        toggle_attribution: Перамыкнуць атрыбуцыю
       base:
         standard: Звычайная мапа
         cycle_map: Роварная мапа

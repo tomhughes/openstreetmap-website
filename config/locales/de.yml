@@ -365,7 +365,7 @@ de:
   accounts:
     show:
       title: Benutzerkonto bearbeiten
-      my_account: Mein Benutzerkonto
+      my_account: Benutzerkonto
       current email address: Aktuelle E-Mail-Adresse
       external auth: Externe Authentifikation
       contributor_terms:
@@ -759,7 +759,7 @@ de:
       nearby mapper: Mapper in der Nähe
       following: Abonniert
     show:
-      title: Meine Übersichtsseite
+      title: Übersichtsseite
       no_home_location_html: '%{edit_profile_link} und lege deinen Wohnort fest, um
         Benutzer in der Nähe zu sehen.'
       edit_your_profile: Bearbeite dein Profil
@@ -3170,6 +3170,7 @@ de:
       your_browser_does_not_support_webgl: dein Browser WebGL nicht unterstützt
       webgl_is_required_for_this_map: WebGL ist erforderlich, um diese Karte anzuzeigen.
       read_more_about_webgl: Mehr lesen
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       private: Privat (werden nur als anonyme, unsortierte Punkte ohne Zeitangaben
@@ -3466,10 +3467,10 @@ de:
       my notes: Meine Hinweise
       my messages: Nachrichten
       my profile: Profil
-      my_account: Mein Benutzerkonto
+      my_account: Benutzerkonto
       my comments: Meine Kommentare
       my_preferences: Benutzereinstellungen
-      my_dashboard: Meine Übersichtsseite
+      my_dashboard: Übersichtsseite
       blocks on me: Erhaltene Sperren
       blocks by me: Vergebene Sperren
       create_mute: Diesen Benutzer stummschalten
@@ -3862,6 +3863,10 @@ de:
       tooltip: Legende
       tooltip_disabled: Die Legende ist nicht für diese Ebene verfügbar
     map:
+      map:
+        title: Karte
+        marker:
+          title: Kartenmarkierung
       popup:
         close: Schließen
       navigation_control:
@@ -3876,6 +3881,8 @@ de:
         feetPopup:
           one: Du bist weniger als 1 Fuß von diesem Punkt entfernt
           other: Du bist weniger als %{count} Fuß von diesem Punkt entfernt
+      attribution_control:
+        toggle_attribution: Quellenangabe umschalten
       base:
         standard: Standard
         cycle_map: Radfahrerkarte
