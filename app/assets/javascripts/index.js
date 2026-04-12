@@ -7,7 +7,6 @@
 //= require leaflet.legend
 //= require leaflet.note
 //= require leaflet.share
-//= require leaflet.polyline
 //= require leaflet.query
 //= require index/contextmenu
 //= require index/search
