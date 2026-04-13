@@ -3542,6 +3542,8 @@ bcl:
       tooltip: Pananda
       tooltip_disabled: An pananda dai makukua para sa patong na ini
     map:
+      map:
+        title: Mapa
       popup:
         close: Isara
       navigation_control:

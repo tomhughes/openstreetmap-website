@@ -3706,7 +3706,7 @@ pl:
       heading_html: '%{block_on} zablokowany przez użytkownika %{block_by}'
       created: 'Utworzona:'
       duration: 'Długość blokady:'
-      status: 'Stan:'
+      status: 'Status:'
       edit: Edytuj
       reason: 'Przyczyna blokady:'
       revoker: 'Cofający uprawnienia:'
@@ -3770,7 +3770,7 @@ pl:
       apply: Zastosuj
       all: Wszystkie
       open: Otwarte
-      closed: Zamknięte
+      closed: Rozwiązane
       hidden: Ukryte
       status: Status
     show:

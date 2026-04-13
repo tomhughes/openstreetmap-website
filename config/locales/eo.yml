@@ -100,7 +100,7 @@ eo:
       relation: Rilato
       relation_member: Ano de rilato
       relation_tag: Etikedo de rilato
-      report: Raporti
+      report: raporton
       session: Seanco
       trace: Spuro
       tracepoint: Spur-punkto
@@ -1910,6 +1910,9 @@ eo:
       kaj aliaj %{partners}.
     partners_corpmembers: firmaaj anoj de OSMF
     partners_partners: kunlaborantoj
+    welcome_tou_notice_html: Uzante tiun ĉi retejon aŭ alian infrastrukturon liveratan
+      de la Fondaĵo OpenStreetMap, vi konsentas kun la %{terms_link}.
+    terms_of_use: Uzkondiĉoj
     tou: Uzkondiĉoj
     nothing_to_preview: Nenio por antaŭvidi.
     learn_more: Ekscii pli
@@ -2255,6 +2258,7 @@ eo:
         image: Profilbildo
         company: Firmao
         location: Loko
+        contribution_calendar: Kalendaro de kontribuoj
     descriptions:
       show:
         title: Redakti profilon
@@ -2315,12 +2319,14 @@ eo:
         failure: Ne povis aktualigi lokon de profilo.
     heatmaps:
       show:
-        title: Agordi oftecmapon
+        title: Agordi kalendaron de kontribuoj
+        show_contribution_calendar_in_public: Montri la kalendaron de kontribuon sur
+          mia profilpaĝo
         save: Konservi
         cancel: Nuligi
       update:
-        success: Aktualigis la oftecmapon.
-        failure: Ne povis aktualigi la oftecmapon.
+        success: Aktualigis la kalendaron de kontribuoj.
+        failure: Ne povis aktualigi la kalendaron de kontribuoj.
   sessions:
     new:
       tab_title: Ensaluti
@@ -3293,6 +3299,7 @@ eo:
       change_image: Ŝanĝi bildon
       edit_company: Redakti firmaon
       edit_location: Redakti lokon
+      edit_contribution_calendar: Agordi kalendaron de kontribuoj
       contributions:
         one: '%{count} kontribuo dum la antaŭa jaro'
         other: '%{count} kontribuoj dum la antaŭa jaro'
@@ -3628,6 +3635,10 @@ eo:
       tooltip: Mapklarigo
       tooltip_disabled: Mapklarigo ne estas disponebla por tiu ĉi tavolo
     map:
+      map:
+        title: Mapo
+        marker:
+          title: Map-markilo
       popup:
         close: Fermi
       navigation_control:
@@ -3642,6 +3653,8 @@ eo:
         feetPopup:
           one: Vi estas %{count} futo for de tiu punkto
           other: Vi estas %{count} futoj for de tiu punkto
+      attribution_control:
+        toggle_attribution: Baskuligi atribuon
       base:
         standard: Norma mapo
         cycle_map: Biciklada mapo
