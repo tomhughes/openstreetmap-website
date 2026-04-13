@@ -1079,6 +1079,8 @@ hi:
       previous: पिछला
   javascripts:
     map:
+      map:
+        title: नक्शा
       layers:
         notes: मानचित्र नोट्स
     site:

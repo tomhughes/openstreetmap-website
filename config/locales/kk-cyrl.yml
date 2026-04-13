@@ -140,7 +140,7 @@ kk-cyrl:
         home_lon: Бойлық
         home_location_name: Үй мекенжайының атауы
         languages: Қолайлы тілдер
-        preferred_editor: Қолайлы редактор
+        preferred_editor: Қалайтын редактор
         pass_crypt: Пароль
         pass_crypt_confirmation: Парольді растау
     help:
@@ -172,8 +172,8 @@ kk-cyrl:
         one: шамамен %{count} жыл бұрын
         other: шамамен %{count} жыл бұрын
       almost_x_years:
-        one: '%{count} жыл бұрын дерлік'
-        other: '%{count} жыл бұрын дерлік'
+        one: '%{count} жылдай бұрын '
+        other: '%{count} жылдай бұрын'
       half_a_minute: жарты минут бұрын
       less_than_x_seconds:
         one: '%{count}  секундтан аз уақыт бұрын'
@@ -297,6 +297,12 @@ kk-cyrl:
           кейін де кейбір ақпараттарыңыз сақталады:'
         retain_edits: Карта дерекқорына сіз жасаған өзгертулер болса, олар сақталады
         retain_traces: Жүктеген тректеріңіз болса, олар сақталады
+        retain_diary_entries: Күнделік жазбаларыңыз және одағы комментарийларыңыз
+          болса, олар сақталады, бірақ көрінбейтін болады.
+        retain_notes: Ескертпелеріңіз және одағы комментарийларыңыз болса, олар сақталады,
+          бірақ көрінбейтін болады.
+        retain_changeset_discussions: Өңдеме дестеңіздің талқылаулары болса, олар
+          сақталады.
         retain_email: Электронды поштаңыз сақталатын болады
         recent_editing_html: Жақында түзету енгізгендіктен, есептік жазбаңызды қазір
           өшіру мүмкін емес. Өшіру %{time} кейін мүмкін болады.
@@ -313,8 +319,12 @@ kk-cyrl:
           үлестеріңізге қатысты шарттарды реттейді.
         read_ct: Жоғарыда көрсетілген қатысушы шарттарымен таныстым және келісемін
         tou_explain:
+          html: Бұл %{tou_link} OSMF ұсынатын веб-сайт пен басқа да инфрақұрылымды
+            пайдалануды реттейді. Сілтемеге өтіп, мәтінді оқып, келісіміңізді беріңіз.
           tou: Қолдану шарты
         read_tou: Мен қолдану шарттарына келісім беремін
+        guidance_info_html: 'Осы шарттарды түсінуге көмектесетін ақпарат: %{readable_summary_link}
+          және кейбір %{informal_translations_link}'
         readable_summary: Адамға түсінікті қысқаша мазмұны
         informal_translations: Бейресми аудармалары
         continue: Жалғастыру
@@ -334,13 +344,27 @@ kk-cyrl:
         terms_declined_link: мына уики бет
     pd_declarations:
       show:
+        title: Менің үлестерімді қоғамдық игілік деп есептеңіз
+        consider_pd: Үлестерімді қоғамдық игілік деп есептеймін
+        consider_pd_why: Неліктен мен өз үлестерімнің қоғамдық игілік болғанын қалар
+          едім?
         confirm: Құптау
+      create:
+        successfully_declared: Сіз өз түзетулеріңізді қоғамдық игілік деп есептейтініңізді
+          сәтті түрде мәлімдедіңіз.
+        already_declared: Сіз өз түзетулеріңізді қоғамдық игілік деп есептейтініңізді
+          мәлімдедп қойғансыз.
+        did_not_confirm: Сіз өз түзетулеріңізді қоғамдық игілік деп есептейтініңізді
+          растаған жоқсыз.
   browse:
+    deleted_ago_by_html: '%{time_ago} %{user} қатысушысымен өшірілді'
+    edited_ago_by_html: '%{time_ago} %{user} өзгертті'
     version: Версия
+    redacted_version: Түзетілген версия
     in_changeset: Өңдеме дестесі
     anonymous: аноним
     no_comment: (Комментарий жоқ)
-    part_of: Осының бөлігі
+    part_of: Осының құрамында
     part_of_relations:
       one: '%{count} қатынас'
       other: '%{count} қатынас'
@@ -348,7 +372,8 @@ kk-cyrl:
       one: '%{count} сызық'
       other: '%{count} сызық'
     download_xml: XML жүктеп алу
-    location: 'Орналасуы:'
+    view_unredacted_history: Түзетілмеген тарихын қарау
+    location: 'Орналасқан жері:'
     node:
       title_html: 'Нүкте: %{name}'
     way:
@@ -357,16 +382,28 @@ kk-cyrl:
       nodes_count:
         one: '%{count} нүкте'
         other: '%{count} нүкте'
+      also_part_of_html:
+        one: '%{related_ways} сызығының бөлігі'
+        other: '%{related_ways} сызықтарының бөлігі'
     relation:
       title_html: 'Қатынас: %{name}'
+      members: Қатысушылар
+      members_count:
+        one: '%{count} мүше'
+        other: '%{count} мүше'
     relation_member:
+      entry_role_html: '%{role} ретіндегі %{type} %{name}'
       type:
         node: Нүкте
         way: Сызық
         relation: Қатынас
+    containing_relation:
+      entry_role_html: '%{relation_name} (%{relation_role} ретінде)'
     not_found:
       title: Табылмады
     timeout:
+      title: Тайм-аут қатесі
+      sorry: Кешірерсіз, ID-сі %{id} %{type} деректерін алу ұзаққа созылды.
       type:
         node: нүкте
         way: сызық
@@ -384,11 +421,18 @@ kk-cyrl:
     start_rjs:
       feature_warning: '%{num_features} нысанды жүктеп алғаннан кейін, браузеріңіз
         баяулап кетуі мүмкін. Осынша көп деректі шынымен көрсету керек пе?'
+      feature_error: 'Нысандар жүктеле аламады: %{message}'
       load_data: Деректерді жүктеу
       loading: Жүктелуде…
     tag_details:
       tags: Тэгтер
+      wiki_link:
+        key: '%{key} тегін сипаттайтын уики-парақша'
+        tag: '%{key}=%{value} тегін сипаттайтын уики-парақша'
       wikidata_link: Уикидеректегі %{page} данасы
+      wikidata_preview:
+        one: Уикидеректер элементін алдын ала қарау
+        other: Уикидеректер элементтерін алдын ала қарау
       wikipedia_link: Уикипедиядағы %{page} мақаласы
       wikimedia_commons_link: Ортаққордағы %{page} данасы
       telephone_link: '%{phone_number} қоңырау шалу'
@@ -438,6 +482,8 @@ kk-cyrl:
   old_ways:
     not_found_message:
       sorry: Өкінішке орай, %{id} сызығының %{version} версиясы табылмады.
+    timeout:
+      sorry: Өкінішке орай, ID-cі %{id} сызығының тарихын алу тым ұзақ болып кетті.
   relations:
     not_found_message:
       sorry: Өкінішке орай, %{id} қатынасы табылмады.
@@ -456,6 +502,8 @@ kk-cyrl:
   old_relation_members:
     not_found_message:
       sorry: Өкінішке орай, %{id} қатынасының %{version} версиясы табылмады.
+    timeout:
+      sorry: Өкінішке орай, ID-cі %{id} қатынасының бөліктерін алу тым ұзаққа созылды.
   changeset_comments:
     feeds:
       comment:
@@ -464,6 +512,9 @@ kk-cyrl:
       show:
         title_all: OpenStreetMap өңдеме дестесін талқылау
         title_particular: OpenStreetMap %{changeset_id} өңдеме дестесін талқылау
+      timeout:
+        sorry: Өкінішке орай, сіз сұраған өңдеме дестесінің комментарий тізімін алу
+          тым ұзаққа созылды.
   changesets:
     changeset_line:
       comments:
@@ -532,6 +583,8 @@ kk-cyrl:
       range: '%{x}-%{y} жалпы саны %{count}'
     not_found_message:
       sorry: Өкінішке орай, %{id} өңдеме дестесі табылмады.
+    timeout:
+      sorry: Өкінішке орай, сіз сұраған өңдеме дестесінің тізімін алу тым ұзаққа созылды.
   changeset_subscriptions:
     show:
       subscribe:
@@ -542,10 +595,16 @@ kk-cyrl:
         button: Талқыдан жазылымды тоқтату
     heading:
       title: '%{id} өңдеме дестесі'
+      created_by_html: '%{created} күні %{link_user} құрды.'
+    no_such_entry:
+      heading: '%{id} нөмірлі жазба жоқ.'
+      body: Кешіріңіз, %{id} нөмірлі өңдеме дестесі жоқ. Емлені тексеріңіз немесе
+        сіз өткен сілтеме қате болуы мүмкін.
   dashboards:
     contact:
       km away: Бұдан %{count} км жерде
-      m away: Бұдан %{count} м жерде
+      m away: Сізден %{count} м жерде
+      latest_edit_html: 'Соңғы түзетім %{ago}:'
       no_edits: (өңдемелер жоқ)
       view_changeset_details: Өңдеме дестесін түгел қарау
     popup:
@@ -554,6 +613,9 @@ kk-cyrl:
       following: Достарым
     show:
       title: Ақпарат панелім
+      no_home_location_html: Жақын маңдағы қатысушыларды көру үшін %{edit_profile_link}
+        және үй мекенжайыңызды орнатыңыз.
+      edit_your_profile: Профиліңізді түзетіңіз
       followings: Сіз жазылған қатысушылар
       no followings: Сіз бір де бір қатысушыға жазымлмағансыз.
       nearby users: Жақын жердегі басқа қатысушылар
@@ -562,7 +624,7 @@ kk-cyrl:
       followed_changesets: өңдеме дестелері
       followed_diaries: Күнделіктер
       nearby_changesets: Жақын жердегі қатысушылардың өңдеме дестелері
-      nearby_diaries: Жақын жердегі қатысушыдың күнделіктері
+      nearby_diaries: Жақын жердегі қатысушылардың күнделіктері
   diary_entries:
     new:
       title: Жаңа күнделік жазбасы
@@ -570,7 +632,7 @@ kk-cyrl:
       location: Локация
       use_map_link: Картаны қолдану
     index:
-      title: Қолданушылардың күнделіктері
+      title: Қатысушылар күнделіктері
       title_followed: Сіз жазылған қатысушылардың күнделіктері
       title_nearby: Жақын жердегі қатысушылардың күнделіктері
       user_title: '%{user} күнделігі'
@@ -580,6 +642,7 @@ kk-cyrl:
       recent_entries: Жақындағы күнделік жазбалары
     edit:
       title: Күнделік жазбасын өңдеу
+      marker_text: Күнделік жазбасының орналасу орны
     show:
       title: '%{user} күнделігі | %{title}'
       user_title: '%{user} күнделігі'
@@ -591,22 +654,65 @@ kk-cyrl:
       login: Кіру
     no_such_entry:
       title: Күнделікте мұндай жазба жоқ
+      heading: '%{id} нөмірлі жазба жоқ.'
+      body: Кешіріңіз, %{id} нөмірлі күнделік жазбасы не комментарий жоқ. Емлені тексеріңіз
+        немесе сіз өткен сілтеме қате болуы мүмкін.
     diary_entry:
+      posted_by_html: '%{created} күні %{language_link} тілінде %{link_user} жариялады.'
+      updated_at_html: Соңғы рет %{updated} күні жаңартылды.
+      full_entry: Толық жазбаны көру
+      comment_link: Комментарий қалдыру
       reply_link: Авторға хабарлама жіберу
+      comment_count:
+        one: '%{count} комментарий'
+        other: '%{count} комментарий'
       no_comments: Комментарий жоқ
       edit_link: Бұл жазбаны өңдеу
       hide_link: Бұл жазбаны жасыру
       unhide_link: Бұл жазбаны жасырмау
       confirm: Құптау
+      report: Осы жазбаға арыздану
     diary_comment:
+      comment_from_html: '%{comment_created_at} жазылған %{link_user} қатысушысынан
+        комментарий'
       hide_link: Бұл комментарийді жасыру
       unhide_link: Бұл комментарийді жасырмау
       confirm: Құптау
+      report: Осы комментарийға арыздану
+    location:
+      location: 'Орналасқан жері:'
+    feed:
+      user:
+        title: '%{user} қатысушысының OpenStreetMap-тағы күнделік жазбалары'
+        description: '%{user} қатысушысының OpenStreetMap-тағы жақындағы күнделік
+          жазбалары'
+      language:
+        title: OpenStreetMap-тағы %{language_name} күнделік жазбалары
+        description: OpenStreetMap қатысушыларының жақындағы %{language_name} күнделік
+          жазбалары
+      all:
+        title: OpenStreetMap-тағы күнделік жазбалары
+        description: OpenStreetMap қатысушыларының жақындағы күнделік жазбалары
     subscribe:
+      heading: Осы өңдеме дестесісінің пікірталасына жазыласыз ба?
       button: Талқыға жазылу
+    unsubscribe:
+      heading: Осы өңдеме дестесісінің пікірталасынан жазылымды тоқтатасыз ба?
+      button: Талқыдан жазылымды тоқтату
     navigation:
+      in_language: '%{language} күнделік жазбалары'
       my_diary: Күнделігім
       new: Жаңа күнделік жазбасы
+      new_title: Күнделігімде жаңа жазба жасау
+    profile_diaries:
+      latest_diaries: Соңғы күнделіктер
+      comments:
+        one: '%{count} комментарий'
+        other: '%{count} комментарий'
+      title_label: Күнделік жазбасы
+  diary_comments:
+    new:
+      heading: Осы өңдеме дестесісінің пікірталасына комментариий қалдырасыз ба?
   doorkeeper:
     flash:
       applications:
@@ -649,20 +755,33 @@ kk-cyrl:
       prefix:
         aerialway:
           cable_car: Арқанжол
+          chair_lift: Орындықты арқанжол
+          drag_lift: Зәкірлі арқанжол
           gondola: Көп вагоны бар арқан жол
+          magic_carpet: Сиқырлы кілем таспалы көтергіші
+          platter: Бугельді көтергіш
           pylon: Тірек
+          station: Арқанжол станциясы
+          t-bar: Т-кейіптес көтергіш
           "yes": Арқан жол
         aeroway:
           aerodrome: Аэродром
           airstrip: Жеңіл ұшаққа арналған ҰҚЖ
           apron: Әуежай перроны
+          gate: Әуежай гейті
           hangar: Ангар
           helipad: Тікұшақ алаңы
+          holding_position: Күту орны
+          navigationaid: Авиациялық навигациялық жүйе
+          parking_position: Тұрақ орны
           runway: Ұшу-қону жолағы
           taxilane: Такси қатары
+          taxiway: Рульдеу жолы
           terminal: Әуежай терминалы
           windsock: Желбағар
         amenity:
+          animal_boarding: Жануарларға арналған интернат
+          animal_shelter: Жануарлар панасы
           arts_centre: Өнер орталығы
           atm: Банкомат
           bank: Банк
@@ -707,6 +826,7 @@ kk-cyrl:
           fuel: Жанармай бекеті
           gambling: Ойын үйі
           grave_yard: Бейіт
+          grit_bin: Жол сеппелеріне арналған контейнер
           hospital: Аурухана
           hunting_stand: Аңшы мұнарасы
           ice_cream: Балмұздақ
@@ -714,13 +834,18 @@ kk-cyrl:
           kindergarten: Балабақша
           language_school: Тіл мектебі
           library: Кітапхана
+          loading_dock: Жүк тиейтін док
           love_hotel: Махаббат мейманханасы
           marketplace: Базар
+          mobile_money_agent: Мобильді ақша агенті
           monastery: Монастырь
+          money_transfer: Ақша аудару
+          motorcycle_parking: Мотоцикл тұрағы
           music_school: Музыка мектебі
           nightclub: Түнгі клуб
           nursing_home: Қарттар үйі
           parking: Тұрақ
+          parking_entrance: Тұрақ кіреберісі
           parking_space: Тұрақтағы орын
           payment_terminal: Төлем терминалы
           pharmacy: Дәріхана
@@ -733,11 +858,15 @@ kk-cyrl:
           public_bath: Қоғамдық монша
           public_bookcase: Қоғамдық кітап шкафы
           public_building: Қоғамдық ғимарат
+          ranger_station: Рейнджерлер станциясы
+          recycling: Кәдеге жарату орны
           restaurant: Мейрамхана
+          sanitary_dump_station: Санитарлық қоқыс тастайтын жер
           school: Мектеп
           shelter: Қалқа
           shower: Душ
           social_centre: Әлеуметтік орталық
+          social_facility: Әлеуметтік мекеме
           studio: Студия
           swimming_pool: Бассейн
           taxi: Такси
@@ -753,24 +882,32 @@ kk-cyrl:
           village_hall: Ауыл клубы
           waste_basket: Қоқыс шелегі
           waste_disposal: Қоқыс жәшігі
+          waste_dump_site: Қалдықтарды тастау орны
           watering_place: Суат
           water_point: Су толтыратын орын
           weighbridge: Көлік таразысы
           "yes": Қоғамдық нысан
         boundary:
+          aboriginal_lands: Аборигендердің жерлері
           administrative: Әкімшілік шекара
+          census: Халық санағы аумағының шекарасы
           national_park: Ұлттық парк
+          political: Cайлау шекарасы
+          protected_area: Күзетілетін аймақ
           "yes": Шекара
         bridge:
           aqueduct: Акведук
           boardwalk: Серуендеуге арналған тақтай жол
           suspension: Аспалы көпір
+          swing: Бұрылмалы көпір
           viaduct: Виадук
           "yes": Көпір
         building:
           apartment: Пәтер
           apartments: Көп пәтерлі үй
+          barn: Қамба
           bungalow: Бунгало
+          chapel: Капелла
           church: Шіркеу ғимараты
           civic: Қоғамдық ғимарат
           college: Колледж ғимараты
@@ -795,6 +932,7 @@ kk-cyrl:
           kindergarten: Балабақша ғимараты
           manufacture: Өнеркәсіптік ғимарат
           office: Кеңсе ғимараты
+          public: Қоғамдық ғимарат
           residential: Тұрғын үй
           retail: Сауда ғимараты
           roof: Шатыр
@@ -853,6 +991,8 @@ kk-cyrl:
           life_ring: Құтқару шеңбері
           phone: Шұғыл байланыс телефоны
           siren: Апаттық дабыл
+          suction_point: Өрт сөндіру пирсі
+          water_tank: Өрт сөндіру су қоймасы
         highway:
           abandoned: Қараусыз қалған жол
           bridleway: Атпен жүру жолы
@@ -860,8 +1000,11 @@ kk-cyrl:
           bus_stop: Автобус аялдамасы
           busway: Автобус жолағы
           construction: Салынып жатқан жол
+          crossing: Қиылыс
           cycleway: Велосипед жолы
           elevator: Лифт
+          emergency_access_point: Алғашқы жәрдем пункті
+          emergency_bay: Апаттық тұрақ
           footway: Тротуар
           ford: Өткел
           give_way: '"Жол бер" белгісі'
@@ -870,50 +1013,87 @@ kk-cyrl:
           motorway: Автокүрежол
           motorway_junction: Қиылыс
           motorway_link: Жол айрығы
+          passing_place: Өткелдік жол
           path: Соқпақ
+          pedestrian: Жаяу жүретін көше
           platform: Платформа
           primary: Бірінші дәрежелі жол
           primary_link: Бірінші дәрежелі жол
+          proposed: Жобаланатын жол
           raceway: Жарыс трассасы
           residential: Көше
           rest_area: Демалыс аймағы
           road: Жол
+          secondary: Екінші дәрежелі жол
+          secondary_link: Екінші дәрежелі жол
           service: Қызметтік жол
+          services: Жол бойындағы сервис
           speed_camera: Бейнетіркеу камерасы
           steps: Баспалдақ
           stop: Тоқта белгісі
           street_lamp: Көше шамы
+          tertiary: Үшінші дәрежелі жол
+          tertiary_link: Үшінші дәрежелі жол
           track: Қара жол
+          traffic_mirror: Жол қозғалысының айнасы
           traffic_signals: Бағдаршам
           trailhead: Соқпақ
           trunk: Трасса
           trunk_link: Трасса
+          turning_circle: Кері бұрылатын айналма жол
+          turning_loop: Кері бұрылатын жол
+          unclassified: Жергілікті маңызы бар жол
           "yes": Жол
         historic:
+          aircraft: Тарихи әуе кемесі
           archaeological_site: Археологиялық қазба орны
+          bomb_crater: Тарихи бомба кратері
           battlefield: Шайқас алаңы
           boundary_stone: Шекаралық тас
           building: Тарихи ғимарат
           bunker: Бункер
           cannon: Тарихи зеңбірек
           castle: Қамал
+          charcoal_pile: Тарихи ағаш көмір үйіндісі
           church: Шіркеу
           city_gate: Қамал қақпасы
           citywalls: Бекініс қабырғалары
           fort: Форт
+          heritage: Мәдени мұра нысаны
+          hollow_way: Қуыс жол
           house: Үй
+          manor: Жер иелігі
           memorial: Ескерткiш
+          milestone: Тарихи қада
+          mine: Кеніш
+          mine_shaft: Шахта оқпаны
+          monument: Монумент
           railway: Тарихи темір жол
           roman_road: Рим жолы
+          ruins: Қираған орын
           rune_stone: Руналық тас
           stone: Тас
           tomb: Мазар
           tower: Мұнара
+          wayside_chapel: Жол бойындағы кішкентай шіркеу
+          wayside_cross: Жол бойындағы айқыш
+          wayside_shrine: Жол бойындағы мазар
+          wreck: Кеменің арқау негізі
+          "yes": Тарихи орын
         information:
+          guidepost: Көрсеткіш баған
+          board: Ақпараттық тақта
           map: Карта
+          office: Туристік кеңсе
+          terminal: Ақпараттық терминал
+          sign: Ақпараттық белгі
+          stele: Ақпараттық стела
         junction:
           "yes": Қиылыс
         landuse:
+          allotments: Бағбаншылық
+          aquaculture: Аквашаруашылық
+          basin: Суайдын
           brownfield: Құрылысқа дайындалған жер
           cemetery: Зират
           commercial: Іскерлік аймақ
@@ -1013,6 +1193,7 @@ kk-cyrl:
           mineshaft: Шахта оқпаны
           monitoring_station: Бақылау бекеті
           petroleum_well: Мұнай ұңғымасы
+          planter: Гүлзар
           pier: Пирс
           pipeline: Құбыр желісі
           pumping_station: Сорғы бекеті
@@ -1055,15 +1236,19 @@ kk-cyrl:
           coastline: Жағалық сызық
           crater: Кратер
           dune: Құм төбе
+          fell: Таулы өлке
           fjord: Фьорд
           forest: Орман
           geyser: Гейзер
           glacier: Мұздық
+          grassland: Көгал
+          heath: Тақыршақ
           hill: Төбе
           hot_spring: Ыстық бұлақ
           island: Арал
           isthmus: Мойнақ
           land: Жер
+          marsh: Сазды жер
           peak: Шың
           peninsula: Түбек
           reef: Риф
@@ -1358,7 +1543,7 @@ kk-cyrl:
       more: Тағы
       select_language: Тілді таңдау
       sign_up: Тіркелу
-      user_diaries: Қолданушылардың күнделіктері
+      user_diaries: Қатысушылар күнделіктері
     select_language_button:
       title: Тілді таңдау
   user_mailer:

@@ -2060,10 +2060,12 @@ fi:
           dark: Tumma
         preferred_map_color_scheme: Ensisijainen kartan väriteema
         map_color_schemes:
-          auto: Automaattinen
+          auto: Sama kuin sivuston
           light: Vaalea
           dark: Tumma
+        preferred_editor_color_scheme: Ensisijainen muokkausohjelman väriteema
         editor_color_schemes:
+          auto: Sama kuin sivuston
           light: Vaalea
           dark: Tumma
         save: Päivitä asetukset
@@ -3325,6 +3327,8 @@ fi:
       tooltip: Merkkien selitykset
       tooltip_disabled: Ei käytettävissä tässä karttanäkymässä
     map:
+      map:
+        title: Kartta
       popup:
         close: Sulje
       navigation_control:
@@ -3342,7 +3346,10 @@ fi:
         standard: Perinteinen
         cycle_map: Pyöräilykartta
         transport_map: Joukkoliikenne
+        tracestracktop_topo: Tracestrack Topo
         hot: Humanitaarinen
+        shortbread: Shortbread
+        openmaptiles_osm: MapTiler OMT
       layers:
         header: Karttanäkymä
         notes: Karttailmoitukset

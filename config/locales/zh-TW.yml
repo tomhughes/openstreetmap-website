@@ -1782,6 +1782,7 @@ zh-TW:
         ku-Latn: 庫德語（拉丁字母）
         lv: 拉脫維亞語
         lb: 盧森堡語
+        lkt: 拉科塔語
         lt: 立陶宛語
         hu: 匈牙利語
         fit: 梅安語
@@ -1866,6 +1867,7 @@ zh-TW:
     hosting_partners_2024_html: 由%{fastly}、%{corpmembers}，和其他%{partners}支援代管。
     partners_corpmembers: OSMF 團體成員
     partners_partners: 合作夥伴
+    welcome_tou_notice_html: 使用本網站或開放街圖基金會提供的其他基礎設施，即表示您同意 %{terms_link}。
     terms_of_use: 使用條款
     tou: 使用條款
     nothing_to_preview: 無可預覽內容。
@@ -2168,6 +2170,7 @@ zh-TW:
         image: 圖片
         company: 公司
         location: 位置
+        contribution_calendar: 貢獻日曆
     descriptions:
       show:
         title: 編輯基本資料
@@ -2228,11 +2231,12 @@ zh-TW:
     heatmaps:
       show:
         title: 配置貢獻日曆
+        show_contribution_calendar_in_public: 在您的個人檔案頁面上顯示捐款日曆
         save: 更新貢獻日曆配置
         cancel: 取消
       update:
-        success: 熱力圖已經更新了。
-        failure: 無法更新熱力圖。
+        success: 貢獻日曆已更新。
+        failure: 無法更新貢獻日曆。
   sessions:
     new:
       tab_title: 登入
@@ -2463,6 +2467,7 @@ zh-TW:
         contributors_hr_croatia: 克羅埃西亞
         contributors_hr_dgu: 克羅埃西亞國家大地測量局
         contributors_hr_open_data_portal: 國家開放資料入口網站
+        contributors_nl_credit_new_html: '%{netherlands}：包含 &copy; 與資料，2007'
         contributors_nl_netherlands: 荷蘭
         contributors_nz_credit_html: '%{new_zealand}：包含來自 %{linz_data_service_link}與基於%{cc_by_link}
           的重複使用授權條款。'
@@ -2818,13 +2823,13 @@ zh-TW:
       points: 點數：
       start_coordinates: 開始坐標：
       coordinates_html: '%{latitude}; %{longitude}'
-      map: 地圖
-      edit: 編輯
+      map: 在地圖上檢視位置
+      edit: 在編輯器中開啟
       owner: 擁有者：
       description: 描述：
       tags: 標籤
       none: 無
-      edit_trace: 編輯這個軌跡
+      edit_trace: 編輯軌跡詳細資訊
       delete_trace: 刪除這個軌跡
       trace_not_found: 找不到軌跡！
       visibility: 能見度
@@ -2836,8 +2841,8 @@ zh-TW:
         other: '%{count} 個點'
       more: 更多
       trace_details: 檢視軌跡詳細資料
-      view_map: 檢視地圖
-      edit_map: 編輯地圖
+      view_map: 在地圖上檢視位置
+      edit_map: 在編輯器中開啟
       public: 公開
       identifiable: 可辨識
       private: 私人
@@ -3028,6 +3033,9 @@ zh-TW:
         html: 你的地址不會公開顯示，請參閱我們的%{privacy_policy_link}來了解更多資訊。
       or: 或
       use external auth: 或者使用第三方服務註冊
+      verify_human: 驗證您是否為人類
+    create:
+      not_human: 抱歉，我們無法確認您是真人。建立新帳號必須通過此驗證。
     no_such_user:
       title: 沒有這個使用者
       heading: 使用者 %{user} 不存在
@@ -3085,6 +3093,7 @@ zh-TW:
       change_image: 更改圖片
       edit_company: 編輯公司
       edit_location: 編輯位置
+      edit_contribution_calendar: 設定貢獻者日曆
       contributions: 去年有%{count}貢獻
       title:
         administrator: 這個使用者是一個管理員
@@ -3395,6 +3404,10 @@ zh-TW:
       tooltip: 圖例
       tooltip_disabled: 圖例不適用這個圖層
     map:
+      map:
+        title: 地圖
+        marker:
+          title: 地圖標記
       popup:
         close: 關閉
       navigation_control:
@@ -3409,6 +3422,8 @@ zh-TW:
         feetPopup:
           one: 你距離此地點不到 %{count} 英尺
           other: 你距離此地點不到 %{count} 英尺
+      attribution_control:
+        toggle_attribution: 切換署名
       base:
         standard: 標準
         cycle_map: 自行車地圖

@@ -3768,6 +3768,8 @@ cs:
     map:
       map:
         title: Mapa
+        marker:
+          title: Značka na mapě
       popup:
         close: Zavřít
       navigation_control:
@@ -3786,6 +3788,8 @@ cs:
           few: Od tohoto bodu jste méně než %{count} stopy
           many: Od tohoto bodu jste méně než %{count} stopy
           other: Od tohoto bodu jste méně než %{count} stop
+      attribution_control:
+        toggle_attribution: Přepnout uvedení zdroje
       base:
         standard: Standardní
         cycle_map: Cyklomapa

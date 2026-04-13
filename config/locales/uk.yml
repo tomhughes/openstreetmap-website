@@ -1916,6 +1916,7 @@ uk:
         ku-Latn: Курдська (латиниця)
         lv: Латиська
         lb: Люксембурзька
+        lkt: Лакота
         lt: Литовська
         hu: Угорська
         fit: Торнедален Фінська
@@ -2000,6 +2001,7 @@ uk:
       іншими %{partners}.
     partners_corpmembers: Корпоративними членами OSMF
     partners_partners: партнерами
+    terms_of_use: Умови використання
     tou: Умови використання
     nothing_to_preview: Нічого немає для перегляду.
     learn_more: Докладніше
@@ -2367,6 +2369,7 @@ uk:
         image: Зображення
         company: Компанія
         location: Розташування
+        contribution_calendar: Участь
     descriptions:
       show:
         title: Редагування профілю
@@ -2429,6 +2432,8 @@ uk:
     heatmaps:
       show:
         title: Налаштувати календар внесків
+        show_contribution_calendar_in_public: Показувати календар участі у вашому
+          профілі
         save: Оновити конфігурацію календаря внесків
         cancel: Скасувати
       update:
@@ -2724,6 +2729,8 @@ uk:
         contributors_hr_croatia: Хорватія
         contributors_hr_dgu: Державне геодезичне управління Хорватії
         contributors_hr_open_data_portal: Національний портал відкритих даних
+        contributors_nl_credit_new_html: '%{netherlands}: Містить &copy; дані AND,
+          2007'
         contributors_nl_netherlands: Нідерланди
         contributors_nz_credit_html: |-
           %{new_zealand}: містить дані, отримані з %{linz_data_service_link}
@@ -3380,6 +3387,10 @@ uk:
       or: або
       use external auth: або використовуйте, облікові записи з інших ресурсів для
         входу
+      verify_human: Підтвердьте, що ви людина
+    create:
+      not_human: На жаль, ми не можемо підтвердити, що ви людина. Це необхідно для
+        створення нових облікових записів.
     no_such_user:
       title: Немає такого учасника
       heading: Учасника %{user} не існує.
@@ -3438,6 +3449,7 @@ uk:
       change_image: Змінити зображення
       edit_company: Редагувати компанію
       edit_location: Редагувати розташування
+      edit_contribution_calendar: Налаштувати календар участі
       contributions:
         one: Кількість редагувань за останній рік — %{count} елемент
         few: Кількість редагувань за останній рік — %{count} елементи
@@ -3802,6 +3814,10 @@ uk:
       tooltip: Умовні знаки
       tooltip_disabled: Легенда мапи недоступна для цього шару
     map:
+      map:
+        title: Мапа
+        marker:
+          title: Мітка на мапі
       popup:
         close: Закрити
       navigation_control:
@@ -3820,6 +3836,8 @@ uk:
           few: Ви перебуваєте за %{count} фути від цієї точки
           many: Ви перебуваєте за %{count} футів від цієї точки
           other: ""
+      attribution_control:
+        toggle_attribution: Показувати атрибуцію
       base:
         standard: Стандартний
         cyclosm: ЦиклОСМ
