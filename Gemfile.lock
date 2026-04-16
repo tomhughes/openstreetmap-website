@@ -339,7 +339,7 @@ GEM
     hashdiff (1.2.1)
     hashie (5.1.0)
       logger
-    herb (0.9.5)
+    herb (0.9.6)
     highline (3.1.2)
       reline
     htmlentities (4.4.2)
@@ -429,7 +429,7 @@ GEM
     mini_portile2 (2.8.9)
     mini_racer (0.20.0)
       libv8-node (~> 24.12.0.1)
-    minitest (6.0.3)
+    minitest (6.0.4)
       drb (~> 2.0)
       prism (~> 1.5)
     minitest-focus (1.4.1)
@@ -840,7 +840,7 @@ GEM
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
     securerandom (0.4.1)
-    selenium-webdriver (4.42.0)
+    selenium-webdriver (4.43.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
