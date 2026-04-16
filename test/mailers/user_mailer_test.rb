@@ -99,7 +99,6 @@ class UserMailerTest < ActionMailer::TestCase
   end
 
   def test_diary_comment_notification
-    create(:language, :code => "en")
     user = create(:user)
     other_user = create(:user)
     diary_entry = create(:diary_entry, :user => user)
@@ -142,7 +141,6 @@ class UserMailerTest < ActionMailer::TestCase
   end
 
   def test_changeset_comment_notification
-    create(:language, :code => "en")
     user = create(:user)
     other_user = create(:user)
     changeset = create(:changeset, :user => user)
