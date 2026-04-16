@@ -412,7 +412,7 @@ pl:
         retain_changeset_discussions: Twoje ewentualne komentarze pod zestawami zmian
           zostaną zachowane.
         retain_email: Twój adres e-mail zostanie zachowany.
-        recent_editing_html: Ponieważ niedawno edytowałeś, Twoje konto nie może zostać
+        recent_editing_html: Ponieważ niedawno edytowałeś, twoje konto nie może zostać
           obecnie usunięte. Usunięcie będzie możliwe za %{time}.
         confirm_delete: Na pewno?
         cancel: Anuluj
@@ -2038,7 +2038,7 @@ pl:
       communities: Społeczności
       copyright: Prawa autorskie
       donate: Dotacje
-      edit: Edycja
+      edit: Edytuj
       edit_with: Edytuj w %{editor}
       export: Eksport
       gps_traces: Ślady GPS
@@ -3459,7 +3459,7 @@ pl:
       blocks on me: Otrzymane blokady
       blocks by me: Nałożone blokady
       create_mute: wycisz tego użytkownika
-      destroy_mute: odcisz tego użytkownika
+      destroy_mute: wyłącz wyciszenie tego użytkownika
       send message: wyślij wiadomość
       diary: dziennik
       edits: edycje
@@ -3749,11 +3749,11 @@ pl:
           unmute: Wyłącz wyciszenie
           send_message: Wyślij wiadomość
     create:
-      notice: Wyciszyłeś użytkownika %{name}.
+      notice: Wyciszono użytkownika %{name}.
       error: Nie udało się wyciszyć użytkownika %{name}. %{full_message}
     destroy:
-      notice: Odciszyłeś użytkownika %{name}.
-      error: Nie udało się odciszyć użytkownika. Spróbuj ponownie.
+      notice: Wyłączono wyciszenie użytkownika %{name}.
+      error: Nie udało się wyłączyć wyciszenia użytkownika. Spróbuj ponownie.
   notes:
     index:
       title: Uwagi użytkownika %{user}

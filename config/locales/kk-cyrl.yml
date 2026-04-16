@@ -714,6 +714,10 @@ kk-cyrl:
     new:
       heading: Осы өңдеме дестесісінің пікірталасына комментариий қалдырасыз ба?
   doorkeeper:
+    errors:
+      messages:
+        account_selection_required: Авторизация сервері соңғы пайдаланушының тіркелгісін
+          таңдауды талап етеді
     flash:
       applications:
         create:
@@ -1249,12 +1253,18 @@ kk-cyrl:
           isthmus: Мойнақ
           land: Жер
           marsh: Сазды жер
+          mud: Балшық
           peak: Шың
           peninsula: Түбек
+          point: Мүйіс
           reef: Риф
           ridge: Жота
+          rock: Жартас
           saddle: Асу
           sand: Құм
+          scree: Шөгінді
+          scrub: Бұта
+          shingle: Жұмыр тас
           spring: Бұлақ
           stone: Тас
           strait: Бұғаз
@@ -1264,36 +1274,50 @@ kk-cyrl:
           valley: Аңғар
           volcano: Жанартау
           water: Су
+          wetland: Батпақтанған аумақ
           wood: Орман
+          "yes": Табиғи нысан
         office:
+          accountant: Бухгалтер
           administrative: Әкімшілік
           advertising_agency: Жарнама агенттігі
           architect: Сәулетші
           association: Қауымдастық
           company: Компания
+          diplomatic: Дипломатиялық кеңсе
           educational_institution: Оқу орнының әкімшілігі
           employment_agency: Жұмыспен қамту агенттігі
+          energy_supplier: Энергия жеткізушісінің кеңсесі
           estate_agent: Жылжымайтын мүлік агенттігі
+          financial: Қаржылық кеңсе
           government: Мемлекеттік мекеме
           insurance: Сақтандыру компаниясы
           it: IT кеңсесі
           lawyer: Заңгер
+          logistics: Логистика кеңсесі
+          newspaper: Газет кеңсесі
+          ngo: Бейкоммерциялық ұйым кеңсесі
           notary: Нотариус
+          religion: Діни кеңсе
           research: Ғылыми-зерттеу ұйымы
           tax_advisor: Салық кеңесшісі
           telecommunication: Телекоммуникациялық компанияның кеңсесі
           travel_agent: Туристік агенттік
           "yes": Кеңсе
         place:
+          allotments: Саяжайлар
           archipelago: Архипелаг
           city: Қала
+          city_block: Қалалық махалла
           country: Ел
           county: Ел
           farm: Ферма
+          hamlet: Қыстақ/Кішкентай ауыл
           house: Үй
           houses: Үйлер
           island: Арал
           islet: Аралшық
+          isolated_dwelling: Айдаладағы тұратын жер
           locality: Мекен, ескі жұрт
           municipality: Муниципалитет
           neighbourhood: Көршілестік
@@ -1311,19 +1335,40 @@ kk-cyrl:
           "yes": Орын
         railway:
           abandoned: Пайдаланылмайтын темір жол
+          buffer_stop: Буферлік аялдама
+          construction: Салынып жатқан темір жол
+          disused: Қолданыстан шыққан темір жол
           funicular: Фуникулёр
+          halt: Теміржол станциясы
+          junction: Теміржол көрсеткіш оғы
+          level_crossing: Теміржол өткелі
           light_rail: Жеңіл рельсті көлік
+          miniature: Темір жол макеті
           monorail: Монорельс
           narrow_gauge: Тар табанды темір жол
+          platform: Теміржол платформасы
+          preserved: Тарихи темір жол
+          proposed: Жобадағы темір жол
+          rail: Рельс
+          spur: Темір жолдың тармағы
           station: Темір жол бекеті
+          stop: темір жол аялдамасы
           subway: Метро
+          subway_entrance: Метро кіреберісі
           tram: Трамвай
           tram_stop: Трамвай аялдамасы
+          turntable: Т/ж айналдыратын шеңбері
+          yard: Депо
         shop:
+          agrarian: Аграрлық дүкен
+          alcohol: Алкоголь дүкені
           antiques: Антиквариат
           appliance: Тұрмыстық техника дүкені
+          art: Көркемөнер дүкені
           baby_goods: Балалар тауарлары
+          bag: Сөмкелер дүкені
           bakery: Наубайхана
+          bathroom_furnishing: Ванна жиһазы
           beauty: Сұлулық салоны
           bed: Төсек жабдықтары
           beverages: Сусын дүкені
@@ -1332,6 +1377,7 @@ kk-cyrl:
           books: Кітап дүкені
           boutique: Бутик
           butcher: Ет дүкені
+          car: Автокөлік дүкені
           car_parts: Автобөлшектер
           car_repair: Автошеберхана
           carpet: Кілем дүкені
@@ -1351,17 +1397,25 @@ kk-cyrl:
           dairy: Сүт өнімдері дүкені
           deli: Деликатестер
           department_store: Сауда үйі
+          discount: Жаппай сату дүкені
+          doityourself: '"Өз қолыңмен жаса" дүкені'
           dry_cleaning: Химтазалау
           e-cigarette: Электронды темекі дүкені
           electronics: Электроника дүкені
+          erotic: Эротикалық тауарлар дүкені
           estate_agent: Жылжымайтын мүлік агенттігі
           fabric: Мата дүкені
+          farm: Фермерлік өнімдер дүкені
           fashion: Сәнді киім дүкені
           fishing: Балық аулау құралдары
           florist: Гүлдер дүкені
+          food: Азық-түлік
+          frame: Жақтаулар дүкені
           funeral_directors: Жерлеу қызметтері
           furniture: Жиһаз
+          garden_centre: Бау-бақша орталығы
           gas: Газ дүкені
+          general: Дүкен
           gift: Сыйлықтар дүкені
           greengrocer: Көкөністер дүкені
           grocery: Шағын маркет
@@ -1369,28 +1423,45 @@ kk-cyrl:
           hardware: Шаруашылық дүкені
           health_food: Пайдалы ас дүкені
           hearing_aids: Есту аппараттары
+          herbalist: Шөппен емдеуші
+          hifi: Аудио-/видео-аппаратура дүкені
           houseware: Ыдыс-аяқ дүкені
           ice_cream: Балмұздақ дүкені
+          interior_decoration: Интерьер безендіру
           jewelry: Зергерлік дүкен
+          kiosk: Дүңгіршек
+          kitchen: Асүй дүкені
           laundry: Кір жуатын орын
+          locksmith: Слесарь
           lottery: Лотерея
           mall: Сауда орталығы
           massage: Массаж
+          medical_supply: Медициналық тауарлар дүкені
           mobile_phone: Ұялы телефондар дүкені
           money_lender: Кредитор
           motorcycle: Мотоцикл дүкені
           motorcycle_repair: Мотоцикл жөндейтін орын
+          music: Музыкалық дүкен
           musical_instrument: Музыкалық аспаптар
+          newsagent: Газет дүңгіршегі
           nutrition_supplements: Тағамдық қоспалар
           optician: Оптика
+          organic: Табиғи өнімдер дүкені
+          outdoor: Демалысқа арналған тауарлар дүкені
+          paint: Суретшінің дүкені
+          pastry: Кондитерлік дүкен
           pawnbroker: Ломбард
           perfumery: Парфюмерия
+          pet: Зоодүкен
+          pet_grooming: Үй жануарларына күтім
+          photo: Фотодүкен
           seafood: Теңіз өнімдері
           second_hand: Секонд-хенд дүкені
           sewing: Тігін жабдықтары
           shoes: Аяқ киім дүкені
           sports: Спорт дүкені
           stationery: Кеңсе тауарлары
+          storage_rental: Қойма жалдау
           supermarket: Супермаркет
           tailor: Тігінші
           tattoo: Тату салоны
@@ -1401,25 +1472,49 @@ kk-cyrl:
           travel_agency: Туристік агенттік
           tyres: Шиналар дүкені
           vacant: Бос тұрған дүкен
+          variety_store: Бағасы бір дүкен
+          video: Видеожазба дүкені
+          video_games: Видеоойын дүкені
           wholesale: Көтерме сауда дүкені
           wine: Шарап дүкені
           "yes": Дүкен
         tourism:
+          alpine_hut: Альпілік там
+          apartment: Демалыстық пәтер
           artwork: Өнер туындысы
           attraction: Көрнекі орын
+          bed_and_breakfast: Жартылай пансион
+          cabin: Туристік шағын үй
+          camp_pitch: Кемпинг
+          camp_site: Лагерь
+          caravan_site: Автокеруен тұрағы
+          chalet: Шале
           gallery: Галерея
+          guest_house: Мейманхана
           hostel: Хостел
           hotel: Қонақ үй
           information: Ақпарат
           motel: Мотель
           museum: Музей
+          picnic_site: Пикник жасайтын орын
+          theme_park: Ойын-сауық паркі
+          viewpoint: Шолу алаңы
+          wilderness_hut: Жабайы табиғаттағы там
           zoo: Хайуанаттар бағы
         tunnel:
+          building_passage: Ғимиарат өткелі
+          culvert: Сужүргізу құбыры
           "yes": Туннель
         water:
           lake: Көл
           pond: Тоған
           reservoir: Бөген
+          basin: Суайдын
+          fishpond: Балық тоғаны
+          lagoon: Лагуна
+          wastewater: Қалдық су
+          oxbow: Ескі арна
+          lock: Шлюз
         waterway:
           dam: Бөгет
           lock: Шлюз
@@ -1441,27 +1536,79 @@ kk-cyrl:
         level9: Әкімшілік-аумақтық шекара (9-деңгей)
         level10: Әкімшілік-аумақтық шекара (10-деңгей)
         level11: Әкімшілік-аумақтық шекара (11-деңгей)
+      border_types:
+        city: Қалалық шекара
+        comarca: Комарка шекарасы
+        county: Аймақтық шекара
+        nation: Халықаралық шекара
+        national: Халықаралық шекара
+        village: Ауыл шекарасы
   searches:
     show:
       title:
         latlon: Ішкі
+        nominatim: Nominatim
+        nominatim_reverse: Nominatim
     queries:
       create:
         no_results: Ештеңе табылмады
+        more_results: Тағы нәтижелер
   directions:
     show:
+      title: Бағдар
       distance: Арақашықтық
       time: Уақты
       ascend: Өр
       descend: Еңіс
       kilometers: километр
+      miles_feet: миль, фут
+      miles_yards: миль, ярд
+      filename: бағдар
   issues:
     index:
+      title: Мәселелер
+      select_status: Статусын таңдаңыз
+      select_type: Түрін таңдаңыз
+      select_last_managed_by: Кім басқарғаны бойынша таңдаңыз
       search: Іздеу
+      search_guidance: 'Мәселелерді іздеу:'
       states:
+        ignored: Ескерілмеді
         open: Ашық
+        resolved: Өңделді
+    page:
+      user_not_found: Бұндай қатысушы жоқ
+      issues_not_found: Бұндай мәселелер табылмады
+      status: Статусы
+      reports: Шағымдар
+      last_updated: Соңғы өзгеріс
+      states:
+        ignored: Ескерілмеді
+        open: Ашық
+        resolved: Өңделді
     show:
+      title:
+        open: '#%{issue_id} ашық мәселесі'
+        ignored: '#%{issue_id} ескерілмеген мәселесі'
+        resolved: '#%{issue_id} өңделген мәселесі'
+      reports:
+        one: '%{count} шағым'
+        other: '%{count} шағым'
+      no_reports: Шағым жоқ
+      report_created_at_html: '%{datetime} күнінде бірінші рет шағымдалды'
+      last_resolved_at_html: '%{datetime} күнінде соңғы рет өңделді'
+      last_updated_at_html: Соңғы рет %{displayname} қолданушысы %{datetime} күні
+        жаңартты
+      resolve: Шешу
+      ignore: Елемеу
       reopen: Қайта ашу
+      read_reports: Шағымдарды оқу
+      new_reports: Жаңа шағымдар
+      other_issues_against_this_user: Осы қатысушыға қарсы басқа мәселелер
+      no_other_issues: Осы қатысушыға қарсы басқа мәселелер жоқ
+      comments_on_this_issue: Осы мәселе жайлы комментарийлер
+      comment_from_html: '%{comment_created_at} жазылған %{user_link} қатысушысынан
+        комментарий'
   reports:
     new:
       categories:
@@ -1470,18 +1617,36 @@ kk-cyrl:
         diary_comment:
           other_label: Басқа
         user:
+          vandal_label: Бұл қатысушы вандал
           other_label: Басқа
         note:
           spam_label: Бұл ескертпе спам
           personal_label: Бұл ескертпеде біреудің жеке дерегі бар
           abusive_label: Бұл ескертпеде балағат сөздер бар
           other_label: Басқа
+    create:
+      successful_report: Шағымыңыз сәтті түрде тіркелді
+      provide_details: Қажетті қосымша мәліметтерді енгізіңіз
   languages_panes:
     select_language_list:
       search_language: Ізделуде…
       languages:
         af: Африкаанс
+        gsw: Алеманнша
+        frp: Арпитанша/Франкопровансальша
+        ast: Астурианша
         az: Әзербайжанша
+        id: Индонезияша
+        ms: Малайша
+        bcl: Орталық бикольша
+        bs: Боснияша
+        br: Бретонша
+        ca: Каталанша
+        cs: Чехше
+        cy: Уэльсше
+        da: Датша
+        de: Немісше
+        dsb: Төменгі лужицаша
         et: Эстонша
         en: Ағылшынша
         en-GB: Ағылшынша (Ұлыбритания)
@@ -1489,16 +1654,37 @@ kk-cyrl:
         eo: Эсперантоша
         eu: Баскша
         fr: Французша
+        fy: Батыс фризша
+        fur: Фриульша
+        ga: Ирландша
+        gd: Шотландық кельтше
+        gl: Галицияша
+        aln: Албанша (гег диалекті)
+        hsb: Жоғарғы лужицаша
         hr: Хорватша
+        ia: Интерлингва
+        is: Исландша
         it: Итальянша
         hu: Венгрше
+        nl: Нидерландша
+        pl: Полякша
+        pt-PT: Португальша
+        pt: Португалша
+        ro: Румынша
         sq: Албанша
+        sk: Словакша
+        sl: Словенше
+        sr-Latn: Сербше (латын)
+        sh: сербохорватша (латын)
         fi: Финнше
         sv: Шведше
+        tl: Тагалог
+        vi: Вьетнамша
         tr: Түрікше
         el: Грекше
         ba: Башқұртша
         be: Беларусша
+        be-Tarask: Беларусша (тарашк.)
         bg: Болгарша
         mk: Македонша
         mo: Молдованша
@@ -1508,10 +1694,20 @@ kk-cyrl:
         tt: Татарша (кириллица)
         uk: Украинша
         kk-cyrl: Қазақша (кириллица)
+        yi: Идиш
         he: Ивритше
         ar: Арабша
         fa: Парсыша
         arz: Мысырлық арабша
+        ps: Пушту
+        nqo: Н'Ко
+        ne: Непалша
+        hi: Хинди
+        bn: Бенгалша
+        pa: Панджаби
+        gu: Гуджарати
+        ta: Тамильше
+        te: Телугу
         th: Тайша
         ka: Грузинше
         zh-CN: Қытайша (Жеңілдетілген)
@@ -1522,8 +1718,10 @@ kk-cyrl:
   layouts:
     logo:
       alt_text: OpenStreetMap логотибі
+    layer_info: Қабат жайлы ақпарат
     start_mapping: Картаға түсіруді бастау
     intro_header: OpenStreetMap-қа қош келдіңіз
+    terms_of_use: Қолдану шарттары
     tou: Қолдану шарты
     nothing_to_preview: Алдын ала қарайтын дым жоқ.
     learn_more: Көбірек білу
@@ -1538,12 +1736,16 @@ kk-cyrl:
       gps_traces: GPS-тректер
       help: Көмек
       history: Тарих
+      home: Үйге
+      issues: Мәселелер
       log_out: Шығу
       log_in: Кіру
       more: Тағы
       select_language: Тілді таңдау
       sign_up: Тіркелу
       user_diaries: Қатысушылар күнделіктері
+    meta:
+      openstreetmap_search: OpenStreetMap Іздеу
     select_language_button:
       title: Тілді таңдау
   user_mailer:
@@ -1556,6 +1758,14 @@ kk-cyrl:
         хабарлама жіберді:'
     follow_notification:
       hi: Сәлем, %{to_user},
+    gpx_details:
+      details: 'Файлыңыз туралы толығырақ:'
+      filename: Файл атауы
+      url: URL
+      description: Сипаттамасы
+      tags: Тегтер
+      total_points: Барлық нүктелер саны
+      imported_points: Импортталған нүктелер саны
     gpx_failure:
       hi: Сәлем, %{to_user},
     gpx_success:
@@ -1574,16 +1784,44 @@ kk-cyrl:
       greeting: Сәлем,
     changeset_comment_notification:
       hi: Сәлем, %{to_user},
+      commented:
+        partial_changeset_without_comment: Комментарийсіз
   confirmations:
     confirm:
+      heading: Электрондық поштаңызды тексеріңіз!
+      introduction_1: Біз растау хатын сіздің электрондық поштаңызға жібердік.
+      introduction_2: Аккаунтыңызды электрондық поштадағы сілтемені басу арқылы растаңыз,
+        содан кейін картаны өңдеуді бастай аласыз.
+      press confirm button: Аккаунтыңызды активациялау үшін астыдағы растау батырмасын
+        басыңыз.
       button: Растау
+      success: Аккаунтыңызды растадық, тіркелгеніңіз үшін рахмет!
+      already active: Бұл аккаунт расталып қойған.
+      unknown token: Бұл растау кодының мерзімі өтіп кетті немесе ондай код жоқ
+      if_need_resend: Растау хатын қайтып жіберу керек болса, төмендегі батырманы
+        басыңыз.
+      resend_button: Растау хатын қайтып жіберу
+    confirm_resend:
+      failure: '%{name} дейтін қатысушы табылмады.'
+    confirm_email:
+      heading: Электрондық пошта мекенжайының өзгеруін растаңыз
+      press confirm button: Жаңа электрондық пошта мекенжайын растау үшін, астыдағы
+        растау батырмасын басыңыз
+      button: Құптау
+      success: Электрондық пошта мекенжайының өзгеруін растадық!
+      failure: Бұл токен арқылы электрондық пошта мекенжайы бұрыннан расталып қойған.
+      unknown_token: Бұл растау кодының мерзімі өтіп кетті немесе ондай код жоқ
     gravatar:
       disabled: Gravatar сөндірілді.
   messages:
     new:
       title: Хабарлама жіберу
+      send_message_to_html: '%{name} қатысушысына жаңа хабарлама жіберу'
+      back_to_inbox: Кіріс қалтасына қайту
     create:
       message_sent: Хабарлама жіберілді
+      limit_exceeded: Сіз соңғы уақытта көп хабарлама жібердіңіз. Тағы жібермес бұрын
+        біраз күте тұрыңыз.
     no_such_message:
       title: Ондай хабарлама жоқ
       heading: Ондай хабарлама жоқ
@@ -1601,11 +1839,20 @@ kk-cyrl:
         notice: Хабарлама оқылды деп белгіленді
       destroy:
         notice: Хабарлама оқылмаған деп белгіленді
+    mutes:
+      destroy:
+        notice: Хабарлама кіріс қалтасына көшірілді
+        error: Хабарлама кіріс қалтасына көшіріле алмады.
     mailboxes:
+      heading:
+        my_inbox: Кіріс хаттарым
+        my_outbox: Жіберілген хаттарым
+        muted_messages: Дыбыссыз хабарламаларлар
       messages_table:
         from: Кімнен
         to: Кімге
         subject: Тақырып
+        date: Күні
         actions: Әрекеттер
       message:
         unread_button: Оқылмаған деп белгілеу
@@ -1622,6 +1869,9 @@ kk-cyrl:
         old_messages:
           one: '%{count} ескі хабарлама'
           other: '%{count} ескі хабарлама'
+    muted_inboxes:
+      show:
+        title: Дыбыссыз хабарламаларлар
     outboxes:
       show:
         messages:
@@ -1642,26 +1892,42 @@ kk-cyrl:
     update:
       flash changed: Пароліңіз өзгертілді.
   preferences:
+    preferences:
+      navigation:
+        preferences: Баптаулар
+        advanced_preferences: Күрделі баптаулар
     basic_preferences:
       show:
         title: Қалайтындарым
+        preferred_language: Қалаған тіл
+        preferred_site_color_scheme: Сайттың қалаған түстік схемасы
         site_color_schemes:
           auto: Автоматты түрде
           light: Жарық
           dark: Қараңғы
+        preferred_map_color_scheme: Картаның қалаған түстік схемасы
         map_color_schemes:
           auto: Сайттағыдай
           light: Жарық
           dark: Қараңғы
+        preferred_editor_color_scheme: Редактордың қалаған түстік схемасы
         editor_color_schemes:
           auto: Сайттағыдай
           light: Жарық
           dark: Қараңғы
+        save: Қалғандарымды жаңарту
+    advanced_preferences:
+      show:
+        title: Күрделі баптауларым
+        save: Қалғандарымды жаңарту
   profiles:
     profile_sections:
       navigation:
+        description: Сипаттамасы
+        links: Сілтемелер
         image: Сурет
         company: Компания
+        location: Географиялық орны
     descriptions:
       show:
         title: Бейінді өңдеу
@@ -1671,11 +1937,20 @@ kk-cyrl:
         failure: Профиль сипаттамасын жаңарту мүмкін болмады
     links:
       show:
+        title: Профильді өңдеу
+        save: Профильді жаңарту
         cancel: Болдырмау
         social_links:
           remove: Алып тастау
+          add: Әлеуметтік сілтеме қосу
+      update:
+        success: Профиль сілтемелері жаңартылды.
+        failure: Профиль сілтемелері жаңартыла алмады.
     images:
       show:
+        title: Профильді өңдеу
+        save: Профильді жаңарту
+        cancel: Болдырмау
         gravatar:
           gravatar: Gravatar-ды қолдану
           what_is_gravatar: Gravatar деген не?
@@ -1683,12 +1958,26 @@ kk-cyrl:
         keep image: Қазір тұрған суретті қалдыру
         delete image: Қазір тұрған суретті алып тастау
         replace image: Қазір тұрған суретті ауыстыру
+        image size hint: (шаршы суреттер, ең болмса 100x100, жақсы келеді)
+      update:
+        success: Профиль суреті жаңартылды.
+        failure: Профиль суреті жаңартыла алмады.
+    companies:
+      show:
+        title: Профильді өңдеу
+        save: Профильді жаңарту
+        cancel: Болдырмау
     locations:
       show:
+        title: Профильді өңдеу
+        save: Профильді жаңарту
         cancel: Болдырмау
         show: Көрсету
         delete: Өшіріп тастау
         undelete: Өшіргенді істетпеу
+      update:
+        success: Профиль мекенжайы жаңартылды.
+        failure: Профиль мекенжайын жаңарту мүмкін болмады.
     heatmaps:
       show:
         cancel: Болдырмау
@@ -1699,17 +1988,30 @@ kk-cyrl:
       remember: Мені есте сақта
       lost password link: Пароліңді жоғалтып алдың ба?
       login_button: Кіру
+      with external: болмаса басқа сайт арқылы кіріңіз
       or: немесе
+      auth failure: Кешірерсіз, бұл логин, парольмен кіру мүмкін емес.
     destroy:
       title: Шығу
       heading: OpenStreetMap-тан шығу
       logout_button: Шығу
+    suspended_flash:
+      suspended: Кешірерсіз, аккаунтыңыз күдікті белсенділікке байланысты бұғатталды.
   shared:
     markdown_help:
+      headings: Бөлімдер
+      heading: Бөлім
+      subheading: Тақырыпат
+      unordered: Реттелмеген тізім
+      ordered: Реттелген тізім
+      first: Бірінші элемент
+      second: Екінші элемент
       link: Сілтеме
       text: Мәтін
       image: Сурет
+      alt: Балама мәтін
       url: URL
+      codeblock: Код жиынтығы
     richtext_field:
       edit: Өңдеу
       preview: Алдын ала қарау
@@ -1728,11 +2030,38 @@ kk-cyrl:
       diary_entries:
         older: Ескілеу жазбалар
         newer: Жаңалау жазбалар
+        oldest: Ең ескі жазбалар
+        newest: Ең жаңа жазбалар
+      issues:
+        older: Ескілеу мәселелер
+        newer: Жаңалау мәселелер
+        oldest: Ең ескі мәселелер
+        newest: Ең жаңа мәселелер
+      traces:
+        older: Ескілеу тректер
+        newer: Жаңалау тректер
+        oldest: Ең ескі тректер
+        newest: Ең жаңа тректер
+      user_blocks:
+        older: Ескілеу бұғаттамалар
+        newer: Жаңалау бұғаттамалар
+        oldest: Ең ескі бұғаттамалар
+        newest: Ең жаңа бұғаттамалар
+      users:
+        older: Ескілеу қатысушылар
+        newer: Жаңалау қатысушылар
+        oldest: Ең ескі қатысушылар
+        newest: Ең жаңа қатысушылар
   site:
+    about:
+      heading_html: '%{copyright}OpenStreetMap авторлары%{br}'
+      used_by_html: '%{name} мыңдаған сайттарға, мобильді қолданбаларға және құрылғыларға
+        карта деректерін ұсынады'
     about_section:
       open_data_title: Ашық дерек
       legal_attribution_example_film_title: Фильм
       legal_attribution_example_tv_title: ТВ
+      partners_title: Әріптестер
     copyright:
       foreign:
         title: Бұл аударма туралы
@@ -1766,6 +2095,7 @@ kk-cyrl:
         overpass:
           title: Overpass API
       export_button: Экспорттау
+      export_download: Жазылуда...
       confirmation:
         cancel: Болдырмау
         download: Жүктеп алу
@@ -1775,9 +2105,12 @@ kk-cyrl:
         join_the_community:
           title: Қауымдастыққа қосылу
     help:
+      title: Анықтама алу
       welcome:
         url: /welcome
         title: OpenStreetMap-қа қош келдіңіз
+      beginners_guide:
+        title: Бастаушыларға нұсқаулық
       community:
         title: Көмек және қоғамдастық форумы
       irc:
@@ -1805,7 +2138,11 @@ kk-cyrl:
         foot: Жаяу
     welcome:
       title: Қош келдіңіз!
+      introduction: Ашық және ерікті әлем картасы OpenStreetMap-қа қош келдіңіз. Енді
+        тіркелгеннен кейін, картографиялауға дайынсыз. Мұнда білуге міндетті ең маңызды
+        нәрселер туралы қысқаша нұсқаулық берілген.
       whats_on_the_map:
+        title: Картада не бар
         doesnt: жоқ
       basic_terms:
         node: нүкте
@@ -1835,6 +2172,7 @@ kk-cyrl:
         rail: Темір жол
         train: Пойыз
         subway: Метро
+        ferry: Сал қайық
         light_rail: Жеңіл рельсті көлік
         tram: Трамвай
         trolleybus: Толлейбус
@@ -1842,6 +2180,9 @@ kk-cyrl:
         apron: Әуежай перроны
         admin: Әкімшілік шекара
         capital: Астана
+        city: Қала
+        orchard: Жеміс бағы
+        vineyard: Жүзімдік
         forest: Орман
         wood: Тоғай
         farmland: Ауылшаруашылық алқабы
@@ -1851,10 +2192,20 @@ kk-cyrl:
         sand: Құм
         golf: Гольф алаңы
         park: Саябақ
+        common: Ортақ жер
+        built_up: Құрылыс алаңы
         resident: Тұрғын аудан
         retail: Сауда аймағы
         industrial: Өнеркәсіптік аймақ
+        commercial: Іскерлік аймақ
+        heathland: Аршагүл далалығы
+        scrubland: Скрэб
         lake: Көл
+        reservoir: Бөген
+        intermittent_water: Еспе құр суайдыны
+        glacier: Мұздық
+        reef: Риф
+        wetland: Батпақтанған аумақ
         farm: Ферма
         cemetery: Зират
         allotments: Саяжайлар
@@ -1897,9 +2248,10 @@ kk-cyrl:
     show:
       filename: 'Файл атауы:'
       download: жүктеп алу
-      map: карта
+      map: мекенжайын картадан көру
       edit: өңдеу
       owner: 'Иесі:'
+      description: 'Сипаттамасы:'
       tags: 'Тэгтер:'
       none: Жоқ
       delete_trace: Осы тректі өшіріп тастау
@@ -1940,15 +2292,27 @@ kk-cyrl:
       edit: Өңдеу
       delete: Өшіріп тастау
       confirm_delete: Осы қосымшаны өшіргіңіз келе ме?
+  oauth2_authorizations:
+    new:
+      deny: Бас тарту
   oauth2_authorized_applications:
     index:
       permissions: Рұқсаттар
   users:
     new:
+      about:
+        header: Ашық та өңделмелі.
+        paragraph_1: Басқа карталарға қарағада, OpenStreetMap толықтай сіз сияқты
+          адамдардың күшімен жасалған және оны кез келген адам тегін түзете, жаңарта,
+          жүктей және қолдана алады.
+        welcome: OpenStreetMap-қа қош келдіңіз
       display name description: Басқа қолданушыларға көрінетін атыңыз. Кейінірек оны
         баптауларда өзгерте аласыз.
+      continue: Тіркелу
       or: немесе
     no_such_user:
+      title: Ондай қатысушы жоқ
+      heading: '%{user} дейтін қатысушы жоқ'
       deleted: өшірілді
     show:
       my diary: Күнделігім
@@ -1957,7 +2321,10 @@ kk-cyrl:
       my notes: Ескертпелерім
       my messages: Хабарламаларым
       my profile: Профилім
+      my_account: Менің аккаунтым
+      my comments: Комментарийларым
       my_preferences: Қалайтындарым
+      my_dashboard: Ақпарат панелім
       send message: Хабарлама жіберу
       diary: Күнделік
       traces: Тректер
@@ -1999,6 +2366,8 @@ kk-cyrl:
   notes:
     index:
       description: Сипаттама
+      apply: Қолданысқа енгізу
+      all: Барлығы
     show:
       title: 'Ескертпе: %{id}'
       description: Сипаттама
@@ -2008,10 +2377,13 @@ kk-cyrl:
       add: Ескертпе қосу
     notes_paging_nav:
       showing_page: '%{page}-беті'
+      next: Келесі
+      previous: Алдыңғы
   javascripts:
     close: Жабу
     share:
       title: Бөлісу
+      filename: карта
     legend:
       title: Шартты белгілер
       tooltip: Шартты белгілер
@@ -2033,8 +2405,15 @@ kk-cyrl:
       queryfeature_tooltip: Мұнда не бар?
       queryfeature_disabled_tooltip: Маңайдағы нысандарды көру үшін картаны жақындатыңыз
     directions:
+      distance_in_units:
+        m: '%{distance}м'
+        km: '%{distance}км'
+        ft: '%{distance}фут'
+        yd: '%{distance}ярд'
+        mi: '%{distance}миль'
       instructions:
         via_point_without_exit: (нүкте арқылы)
+        start_without_exit: '%{name} дегенен бастаңыз'
         unnamed: атаусыз жол
         exit_counts:
           first: 1-ші
@@ -2051,6 +2430,8 @@ kk-cyrl:
       node: Нүкте
       way: Сызық
       relation: Қатынас
+    element:
+      wikipedia: Уикипедия
     context:
       directions_from: Осы жерден маршрут құру
       directions_to: Осы жерге маршрут құру

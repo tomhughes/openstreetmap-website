@@ -3799,16 +3799,17 @@ da:
         slight_left_without_exit: Svagt til venstre ind på %{name}
         via_point_without_exit: (via punkt)
         follow_without_exit: Følg %{name}
-        roundabout_without_exit: Ved rundkørslen, tag afkørsel mod %{name}
+        roundabout_without_exit: Ved rundkørslen, tag afkørslen ind på %{name}
         leave_roundabout_without_exit: Forlad rundkørslen - %{name}
         stay_roundabout_without_exit: Bliv i rundkørslen - %{name}
         start_without_exit: Start på %{name}
         destination_without_exit: Nå målet
         against_oneway_without_exit: Kør mod ensretningen på %{name}
         end_oneway_without_exit: Slutningen af ensretningen på %{name}
-        roundabout_with_exit: Ved rundkørslen, tag afkørsel %{exit} mod %{name}
-        roundabout_with_exit_ordinal: Ved rundkørslen, tag afkørsel %{exit} mod %{name}
-        exit_roundabout: Forlad rundkørsel mod %{name}
+        roundabout_with_exit: Ved rundkørslen, tag afkørsel %{exit} ind på %{name}
+        roundabout_with_exit_ordinal: Ved rundkørslen, tag %{exit} afkørsel ind på
+          %{name}
+        exit_roundabout: Forlad rundkørslen ind på %{name}
         ferry_without_exit: Tag færgen %{name}
         unnamed: unavngiven vej
         exit_counts:

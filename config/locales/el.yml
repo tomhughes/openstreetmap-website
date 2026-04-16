@@ -3447,13 +3447,13 @@ el:
         να επεξεργαστείτε τον χάρτη.
     issued_blocks:
       show:
-        title: Φραγές από τον/την %{name}
-        heading_html: Κατάλογος φραγών από τον/την %{name}
+        title: Φραγές από %{name}
+        heading_html: Λίστα φραγών από %{name}
         empty: Ο/Η %{name} δεν έχει κάνει φραγή ακόμη.
     received_blocks:
       show:
-        title: Φραγές στον/στην %{name}
-        heading_html: Κατάλογος φραγών στον/στην %{name}
+        title: Φραγές σε %{name}
+        heading_html: Λίστα φραγών σε %{name}
         empty: Ο/Η %{name} δεν έχει φραγεί ακόμη.
       edit:
         title: Ανάκληση όλων των φραγών σε %{block_on}
@@ -3578,7 +3578,7 @@ el:
       success: Η φραγή ενημερώθηκε.
     index:
       title: Φραγές χρήστη
-      heading: Λίστα φραγών του χρήστη
+      heading: Λίστα φραγών χρηστών
       empty: Δεν έχουν γίνει ακόμη φραγές.
     helper:
       time_future_html: Τελειώνει σε %{time}.
@@ -3632,9 +3632,9 @@ el:
     navigation:
       all_blocks: Όλες οι φραγές
       blocks_on_me: Φραγές σε μένα
-      blocks_on_user_html: Φραγές στον/στην %{user}
+      blocks_on_user_html: Φραγές σε %{user}
       blocks_by_me: Φραγές από μένα
-      blocks_by_user_html: Φραγές από τον/την %{user}
+      blocks_by_user_html: Φραγές από %{user}
       block: 'Φραγή #%{id}'
       new_block: Νέα φραγή
   user_mutes:

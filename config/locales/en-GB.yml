@@ -949,14 +949,10 @@ en-GB:
           hairdresser: Hairdresser
           hardware: Hardware Store
           houseware: Houseware Shop
-          interior_decoration: Interior Decoration
           jewelry: Jewellery Shop
           kiosk: Kiosk Shop
-          kitchen: Kitchen Shop
           laundry: Laundry
-          lottery: Lottery
           mall: Mall
-          massage: Massage
           mobile_phone: Mobile Phone Shop
           motorcycle: Motorcycle Shop
           music: Music Shop
@@ -964,8 +960,6 @@ en-GB:
           optician: Optician
           organic: Organic Food Shop
           outdoor: Outdoor Shop
-          paint: Paint Shop
-          pawnbroker: Pawnbroker
           pet: Pet Shop
           photo: Photo Shop
           seafood: Seafood
@@ -974,7 +968,6 @@ en-GB:
           sports: Sports Shop
           supermarket: Supermarket
           tailor: Tailor
-          ticket: Ticket Shop
           tobacco: Tobacconist
           toys: Toy Shop
           travel_agency: Travel Agency
