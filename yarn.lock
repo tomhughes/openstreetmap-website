@@ -204,71 +204,71 @@
     "@eslint/core" "^1.2.1"
     levn "^0.4.1"
 
-"@herb-tools/config@0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@herb-tools/config/-/config-0.9.5.tgz#9a8abd8841066ae8f2698f2092b3a58df24980f1"
-  integrity sha512-tVUvgxHZgoKSOChotYEIn8iNquavTd6RgzOfRk7NSokXlVpHOYf2wF94X+nGS0cDyj6pOxTIae9RF6LPAbRVEg==
+"@herb-tools/config@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@herb-tools/config/-/config-0.9.6.tgz#60fff48a35cdf50d4d276bbe7242fb8fe93f9348"
+  integrity sha512-GE3KkN7749HFrsdhjdt7qJixVasOU6Mk748gwuw4xeOIwzU3u+z4D832IohbsuoWjF65iV7GuB1t0o2U8KpgeA==
   dependencies:
-    "@herb-tools/core" "0.9.5"
+    "@herb-tools/core" "0.9.6"
     picomatch "^4.0.4"
-    tinyglobby "^0.2.15"
+    tinyglobby "^0.2.16"
     yaml "^2.8.3"
 
-"@herb-tools/core@0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@herb-tools/core/-/core-0.9.5.tgz#7fd75301da8d3bedc3e9f0c2dbc020b36e44b349"
-  integrity sha512-YgPunnLxCu3L5IrZkPFFyp32jNSThIBbqhdXyJyFBXn4/36gWHu19SKXXfoHx/fQvFP5HkX30IvkF4LGV3MH2g==
+"@herb-tools/core@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@herb-tools/core/-/core-0.9.6.tgz#b212270fd20d378b9ee4497c683e91ef686622cd"
+  integrity sha512-H0LsafXLv8ouj/jWKDkdaojUDmd5ssV3CjmSuZEoxb5qIyHt/xqXC+3HY51eUP0MNrHPDMipRV7kW9qNWENcSA==
 
-"@herb-tools/highlighter@0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@herb-tools/highlighter/-/highlighter-0.9.5.tgz#971ef561c1265c6857a9d2352a686a9456efbb76"
-  integrity sha512-B2Mm6v4eGzVFpWlKk0O4m8PvMz/8bubOlR85eBDoAnGy2KcWacBSEIyX/y2VXVmp7QH9D3ugbQ8EEVgDFNccvg==
+"@herb-tools/highlighter@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@herb-tools/highlighter/-/highlighter-0.9.6.tgz#7b0389c1d6d8ce2fa2325e27ec0212c1648b1bad"
+  integrity sha512-oHSTDlww+gJxODQJBOFdVV+ZEDapmXMEBKuBwKd5bySdkWos9zDVTKf/ygnOIT2ZCnQMNuwhz6y63AyzRy2D6Q==
   dependencies:
-    "@herb-tools/core" "0.9.5"
-    "@herb-tools/node-wasm" "0.9.5"
+    "@herb-tools/core" "0.9.6"
+    "@herb-tools/node-wasm" "0.9.6"
 
 "@herb-tools/linter@^0.9.2":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@herb-tools/linter/-/linter-0.9.5.tgz#d46486f351630161816632e8d9ebc39adbdf7837"
-  integrity sha512-XUc0HPRdwCtMFq9+a/dlIRAHgRZ69hiwnlU7F1h53DdeyL41ZGkpFRM+p7DAc+dj62EMVkK150OWIocmLUgw+w==
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@herb-tools/linter/-/linter-0.9.6.tgz#ca4ad0523dc0d870b2b2dab709a8b03abdf601fd"
+  integrity sha512-X7luRti9VcS/pQ/f71XqzaXogFg/oiCbbxZb+2VGjswbW4kzk+QW+C2KWXzeVth1VKFKnZGSS5C6zAHsp6IczA==
   dependencies:
-    "@herb-tools/config" "0.9.5"
-    "@herb-tools/core" "0.9.5"
-    "@herb-tools/highlighter" "0.9.5"
-    "@herb-tools/node-wasm" "0.9.5"
-    "@herb-tools/printer" "0.9.5"
-    "@herb-tools/rewriter" "0.9.5"
+    "@herb-tools/config" "0.9.6"
+    "@herb-tools/core" "0.9.6"
+    "@herb-tools/highlighter" "0.9.6"
+    "@herb-tools/node-wasm" "0.9.6"
+    "@herb-tools/printer" "0.9.6"
+    "@herb-tools/rewriter" "0.9.6"
     picomatch "^4.0.4"
     tinyglobby "^0.2.15"
 
-"@herb-tools/node-wasm@0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@herb-tools/node-wasm/-/node-wasm-0.9.5.tgz#5804a1c92a4ef6066770328d319d455684f676ba"
-  integrity sha512-BlFhsR5W5RuMQTBZeKPXEKhoJI8vbVuiZH7797CiDJ2BEhousFbSLjYr2fCTSseRY37caFP/m7/VVA4vZYVduw==
+"@herb-tools/node-wasm@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@herb-tools/node-wasm/-/node-wasm-0.9.6.tgz#bd431ee18011efde52609eafdf7c57097f89f121"
+  integrity sha512-eqWWI5U10qGQ5C3PKxP9tHQmX1YNfmA9VZpyueyQ8T6Sh7UmolLvTaRoA6QEl2Xj62jCiJ5C14/36OiwVBSveA==
   dependencies:
-    "@herb-tools/core" "0.9.5"
+    "@herb-tools/core" "0.9.6"
 
-"@herb-tools/printer@0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@herb-tools/printer/-/printer-0.9.5.tgz#903d38f7cac49335daab39ddede619a399560934"
-  integrity sha512-8Ftj3qoVOdNtpwuJWmUgrl6SV2ObsR9IEfuDbAs/yL0rr3mqtAtk5wkOqrx0xiwHxNFW0JB9zTTgY6zCFMJFhg==
+"@herb-tools/printer@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@herb-tools/printer/-/printer-0.9.6.tgz#45305e56ee81d5f9ba870c8ecf61f27e8a25d862"
+  integrity sha512-20uhj90hKGcTQaDTsxtJFhB2E6s4diplpGXFJRxmfNdgoFBQHh5P2Ssnq1W4lUGTZrlTD8P0b7iohqw+IhNONA==
   dependencies:
-    "@herb-tools/core" "0.9.5"
+    "@herb-tools/core" "0.9.6"
     tinyglobby "^0.2.15"
 
-"@herb-tools/rewriter@0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@herb-tools/rewriter/-/rewriter-0.9.5.tgz#149c8598c4f76cc533709f1cbabfe777823c7590"
-  integrity sha512-XtUqheyHZtE1gTL8PPEMneOaM6b1LndXBkeTk+PNUIG2NnZsU33ERPbbKQW48YkoA3HzMrBIM19zU0xvkmRaKA==
+"@herb-tools/rewriter@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@herb-tools/rewriter/-/rewriter-0.9.6.tgz#611b8d19355b1650cf095aad2c8b9429d86734f0"
+  integrity sha512-ZZywAoFEh7y8FozGz78iPPyWDg1vpjH/osI4xotvHULd0du8Vi3IN30oRfOUmqXdg2f6HOy9pSIBtqOTNku3Pw==
   dependencies:
-    "@herb-tools/core" "0.9.5"
-    "@herb-tools/tailwind-class-sorter" "0.9.5"
+    "@herb-tools/core" "0.9.6"
+    "@herb-tools/tailwind-class-sorter" "0.9.6"
     tinyglobby "^0.2.15"
 
-"@herb-tools/tailwind-class-sorter@0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@herb-tools/tailwind-class-sorter/-/tailwind-class-sorter-0.9.5.tgz#000813c24a997ec32f63968de191fc95e73e5447"
-  integrity sha512-xtFMknhguJbBOeNpXxAsdDJe5C4qUyi4+q/LqpU3/l0J5+8LXEYO+9Iy2F0C/QTGkdm9fHGNUQtiQWj1xTRuKg==
+"@herb-tools/tailwind-class-sorter@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@herb-tools/tailwind-class-sorter/-/tailwind-class-sorter-0.9.6.tgz#ccc5b3fe6432aa91bc5dd316d70d00218fcf738e"
+  integrity sha512-RHA+04Wy26S9unRAtL5zb4AX5eCA5l4Dmq5fVpawevuCgHeEegfr5RQNg7cHZR8svngixLGvylXQ6Hn4iYP97A==
   dependencies:
     clear-module "^4.1.2"
     escalade "^3.2.0"
@@ -372,10 +372,10 @@
   resolved "https://registry.yarnpkg.com/@maplibre/geojson-vt/-/geojson-vt-5.0.4.tgz#c5f301a5d227cecf0bf4d1ab9239b8b0b13e78fe"
   integrity sha512-KGg9sma45S+stfH9vPCJk1J0lSDLWZgCT9Y8u8qWZJyjFlP8MNP1WGTxIMYJZjDvVT3PDn05kN1C95Sut1HpgQ==
 
-"@maplibre/geojson-vt@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@maplibre/geojson-vt/-/geojson-vt-6.0.4.tgz#f028fa633594c067b4c24030c1c282c0dd6cc835"
-  integrity sha512-HYv3POhMRCdhP3UPPATM/hfcy6/WuVIf5FKboH8u/ZuFMTnAIcSVlq5nfOqroLokd925w2QtE7YwquFOIacwVQ==
+"@maplibre/geojson-vt@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@maplibre/geojson-vt/-/geojson-vt-6.1.0.tgz#c59a2b63a90e6214b2095358837b60f46c172e95"
+  integrity sha512-2eIY4gZxeKIVOZVNkAMb+5NgXhgsMQpOveTQAvnp53LYqHGJZDidk7Ew0Tged9PThidpbS+NFTh0g4zivhPDzQ==
   dependencies:
     kdbush "^4.0.2"
 
@@ -1248,9 +1248,9 @@ glob-parent@^6.0.2:
     is-glob "^4.0.3"
 
 globals@^17.3.0:
-  version "17.4.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-17.4.0.tgz#33d7d297ed1536b388a0e2f4bcd0ff19c8ff91b5"
-  integrity sha512-hjrNztw/VajQwOLsMNT1cbJiH2muO3OROCHnbehc8eY5JyD2gqz4AcMHPqgaOR59DjgUjYAYLeH699g/eWi2jw==
+  version "17.5.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-17.5.0.tgz#a82c641d898f8dfbe0e81f66fdff7d0de43f88c6"
+  integrity sha512-qoV+HK2yFl/366t2/Cb3+xxPUo5BuMynomoDmiaZBIdbs+0pYbjfZU+twLhGKp4uCZ/+NbtpVepH5bGCxRyy2g==
 
 hard-rejection@^2.1.0:
   version "2.1.0"
@@ -1478,9 +1478,9 @@ map-obj@^4.0.0:
   integrity sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==
 
 maplibre-gl@^5.22.0:
-  version "5.22.0"
-  resolved "https://registry.yarnpkg.com/maplibre-gl/-/maplibre-gl-5.22.0.tgz#b61a7f3add4e8e85077a5b585009dc7868b1c6fe"
-  integrity sha512-nc8YA+YSEioMZg5W0cb6Cf3wQ8aJge66dsttyBgpOArOnlmFJO1Kc5G32kYVPeUYhLpBja83T99uanmJvYAIyQ==
+  version "5.23.0"
+  resolved "https://registry.yarnpkg.com/maplibre-gl/-/maplibre-gl-5.23.0.tgz#a72d4cda848d93072b9a2334c0ea3beb11a92ea1"
+  integrity sha512-aou8YBNFS8uVtDWFWt0W/6oorfl18wt+oIA8fnXk1kivjkbtXi9gGrQvflTpwrR3hG13aWdIdbYWeN0NFMV7ag==
   dependencies:
     "@mapbox/jsonlint-lines-primitives" "^2.0.2"
     "@mapbox/point-geometry" "^1.1.0"
@@ -1488,7 +1488,7 @@ maplibre-gl@^5.22.0:
     "@mapbox/unitbezier" "^0.0.1"
     "@mapbox/vector-tile" "^2.0.4"
     "@mapbox/whoots-js" "^3.1.0"
-    "@maplibre/geojson-vt" "^6.0.4"
+    "@maplibre/geojson-vt" "^6.1.0"
     "@maplibre/maplibre-gl-style-spec" "^24.8.1"
     "@maplibre/mlt" "^1.1.8"
     "@maplibre/vt-pbf" "^4.3.0"
@@ -2040,13 +2040,13 @@ tinyexec@^1.0.2:
   resolved "https://registry.yarnpkg.com/tinyexec/-/tinyexec-1.0.2.tgz#bdd2737fe2ba40bd6f918ae26642f264b99ca251"
   integrity sha512-W/KYk+NFhkmsYpuHq5JykngiOCnxeVL8v8dFnqxSD8qEEdRfXk1SDM6JzNqcERbcGYj9tMrDQBYV9cjgnunFIg==
 
-tinyglobby@^0.2.15:
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.15.tgz#e228dd1e638cea993d2fdb4fcd2d4602a79951c2"
-  integrity sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==
+tinyglobby@^0.2.15, tinyglobby@^0.2.16:
+  version "0.2.16"
+  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.16.tgz#1c3b7eb953fce42b226bc5a1ee06428281aff3d6"
+  integrity sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==
   dependencies:
     fdir "^6.5.0"
-    picomatch "^4.0.3"
+    picomatch "^4.0.4"
 
 tinyqueue@^3.0.0:
   version "3.0.0"
