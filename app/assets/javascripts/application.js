@@ -214,7 +214,11 @@ $(function () {
           const query = $(this).val().toLowerCase();
           $(".language-item").each(function () {
             const text = $(this).text().toLowerCase();
-            $(this).toggle(text.indexOf(query) > -1);
+            // Get languageCode from link_to data attribute
+            const code = $(this).find("a").data("languageCode").toLowerCase();
+            // Show the item if the query matches either the language name or code
+            const matches = text.indexOf(query) > -1 || code.indexOf(query) > -1;
+            $(this).toggle(matches);
           });
         });
       }
