@@ -1,7 +1,9 @@
-version: 0.9.4
+version: 0.9.6
 
 linter:
   rules:
+    actionview-no-silent-helper:
+      enabled: false
     erb-no-unused-expressions:
       enabled: false
     erb-strict-locals-required:
