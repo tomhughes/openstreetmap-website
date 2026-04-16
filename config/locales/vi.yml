@@ -1157,7 +1157,7 @@ vi:
           sports_centre: Trung tâm Thể thao
           stadium: Sân vận động
           swimming_pool: Hồ Bơi
-          track: Đường Chạy
+          track: Đường Đua (Không phải Đua Xe)
           water_park: Công viên Nước
           "yes": Giải trí
         lock:
@@ -1705,6 +1705,7 @@ vi:
         ku-Latn: Kurd (Latinh)
         lv: Latvia
         lb: Luxembourg
+        lkt: Lakota
         lt: Litva
         hu: Hungary
         fit: Phần Lan Thung lũng Torne
@@ -1789,6 +1790,9 @@ vi:
       và %{partners} khác.
     partners_corpmembers: các thành viên công ty Quỹ OSM
     partners_partners: các công ty bảo trợ
+    welcome_tou_notice_html: Với việc sử dụng trang mạng này hoặc các cơ sở hạ tầng
+      khác do Quỹ OpenStreetMap cung cấp, bạn đồng ý với các %{terms_link}.
+    terms_of_use: Điều khoản Sử dụng
     tou: Điều khoản sử dụng
     nothing_to_preview: Không có gì để xem trước.
     learn_more: Tìm hiểu Thêm
@@ -2107,7 +2111,7 @@ vi:
       update_success_flash:
         message: Đã cập nhật tùy chỉnh.
       navigation:
-        preferences: Tùy chọn
+        preferences: Tùy chỉnh
         advanced_preferences: Tùy chỉnh Nâng cao
     basic_preferences:
       show:
@@ -2141,6 +2145,7 @@ vi:
         image: Hình
         company: Công ty
         location: Vị trí
+        contribution_calendar: Lịch Đóng góp
     descriptions:
       show:
         title: Sửa đổi Hồ sơ
@@ -2202,12 +2207,14 @@ vi:
         failure: Không thể cập nhật vị trí trong hồ sơ.
     heatmaps:
       show:
-        title: Thiết lập Bản đồ nhiệt
-        save: Cập nhật Cấu hình Bản đồ nhiệt
+        title: Thiết lập Lịch Đóng góp
+        show_contribution_calendar_in_public: Hiển thị lịch đóng góp trên trang hồ
+          sơ của bạn
+        save: Cập nhật Cấu hình Lịch Đóng góp
         cancel: Hủy bỏ
       update:
-        success: Bản đồ nhiệt đã được cập nhật.
-        failure: Không thể cập nhật bản đồ nhiệt.
+        success: Lịch đóng góp đã được cập nhật.
+        failure: Không thể cập nhật lịch đóng góp.
   sessions:
     new:
       tab_title: Đăng nhập
@@ -2500,6 +2507,8 @@ vi:
         contributors_hr_croatia: Croatia
         contributors_hr_dgu: Cơ quan Quản lý Trắc địa Nhà nước Croatia
         contributors_hr_open_data_portal: Cổng Dữ liệu Mở Quốc gia
+        contributors_nl_credit_new_html: '%{netherlands}: Chứa dữ liệu &copy; AND,
+          2007'
         contributors_nl_netherlands: Hà Lan
         contributors_nz_credit_html: |-
           %{new_zealand}: Chứa dữ liệu bắt nguồn từ %{linz_data_service_link}
@@ -2858,6 +2867,14 @@ vi:
       image_dimensions_html: Hình của lớp %{layer} với kích thước %{width}×%{height}
       download: Tải về
       downloading: Đang tải về…
+  webgl_error_panes:
+    show:
+      compact_message: Bản đồ này yêu cầu WebGL.
+      description_html: Rất tiếc, hình như %{your_browser_does_not_support_webgl},
+        một công nghệ dùng để kết xuất đồ họa 3D trên mạng.
+      your_browser_does_not_support_webgl: trình duyệt của bạn không hỗ trợ WebGL
+      webgl_is_required_for_this_map: Bản đồ này yêu cầu WebGL.
+      read_more_about_webgl: Đọc thêm
   traces:
     visibility:
       private: Bí mật (chỉ hiển thị các điểm vô danh không có thứ tự)
@@ -2900,13 +2917,13 @@ vi:
       points: 'Số nốt:'
       start_coordinates: 'Tọa độ đầu đường:'
       coordinates_html: '%{latitude}; %{longitude}'
-      map: bản đồ
-      edit: sửa đổi
+      map: xem địa điểm trên bản đồ
+      edit: mở trong trình vẽ
       owner: 'Tác giả:'
       description: 'Miêu tả:'
       tags: 'Thẻ:'
       none: Không có
-      edit_trace: Sửa đổi tuyến đường này
+      edit_trace: Sửa chi tiết tuyến đường
       delete_trace: Xóa tuyến đường này
       trace_not_found: Không tìm thấy tuyến đường!
       visibility: 'Mức độ truy cập:'
@@ -2917,8 +2934,8 @@ vi:
         other: '%{count} điểm'
       more: thêm
       trace_details: Xem Chi tiết Tuyến đường
-      view_map: Xem Bản đồ
-      edit_map: Sửa đổi Bản đồ
+      view_map: Xem địa điểm trên bản đồ
+      edit_map: Mở trong trình vẽ
       public: CÔNG KHAI
       identifiable: NHẬN RA ĐƯỢC
       private: RIÊNG
@@ -3127,6 +3144,10 @@ vi:
           trong %{privacy_policy_link} của chúng tôi.
       or: hoặc
       use external auth: hoặc mở tài khoản qua dịch vụ bên thứ ba
+      verify_human: Xác minh bạn là người thật
+    create:
+      not_human: Rất tiếc, không thể xác nhận bạn là người thật. Chỉ có người thật
+        được phép tạo tài khoản mới.
     no_such_user:
       title: Người dùng không tồn tại
       heading: Người dùng %{user} không tồn tại
@@ -3185,6 +3206,7 @@ vi:
       change_image: Sửa đổi Hình ảnh
       edit_company: Sửa đổi Công ty
       edit_location: Sửa đổi Vị trí
+      edit_contribution_calendar: Thiết lập Lịch Đóng góp
       contributions:
         other: Đóng góp %{count} lần trong năm qua
       title:
@@ -3517,6 +3539,10 @@ vi:
       tooltip: Chú giải
       tooltip_disabled: Bảng Chú giải không có sẵn cho lớp này
     map:
+      map:
+        title: Bản đồ
+        marker:
+          title: Ghim bản đồ
       popup:
         close: Đóng
       navigation_control:
@@ -3529,6 +3555,8 @@ vi:
           other: Bạn đang cách địa điểm này trong vòng %{count} mét
         feetPopup:
           other: Bạn đang cách địa điểm này trong vòng %{count} bộ
+      attribution_control:
+        toggle_attribution: Bật tắt Lời ghi công
       base:
         standard: Chuẩn
         cycle_map: Bản đồ Xe đạp

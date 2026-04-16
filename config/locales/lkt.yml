@@ -49,6 +49,7 @@ lkt:
             url:
               http_parse_error: Takómni URL http:// naíŋš https:// tȟokáheya uŋ
     models:
+      acl: Oíyaye Wóopȟe Čhašówapi
       changeset: Wóyutȟokča-opȟáȟte
       changeset_tag: Wóyutȟokča-opȟáȟte Ihóši
       country: Makȟóčhe
@@ -73,10 +74,13 @@ lkt:
       relation_member: Makȟá-oúŋčhaǧe Haŋké
       relation_tag: Makȟá-oúŋčhaǧe Ihóši
       report: Wóel'igle
+      session: Oškiŋčiye
       trace: Waóye
       tracepoint: Waóye-owáŋka
       tracetag: Waóye Ihóši
       user: Tuwá uŋ kiŋ
+      user_preference: Tuwá Uŋ Kiŋ Wóigluštaŋ
+      user_token: Tuwá Uŋ Kiŋ Kȟaŋsú
       way: Makȟá-kazópi
       way_node: Makȟá-kazópi Tȟaówaŋka
       way_tag: Makȟá-kazópi Ihóši
@@ -93,6 +97,7 @@ lkt:
       doorkeeper/application:
         name: Čhažé
         redirect_uri: Etáŋhaŋ URL Iglákapi yo/ye
+        confidential: Naȟmála wówala owáyagnaka he?
         scopes: Wóiyowiƞkhiye
       friend:
         user: Tuwá uŋ kiŋ
@@ -126,6 +131,7 @@ lkt:
         email: Wakȟáƞgli wóyakapi
         new_email: Wakȟaƞgli wóyakapi makȟóčhažeyate théča
         active: Škéhaŋ Uŋ
+        display_name: Čhažé tȟaŋíŋ
         company: Okȟólakičhiye
         home_lat: Oglákiŋyaŋ
         home_lon: Makȟáiphiyake Oíyutȟe
@@ -224,7 +230,7 @@ lkt:
         legale_names:
           france: Wašíču Ikčéka-Makȟóčhe
           italy: Italy Makȟóčhe
-          rest_of_world: Makȟóčhe uŋmápi
+          rest_of_world: Makȟóčhe uŋmá
       update:
         terms accepted: Kíč'uŋpi-wóopȟe kiŋ wičáyala! Philámaye!
       terms_declined_flash:
@@ -313,6 +319,7 @@ lkt:
       older_versions: Wótokheča Isáƞm Káƞ
       newer_versions: Wótokheča Isáƞm Théča
     actions:
+      view_redacted_data: Wíhoši Naȟmápi Kiŋ Waŋyáŋka yo/ye
       view_redaction_message: Wóanaȟma Tȟáwonaȟ’uŋ Waŋyáŋka yo/ye
   nodes:
     not_found_message:
@@ -320,6 +327,8 @@ lkt:
     timeout:
       sorry: Eháš tȟéhaŋ ID %{id} makȟa-owáŋka ihóši kiŋ oyále. He iyáču oyákihi šni.
   old_nodes:
+    not_found_message:
+      sorry: Makȟá-owáŋka %{id} wótokheča %{version} iyéwaya owákihi šni.
     timeout:
       sorry: Eháš tȟéhaŋ ID %{id} makȟa-owáŋka eháŋni-wóyakapi kiŋ owále. He iyáču
         oyákihi šni.
@@ -329,6 +338,8 @@ lkt:
     timeout:
       sorry: Eháš tȟéhaŋ ID %{id} makȟa-kazópi ihóši kiŋ oyále. He iyáču oyákihi šni.
   old_ways:
+    not_found_message:
+      sorry: Makȟá-kazópi %{id} wótokheča %{version} iyéwaya owákihi šni.
     timeout:
       sorry: Eháš tȟéhaŋ ID %{id} makȟa-kazópi eháŋni-wóyakapi kiŋ oyále. He iyáču
         oyákihi šni.
@@ -345,20 +356,29 @@ lkt:
       sorry: Eháš tȟéhaŋ ID %{id} makȟá-oúŋčhaǧe ihóši kiŋ oyále. He iyáču oyákihi
         šni.
   old_relations:
+    not_found_message:
+      sorry: Makȟá-oúŋčhaǧe %{id} wótokheča %{version} iyéwaya owákihi šni.
     timeout:
       sorry: Eháš tȟéhaŋ ID %{id} makȟá-oúŋčhaǧe eháŋni-wóyakapi kiŋ oyále. He iyáču
         oyákihi šni.
   old_relation_members:
+    not_found_message:
+      sorry: Makȟá-oúŋčhaǧe %{id} wótokheča %{version} iyéwaya owákihi šni.
     timeout:
       sorry: Eháš tȟéhaŋ ID %{id} makȟá-oúŋčhaǧe haŋké kiŋ hená oyále. He iyáču oyákihi
         šni.
   changeset_comments:
     feeds:
       comment:
+        comment: Wóyutȟokča-opȟáȟte %{changeset_id} mahél %{author} wóeye théča waŋ
+          káǧe
         commented_at_by_html: '%{when} he eháŋ %{user} yutȟókeča'
       show:
         title_all: OpenStreetMap wóyutȟokča-opȟáȟte akhíyapi
         title_particular: OpenStreetMap wóyutȟokča-opȟáȟte %{changeset_id} akhíyapi
+      timeout:
+        sorry: Eháš tȟéhaŋ wóyutȟokča-opȟáȟte wóeye tȟačhášowapi kiŋ oyále. He iyáču
+          oyákihi šni.
   changesets:
     changeset_line:
       comments:
@@ -377,15 +397,21 @@ lkt:
         title: Wóyutȟokča-opȟáȟte %{id}
         title_comment: Wóyutȟokča-opȟáȟte %{id} - %{comment}
         created: Káǧapi
+        closed: Ečhél iyéyapi
         belongs_to: Tuwá owá kiƞ
     show:
       title: 'Wóyutȟokča-opȟáȟte: %{id}'
       created: '%{when} he eháŋ káǧapi'
+      closed: '%{when} he eháŋ ečhél iyéyapi'
       created_ago_html: '%{time_ago} he eháŋ káǧapi'
+      closed_ago_html: '%{time_ago} he eháŋ ečhél iyéyapi'
+      created_ago_by_html: '%{time_ago} he eháŋ %{user} káǧe'
+      closed_ago_by_html: '%{time_ago} he eháŋ %{user} ečhél iyéye'
       discussion: Wóakhiye
       subscribe: Le otȟápȟa yo/ye
       unsubscribe: Le otȟápȟa-ayúštaƞ yo/ye
-      hidden_comment_by_html: '%{time_ago}, %{user} wóeye-naȟmápi waƞ káǧe'
+      comment_by_html: '%{time_ago} he eháŋ, %{user} wóeye waƞ káǧe'
+      hidden_comment_by_html: '%{time_ago} he eháŋ, %{user} wóeye-naȟmápi waƞ káǧe'
       hide_comment: naȟmá yo/ye
       unhide_comment: yuátȟaƞiƞ yo/ye
       comment: Waéya yo/ye
