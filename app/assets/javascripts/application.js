@@ -193,9 +193,12 @@ $(function () {
     $(document).on("turbo:render", updateHeader);
   }, 0);
 
-  $("#menu-icon").on("click", function (e) {
+  const menuIcon = $("#menu-icon");
+  const header = $("header");
+  menuIcon.on("click", function (e) {
     e.preventDefault();
-    $("header").toggleClass("closed");
+    header.toggleClass("closed");
+    menuIcon.prop("ariaExpanded", !header.hasClass("closed"));
   });
 
   $("nav.primary li a").on("click", function () {
