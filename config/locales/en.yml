@@ -2349,7 +2349,7 @@ en:
       legal_1_2_html: |
         If you would like to use OpenStreetMap maps or data please make sure to attribute OpenStreetMap—refer to %{attribution_guidelines_link} for more information.
       legal_attribution_guidelines_title: Attribution Guidelines
-      legal_attribution_guidelines_url: https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines
+      legal_attribution_guidelines_url: https://osmfoundation.org/wiki/Licence/Attribution_Guidelines
       legal_1_3_html: |
         Specifically for using a screenshot from OpenStreetMap directly in your book, publication, film or TV show, you do not need to ask for permission as data in OpenStreetMap is open for all to use. Refer to the %{attribution_guidelines_link} and see existing examples in %{attribution_example_film} and %{attribution_example_tv}.
       legal_attribution_example_film_title: Film
@@ -2434,11 +2434,11 @@ en:
           created a browsable map, a printed map or a static image.
           More details can be found in the %{attribution_guidelines_link} section of %{licensing_requirements_link}.
         credit_3_v2025_requirements_on_how_displayed: requirements on how this should be displayed
-        credit_3_v2025_requirements_on_how_displayed_url: https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines
+        credit_3_v2025_requirements_on_how_displayed_url: https://osmfoundation.org/wiki/Licence/Attribution_Guidelines
         credit_3_v2025_attribution_guidelines: attribution guidelines
-        credit_3_v2025_attribution_guidelines_url: https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines
+        credit_3_v2025_attribution_guidelines_url: https://osmfoundation.org/wiki/Licence/Attribution_Guidelines
         credit_3_v2025_licensing_requirements: the licensing requirements
-        credit_3_v2025_licensing_requirements_url: https://wiki.osmfoundation.org/wiki/Licence
+        credit_3_v2025_licensing_requirements_url: https://osmfoundation.org/wiki/Licence
         credit_4_v2025_html: |
           Generally speaking,
           to make clear that the data is available under the Open
@@ -2464,7 +2464,7 @@ en:
           to our %{takedown_procedure_link} or file directly at our
           %{online_filing_page_link}.
         infringement_2_1_takedown_procedure: takedown procedure
-        infringement_2_1_takedown_procedure_url: https://wiki.osmfoundation.org/wiki/Takedown_procedure
+        infringement_2_1_takedown_procedure_url: https://osmfoundation.org/wiki/Takedown_procedure
         infringement_2_1_online_filing_page: on-line filing page
         infringement_2_1_online_filing_page_url: https://dmca.openstreetmap.org/
         trademarks_title: Trademarks
@@ -2473,7 +2473,7 @@ en:
           OpenStreetMap Foundation. If you have questions about your use of the marks, please see our
           %{trademark_policy_link}.
         trademarks_1_1_trademark_policy: Trademark Policy
-        trademarks_1_1_trademark_policy_url: https://wiki.osmfoundation.org/wiki/Trademark_Policy
+        trademarks_1_1_trademark_policy_url: https://osmfoundation.org/wiki/Trademark_Policy
         services_title_html: Additional services
         services_1_html: |
           Although OpenStreetMap is open data, we cannot provide a
