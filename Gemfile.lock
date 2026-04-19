@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/tomhughes/image_optim.git
-  revision: 3ae8ac42f1c4d6a2da88bc218ca6e6b0a438551b
+  revision: 745137caf615ab07b29082c291416c8fbe0ac3b9
   ref: svgo-config
   specs:
     image_optim (0.31.4)
