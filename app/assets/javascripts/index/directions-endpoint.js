@@ -95,9 +95,20 @@ OSM.DirectionsEndpoint = function Endpoint(map, input, marker, dragCallback, cha
     if (g1) endpoint.cachedReverseGeocode = g1;
   };
 
+  function findPreferredEntrance(entrances, types) {
+    if (!entrances) return null;
+
+    for (const t of types) {
+      const matchId = entrances.find(e => e.type === t);
+      if (matchId) return matchId;
+    }
+
+    return null;
+  }
+
   function getGeocode() {
     const viewbox = map.getBounds().toBBoxString(), // <sw lon>,<sw lat>,<ne lon>,<ne lat>
-          geocodeUrl = OSM.NOMINATIM_URL + "search?" + new URLSearchParams({ q: endpoint.value, format: "json", viewbox, limit: 1 });
+          geocodeUrl = OSM.NOMINATIM_URL + "search?" + new URLSearchParams({ q: endpoint.value, format: "json", viewbox, limit: 1, entrances: 1 });
 
     endpoint.geocodeRequest = new AbortController();
     fetch(geocodeUrl, { signal: endpoint.geocodeRequest.signal })
@@ -114,7 +125,7 @@ OSM.DirectionsEndpoint = function Endpoint(map, input, marker, dragCallback, cha
         return;
       }
 
-      setLatLng(L.latLng(json[0]));
+      setLatLng(L.latLng(findPreferredEntrance(json[0].entrances, ["main", "yes"]) || json[0]));
 
       endpoint.value = json[0].display_name;
       input.val(json[0].display_name);
