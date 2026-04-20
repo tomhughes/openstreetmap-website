@@ -5,6 +5,7 @@
 # Author: Alvarenga
 # Author: Andrekowacs
 # Author: Athena in Wonderland
+# Author: Bartomelow
 # Author: BraulioBezerra
 # Author: Brunomelnic
 # Author: Cainamarques
@@ -147,7 +148,7 @@ pt:
       relation: Relação
       relation_member: Membro da relação
       relation_tag: Etiqueta de relação
-      report: Denunciar
+      report: denúncia
       session: Sessão
       trace: Trilha
       tracepoint: Ponto de trilha

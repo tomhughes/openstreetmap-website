@@ -685,17 +685,17 @@ pl:
       feed:
         title: Zestaw zmian %{id}
         title_comment: Zestaw zmian %{id} – %{comment}
-        created: Utworzone
+        created: Utworzony
         closed: Zamknięty
         belongs_to: Autor
     show:
       title: 'Zestaw zmian: %{id}'
       created: 'Utworzony: %{when}'
       closed: 'Zamknięty: %{when}'
-      created_ago_html: Utworzone %{time_ago}
-      closed_ago_html: Zamknięte %{time_ago}
+      created_ago_html: Utworzony %{time_ago}
+      closed_ago_html: Zamknięty %{time_ago}
       created_ago_by_html: Utworzone %{time_ago} przez %{user}
-      closed_ago_by_html: Zamknięte %{time_ago} przez %{user}
+      closed_ago_by_html: Zamknięty %{time_ago} przez %{user}
       discussion: Dyskusja
       join_discussion: Zaloguj się, aby dołączyć do dyskusji
       still_open: Zestaw zmian jest wciąż otwarty – dyskusja będzie możliwa, gdy zostanie
@@ -1205,7 +1205,7 @@ pl:
           road: Droga
           secondary: Droga drugorzędna
           secondary_link: Droga drugorzędna – łącznik
-          service: Droga serwisowa/dojazdowa
+          service: Droga wewnętrzna
           services: Miejsce Obsługi Podróżnych
           speed_camera: Fotoradar
           steps: Schody
@@ -2144,7 +2144,7 @@ pl:
       subject: '[OpenStreetMap] Prośba zmiany hasła'
       greeting: Cześć,
       hopefully_you: Ktoś (prawdopodobnie ty) poprosił o zresetowanie hasła do konta
-        w serwisie openstreetmap.org przypisanego do tego adresu e-mail.
+        na stronie openstreetmap.org przypisanego do tego adresu e-mail.
       click_the_link: Jeśli to ty, kliknij poniższy odnośnik, żeby wyczyścić hasło.
     note_comment_notification:
       description: 'Uwaga OpenStreetMap #%{id}'

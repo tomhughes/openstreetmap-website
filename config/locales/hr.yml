@@ -1961,8 +1961,8 @@ hr:
       description: 'Dnevnički zapis OpenStreetMapa #%{id}'
       subject: '[OpenStreetMap] %{user} je komentirao vaš dnevnički zapis'
       hi: Pozdrav %{to_user},
-      header: '%{from_user} je komentirao vaš nedavni OpenStreetMap dnevnički zapis
-        s predmetom %{subject}:'
+      header: '%{from_user} je komentirao OpenStreetMap dnevnički zapis s predmetom
+        %{subject}:'
       header_html: '%{from_user} je komentirao OpenStreetMap dnevnički zapis s predmetom
         %{subject}:'
       footer: Možete pročitati komentare na %{readurl} i komentirati na %{commenturl}
