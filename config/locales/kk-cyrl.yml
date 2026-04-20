@@ -243,7 +243,7 @@ kk-cyrl:
     show:
       title: Аккаунтты өңдеу
       my_account: Менің аккаунтым
-      current email address: Қазіргі е-пошта мекенжайы
+      current email address: Қазіргі эл. пошта мекенжайы
       external auth: Сыртқы аутентификация
       contributor_terms:
         heading: Жобаға қатысу шарттары
@@ -448,7 +448,7 @@ kk-cyrl:
   feature_queries:
     show:
       title: Мұнда не бар?
-      introduction: Жақын объектілерді табу үшін картаға басыңыз
+      introduction: Жақындағы объектілерді табу үшін картаға басыңыз
       nearby: Маңайдағы нысандар
       enclosing: Айналадағы нысандар
   old_elements:
@@ -602,7 +602,7 @@ kk-cyrl:
         сіз өткен сілтеме қате болуы мүмкін.
   dashboards:
     contact:
-      km away: Бұдан %{count} км жерде
+      km away: Сізден %{count} км жерде
       m away: Сізден %{count} м жерде
       latest_edit_html: 'Соңғы түзетім %{ago}:'
       no_edits: (өңдемелер жоқ)
@@ -2089,6 +2089,7 @@ kk-cyrl:
       user_page_link: қолданушы беті
     export:
       title: Экспорттау
+      licence: Лицензиясы
       too_large:
         planet:
           title: OSM ғаламшары
@@ -2128,6 +2129,7 @@ kk-cyrl:
       search_results: Іздеу нәтижелері
     search:
       search: Іздеу
+      get_directions_title: Екі нүкте арасында маршрут құру
       from: Қайдан
       to: Қайда
       where_am_i: Бұл қай жер?
@@ -2149,6 +2151,7 @@ kk-cyrl:
         way: сызық
       rules:
         title: Ережелер!
+        automated_edits: Автоматты өңдемелер
     add_a_note:
       title: Өңдеуге уақыт жоқ па? Ескертпе қос!
     communities:
@@ -2219,6 +2222,7 @@ kk-cyrl:
         building: Елеулі ғимарат
         station: Темір жол бекеті
         peak: Шың
+        tunnel: Пунктир = туннель
         bus_stop: Автобус аялдамасы
         bicycle_shop: Велосипед дүкені
         bicycle_parking: Велосипед тұрағы
@@ -2226,6 +2230,7 @@ kk-cyrl:
   share_panes:
     show:
       link: Сілтеме немесе HTML
+      include_marker: Маркер қосу
       long_link: Сілтеме
       short_link: Қысқа сілтеме
       embed: HTML
@@ -2327,8 +2332,10 @@ kk-cyrl:
       my_dashboard: Ақпарат панелім
       send message: Хабарлама жіберу
       diary: Күнделік
+      edits: Өңдемелер
       traces: Тректер
       mapper since: 'Тіркелген күні:'
+      last map edit: 'Соңғы өңдемесі:'
     lists:
       show:
         title: Қатысушылар
@@ -2371,6 +2378,8 @@ kk-cyrl:
     show:
       title: 'Ескертпе: %{id}'
       description: Сипаттама
+      discussion: Талқы
+      subscribe: Жазылу
       hide: Жасыру
     new:
       title: Жаңа ескертпе

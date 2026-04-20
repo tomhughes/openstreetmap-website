@@ -1935,6 +1935,7 @@ ko:
       description: 설명
       tags: 태그
       total_points: 총점
+      imported_points: 가져온 포인트 수
     gpx_failure:
       hi: 안녕하세요 %{to_user}님,
       failed_to_import: GPS 트레이스로 파일을 가져오지 못한 것 같습니다.
@@ -3303,6 +3304,7 @@ ko:
         ended: 종료
         revoked_html: '%{name}님에 의해 취소됨'
         active: 활동적인 사용자
+        active_until_read: 읽을 때까지 활성
         read_html: '%{time}에 읽음'
         time_in_future_title: '%{time_absolute}; %{time_relative}'
         time_in_past_title: '%{time_absolute}; %{time_relative}'

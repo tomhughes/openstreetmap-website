@@ -1952,6 +1952,7 @@ ro:
       see_their_profile: Puteți vedea profilul lor la %{userurl}.
       see_their_profile_html: Puteți vedea profilul respectiv la %{userurl}.
     gpx_details:
+      details: 'Detaliile fișierului tău:'
       filename: Nume de fișier
       url: URL
       description: Descriere
@@ -2810,6 +2811,7 @@ ro:
         track: Înregistrare GPS
         bridleway: Traseu de călărie
         cycleway: Pistă de biciclete
+        international_bike_route: Rută internațională de ciclism
         national_bike_route: Rețeaua națională de ciclism
         regional_bike_route: Rețeaua regională de ciclism
         local_bike_route: Rețeaua locală de ciclism
@@ -3530,10 +3532,16 @@ ro:
         o notă pentru a explica problema.
       anonymous_warning_log_in: autentificare
       anonymous_warning_sign_up: înregistrare
+      counter_warning_guide_link:
+        text: contribuie singur
+      counter_warning_forum_link:
+        text: comunitatea te poate ajuta
       advice: Notația dvs. este publică și poate fi utilizată pentru actualizarea
         hărții, astfel încât să nu introduceți informații personale sau informații
         din hărți protejate prin drepturi de autor sau listări de directoare.
       add: Adaugă notație
+    new_readonly:
+      title: Notă nouă
     notes_paging_nav:
       showing_page: Pagina %{page}
       next: Următorul
@@ -3701,6 +3709,12 @@ ro:
       show_address: Arată adresa
       query_features: Funcții de interogare
       centre_map: Centrează harta aici
+    home:
+      marker_title: Locația mea acasă
+      not_set: Contul tău nu are locația acasă setată
+    contribution_calendar:
+      tooltip:
+        no_contributions: Nicio contribuție pe %{date}
     remote_edit:
       failed:
         title: Editarea a eșuat
