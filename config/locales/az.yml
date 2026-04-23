@@ -254,7 +254,7 @@ az:
       title: Hesabı redaktə et
       my_account: Hesabım
       current email address: Cari e-poçt ünvanı
-      external auth: Xarici Doğrulama
+      external auth: Xarici Autentifikasiya
       contributor_terms:
         heading: Töhfəçi Şərtləri
         agreed: '%{date} tarixində Töhfəçi Şərtləri ilə razılaşmısınız.'

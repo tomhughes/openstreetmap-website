@@ -188,7 +188,7 @@ es:
       relation: Relación
       relation_member: Miembro de la relación
       relation_tag: Etiqueta de la relación
-      report: Informe
+      report: Denuncia
       session: Sesión
       trace: Traza
       tracepoint: Punto de la traza
@@ -1650,7 +1650,7 @@ es:
           tattoo: Estudio de tatuajes
           tea: Tienda de té
           ticket: Tienda de Tickets
-          tobacco: Tienda de conveniencia
+          tobacco: Tienda de tabaco
           toys: Juguetería
           travel_agency: Agencia de viajes
           tyres: Tienda de neumáticos
@@ -2030,6 +2030,9 @@ es:
     partners_fastly: Fastly
     partners_corpmembers: Miembros corporativos de OSMF
     partners_partners: socios
+    welcome_tou_notice_html: Al utilizar este sitio web u otra infraestructura proporcionada
+      por la Fundación OpenStreetMap, aceptas los %{terms_link}.
+    terms_of_use: Términos de uso
     tou: Términos de Uso
     nothing_to_preview: Nada que previsualizar.
     learn_more: Más información
@@ -2395,6 +2398,7 @@ es:
         image: Imagen
         company: Empresa
         location: Ubicación
+        contribution_calendar: Calendario de contribuciones
     descriptions:
       show:
         title: Editar perfil
@@ -2456,12 +2460,14 @@ es:
         failure: No se ha podido actualizar la ubicación del perfil.
     heatmaps:
       show:
-        title: Configurar Mapa de Calor
-        save: Actualizar la configuración del mapa de calor
+        title: Configurar calendario de contribuciones
+        show_contribution_calendar_in_public: Mostrar el calendario de contribuciones
+          en tu página de perfil
+        save: Actualizar la configuración del calendario de contribuciones
         cancel: Cancelar
       update:
-        success: Mapa de Calor actualizado.
-        failure: No se pudo actualizar el Mapa de Calor.
+        success: Calendario de contribuciones actualizado.
+        failure: No se pudo actualizar el calendario de contribuciones.
   sessions:
     new:
       tab_title: Iniciar sesión
@@ -3517,6 +3523,7 @@ es:
       change_image: Cambiar imagen
       edit_company: Editar compañía
       edit_location: Editar ubicación
+      edit_contribution_calendar: Configurar el calendario de contribuciones
       contributions:
         one: '%{count} contribución en el último año'
         other: '%{count} contribuciones en el último año'
@@ -3864,6 +3871,10 @@ es:
       tooltip: Leyenda del mapa
       tooltip_disabled: Leyenda del mapa no disponible en esta capa
     map:
+      map:
+        title: Mapa
+        marker:
+          title: Marcadores de mapas
       popup:
         close: Cerrar
       navigation_control:
@@ -3878,6 +3889,8 @@ es:
         feetPopup:
           one: Estás a %{count} pie desde este punto
           other: Estás a %{count} pies desde este punto
+      attribution_control:
+        toggle_attribution: Alternar atribución
       base:
         standard: Estándar
         cyclosm: CyclOSM

@@ -14,6 +14,7 @@
 # Author: Boniface
 # Author: CKali
 # Author: Cantons-de-l'Est
+# Author: Chpol
 # Author: Cquoi
 # Author: Crochet.david
 # Author: Cybereric
@@ -77,6 +78,7 @@
 # Author: Mdk
 # Author: Melimeli
 # Author: Metroitendo
+# Author: MimoletteMeow
 # Author: Momo50WM
 # Author: Mulcyber
 # Author: Mæ CALDÌN
@@ -1365,7 +1367,7 @@ fr:
           sports_centre: Centre sportif
           stadium: Stade
           swimming_pool: Piscine
-          track: Piste de course
+          track: Piste de course (hors sports automobiles)
           water_park: Parc aquatique
           "yes": Loisirs
         lock:
@@ -1934,6 +1936,7 @@ fr:
         az: Azerbaïdjanais
         id: Indonésien
         ms: Malais
+        bcl: bicolano central
         bs: Bosnien
         br: Breton
         ca: Catalan
@@ -1964,6 +1967,7 @@ fr:
         ku-Latn: Kurde (latin)
         lv: Letton
         lb: Luxembourgeois
+        lkt: lakota
         lt: Lituanien
         hu: Hongrois
         fit: Meänkieli
@@ -2050,6 +2054,9 @@ fr:
       et d’autres %{partners}.
     partners_corpmembers: des entreprises membres de l'OSMF
     partners_partners: partenaires
+    welcome_tou_notice_html: En utilisant ce site web ou toute autre infrastructure
+      fournie par la Fondation OpenStreetMap, vous acceptez les %{terms_link}.
+    terms_of_use: Conditions d'utilisation
     tou: Conditions d’utilisation
     nothing_to_preview: La prévisualisation est vide.
     learn_more: En savoir plus
@@ -2420,6 +2427,7 @@ fr:
         image: Image
         company: Entreprise
         location: Emplacement
+        contribution_calendar: Calendrier des contributions
     descriptions:
       show:
         title: Modifier le profil
@@ -2482,12 +2490,14 @@ fr:
         failure: Impossible de mettre à jour l’emplacement du profil.
     heatmaps:
       show:
-        title: Configurer la carte thermique
-        save: Mettre à jour de la configuration de la carte thermique
+        title: Configurer le calendrier des contributions
+        show_contribution_calendar_in_public: Afficher le calendrier des contributions
+          sur votre page de profil
+        save: Mettre à jour la configuration du calendrier des contributions
         cancel: Annuler
       update:
-        success: Carte thermique mise à jour.
-        failure: La carte thermique n'a pas pu être mise à jour.
+        success: Calendrier des contributions mis à jour.
+        failure: Impossible de mettre à jour le calendrier des contributions.
   sessions:
     new:
       tab_title: Se connecter
@@ -2614,12 +2624,21 @@ fr:
       legal_1_1_terms_of_use: Conditions d’utilisation
       legal_1_1_aup: Politique des usages acceptés
       legal_1_1_privacy_policy: Politique de confidentialité
+      legal_1_2_html: Si vous souhaitez utiliser les cartes ou les données d'OpenStreetMap,
+        veuillez vous assurer de mentionner OpenStreetMap comme source — consultez
+        %{attribution_guidelines_link} pour plus d'informations.
       legal_attribution_guidelines_title: Indications pour l’Attribution
       legal_attribution_guidelines_url: https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines
+      legal_1_3_html: Aucune autorisation n'est requise pour utiliser une capture
+        d'écran d'OpenStreetMap directement dans votre livre, publication, film ou
+        émission télévisée, les données d'OpenStreetMap étant libres de droits. Consultez
+        le lien %{attribution_guidelines_link} et les exemples existants dans %{attribution_example_film}
+        et %{attribution_example_tv}.
       legal_attribution_example_film_title: Film
+      legal_attribution_example_tv_title: Télévision
       legal_2_1_html: |-
         Veuillez %{contact_the_osmf_link}
-        si vous avez des questions sur les conditions de licence, les droits d’auteur ou d’autres questions juridiques.
+        pour toute autre question relative aux licences, aux droits d'auteur ou à d'autres aspects juridiques.
       legal_2_1_contact_the_osmf: contacter l’OSMF
       legal_2_2_html: OpenStreetMap, le logo avec la loupe, ainsi que State of the
         Map sont des %{registered_trademarks_link}.
@@ -2784,6 +2803,8 @@ fr:
         contributors_hr_dgu: Administration géodésique de l'État de Croatie
         contributors_hr_open_data_portal: Portail national des données ouvertes
         contributors_hr_open_data_portal_url: https://data.gov.hr/en/
+        contributors_nl_credit_new_html: '%{netherlands} : Contient des données &copy;,
+          2007'
         contributors_nl_netherlands: Pays-Bas
         contributors_nz_credit_html: |-
           %{new_zealand} : contient des données provenant du %{linz_data_service_link}
@@ -3521,6 +3542,7 @@ fr:
       change_image: Changer l’image
       edit_company: Modifier l’entreprise
       edit_location: Modifier l’emplacement
+      edit_contribution_calendar: Configurer le calendrier des contributions
       contributions:
         one: Une contribution au cours de la dernière année
         other: '%{count} contributions au cours de la dernière année'
@@ -3870,6 +3892,10 @@ fr:
       tooltip: Légende
       tooltip_disabled: La légende n’est pas disponible pour cette couche
     map:
+      map:
+        title: Carte
+        marker:
+          title: Repère sur la carte
       popup:
         close: Fermer
       navigation_control:
@@ -3884,6 +3910,8 @@ fr:
         feetPopup:
           one: Vous êtes à moins de %{count} pied de ce point
           other: Vous êtes à moins de %{count} pieds de ce point
+      attribution_control:
+        toggle_attribution: Afficher/masquer les crédits
       base:
         standard: Standard
         cycle_map: Carte cyclable

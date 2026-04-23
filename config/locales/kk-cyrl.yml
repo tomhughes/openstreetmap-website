@@ -131,7 +131,7 @@ kk-cyrl:
         auth_provider: Аутентификация провайдері
         auth_uid: Аутентификация UID
         email: Электронды пошта
-        new_email: Жаңа эл.поштаның мекенжайы
+        new_email: Жаңа эл.пошта мекенжайы
         active: Белсенді
         display_name: Көрсетілетін ат
         description: Профильдің сипаттамасы
@@ -139,8 +139,8 @@ kk-cyrl:
         home_lat: Ендік
         home_lon: Бойлық
         home_location_name: Үй мекенжайының атауы
-        languages: Қолайлы тілдер
-        preferred_editor: Қалайтын редактор
+        languages: Қалаған тілдер
+        preferred_editor: Қалаған редактор
         pass_crypt: Пароль
         pass_crypt_confirmation: Парольді растау
     help:
@@ -242,7 +242,7 @@ kk-cyrl:
   accounts:
     show:
       title: Аккаунтты өңдеу
-      my_account: Менің аккаунтым
+      my_account: Аккаунтым
       current email address: Қазіргі эл. пошта мекенжайы
       external auth: Сыртқы аутентификация
       contributor_terms:
@@ -617,7 +617,7 @@ kk-cyrl:
         және үй мекенжайыңызды орнатыңыз.
       edit_your_profile: Профиліңізді түзетіңіз
       followings: Сіз жазылған қатысушылар
-      no followings: Сіз бір де бір қатысушыға жазымлмағансыз.
+      no followings: Сіз әлі бір де бір қатысушыға жазылмағансыз.
       nearby users: Жақын жердегі басқа қатысушылар
       no nearby users: Жақын жерде картаны өңдеймін дейтін басқа қатысушылар әзірше
         жоқ
@@ -718,25 +718,56 @@ kk-cyrl:
       messages:
         account_selection_required: Авторизация сервері соңғы пайдаланушының тіркелгісін
           таңдауды талап етеді
+        consent_required: Авторизация сервері соңғы пайдаланушының келісімін талап
+          етеді
+        interaction_required: Авторизация сервері соңғы пайдаланушының әрекеттестігін
+          талап етеді
+        login_required: Авторизация сервері соңғы пайдаланушының аутентификациясын
+          талап етеді
     flash:
       applications:
         create:
           notice: Қосымша тіркелген.
+    openid_connect:
+      errors:
+        messages:
+          auth_time_from_resource_owner_not_configured: Doorkeeper::OpenidConnect.configure.auth_time_from_resource_owner
+            конфигурациясы болмағандығынан орын алған сәтсіздік.
+          reauthenticate_resource_owner_not_configured: Doorkeeper::OpenidConnect.configure.reauthenticate_resource_owner
+            конфигурациясы болмағандығынан орын алған сәтсіздік.
+          resource_owner_from_access_token_not_configured: Doorkeeper::OpenidConnect.configure.resource_owner_from_access_token
+            конфигурациясы болмағандығынан орын алған сәтсіздік.
+          select_account_for_resource_owner_not_configured: Doorkeeper::OpenidConnect.configure.select_account_for_resource_owner
+            конфигурациясы болмағандығынан орын алған сәтсіздік.
+          subject_not_configured: ID токенін генерациялау OpenidConnect.configure.subject
+            конфигурациясы болмағаннан сәтсіздікке ұшырады.
     scopes:
       address: Нақты менжайыңызды көру
       email: Эл. поштаңызды көру
+      openid: Аккаунтыңызды растаңыз
       phone: Телефон нөміріңізді көру
+      profile: Профиліңіздін ақпаратын қарау
   errors:
     contact:
+      contact_url_title: Әртүрлі байланыс каналдарына түсініктеме
       contact: байланыс
+      contact_the_community_html: Жұмыс істемейтін сілтеме немесе қате тапсаңыз, OpenStreetMap
+        қауымдастығымен %{contact_link}. Сұратымыңыздың нақты URL-ын жазып алыңыз.
     bad_request:
       title: Қате сұраныс
+      description: OpenStreetMap серверінен сұраған операцияңыз дұрыс емес (HTTP 400)
     forbidden:
       title: Рұқсат жоқ
+      description: OpenStreetMap серверінен сұраған операцияңыз администраторларға
+        ғана қолжетімді (HTTP 400)
     internal_server_error:
       title: Қолданба қатесі
+      description: OpenStreetMap сервері күтпеген жағдайға тап болып, сұратымды орындай
+        алмады (HTTP 500)
     not_found:
       title: Файл табылмады
+      description: OpenStreetMap серверінде мұндай атаумен файл/каталог/API операциясы
+        табылмады (HTTP 404)
   export:
     show:
       title: OpenStreetMap кіріктірілген
@@ -911,6 +942,7 @@ kk-cyrl:
           apartments: Көп пәтерлі үй
           barn: Қамба
           bungalow: Бунгало
+          cabin: Жұпыны үй
           chapel: Капелла
           church: Шіркеу ғимараты
           civic: Қоғамдық ғимарат
@@ -1004,6 +1036,7 @@ kk-cyrl:
           bus_stop: Автобус аялдамасы
           busway: Автобус жолағы
           construction: Салынып жатқан жол
+          corridor: Дәліз
           crossing: Қиылыс
           cycleway: Велосипед жолы
           elevator: Лифт
@@ -1253,6 +1286,7 @@ kk-cyrl:
           isthmus: Мойнақ
           land: Жер
           marsh: Сазды жер
+          moor: Қуаң дала
           mud: Балшық
           peak: Шың
           peninsula: Түбек
@@ -1355,6 +1389,7 @@ kk-cyrl:
           stop: темір жол аялдамасы
           subway: Метро
           subway_entrance: Метро кіреберісі
+          switch: Теміржол бұру тетігі
           tram: Трамвай
           tram_stop: Трамвай аялдамасы
           turntable: Т/ж айналдыратын шеңбері
@@ -1514,10 +1549,19 @@ kk-cyrl:
           lagoon: Лагуна
           wastewater: Қалдық су
           oxbow: Ескі арна
+          stream_pool: Ағынсудың иірімі
           lock: Шлюз
         waterway:
+          artificial: Жасанды ағынсу
+          boatyard: Верфь
+          canal: Канал
           dam: Бөгет
+          derelict_canal: Кеуіп қалған канал
+          ditch: Арық
+          dock: Док
+          drain: Кәріз
           lock: Шлюз
+          lock_gate: Шлюз қақпасы
           rapids: Шоңғал
           river: Өзен
           stream: Жылға
@@ -1609,6 +1653,9 @@ kk-cyrl:
       comments_on_this_issue: Осы мәселе жайлы комментарийлер
       comment_from_html: '%{comment_created_at} жазылған %{user_link} қатысушысынан
         комментарий'
+    helper:
+      reportable_title:
+        note: №%{note_id} ескертпе
   reports:
     new:
       categories:
@@ -1629,7 +1676,7 @@ kk-cyrl:
       provide_details: Қажетті қосымша мәліметтерді енгізіңіз
   languages_panes:
     select_language_list:
-      search_language: Ізделуде…
+      search_language: Іздеу…
       languages:
         af: Африкаанс
         gsw: Алеманнша
@@ -1665,13 +1712,26 @@ kk-cyrl:
         ia: Интерлингва
         is: Исландша
         it: Итальянша
+        lv: Латышша
+        lb: Люксембургша
+        lkt: Лакота
+        lt: Литванша
         hu: Венгрше
+        fit: Торнедальдік финше
         nl: Нидерландша
+        nb: Норвегше(букмол)
+        nn: Жаңанорвегше
+        oc: Окситанша
+        nds: Төменгі немісше
         pl: Полякша
         pt-PT: Португальша
         pt: Португалша
+        ksh: Кёльнше
         ro: Румынша
+        sc: Сардинше
+        sco: Шотландша
         sq: Албанша
+        scn: Cицилийше
         sk: Словакша
         sl: Словенше
         sr-Latn: Сербше (латын)
@@ -1679,8 +1739,11 @@ kk-cyrl:
         fi: Финнше
         sv: Шведше
         tl: Тагалог
+        kab: Кабильше
         vi: Вьетнамша
         tr: Түрікше
+        yo: Йоруба
+        diq: Димли
         el: Грекше
         ba: Башқұртша
         be: Беларусша
@@ -1697,19 +1760,28 @@ kk-cyrl:
         yi: Идиш
         he: Ивритше
         ar: Арабша
+        skr-arab: Сирайки
         fa: Парсыша
         arz: Мысырлық арабша
+        pnb: Батыс Панджаби
         ps: Пушту
         nqo: Н'Ко
         ne: Непалша
+        mr: Маратхи
         hi: Хинди
         bn: Бенгалша
         pa: Панджаби
         gu: Гуджарати
         ta: Тамильше
         te: Телугу
+        kn: Каннада
         th: Тайша
+        my: Бирманша
+        shn: Шанша
+        xmf: Мегрельше
         ka: Грузинше
+        km: Кхмер
+        sat: Сантали
         zh-CN: Қытайша (Жеңілдетілген)
         zh-TW: Қытайша (Дәстүрлі)
         zh-HK: Қытайша (Гонконг)
@@ -1721,6 +1793,7 @@ kk-cyrl:
     layer_info: Қабат жайлы ақпарат
     start_mapping: Картаға түсіруді бастау
     intro_header: OpenStreetMap-қа қош келдіңіз
+    partners_partners: әріптестер
     terms_of_use: Қолдану шарттары
     tou: Қолдану шарты
     nothing_to_preview: Алдын ала қарайтын дым жоқ.
@@ -1729,7 +1802,7 @@ kk-cyrl:
       about: Жоба туралы
       communities: Қауымдастықтар
       copyright: Авторлық құқықтар
-      donate: Қайырмалдық
+      donate: Қайырымдылық
       edit: Өңдеу
       edit_with: '%{editor} арқылы өңдеу'
       export: Экспорттау
@@ -1893,12 +1966,14 @@ kk-cyrl:
       flash changed: Пароліңіз өзгертілді.
   preferences:
     preferences:
+      update_success_flash:
+        message: Бапталымдар жаңартылды.
       navigation:
         preferences: Баптаулар
         advanced_preferences: Күрделі баптаулар
     basic_preferences:
       show:
-        title: Қалайтындарым
+        title: Бапталымдарым
         preferred_language: Қалаған тіл
         preferred_site_color_scheme: Сайттың қалаған түстік схемасы
         site_color_schemes:
@@ -1980,13 +2055,15 @@ kk-cyrl:
         failure: Профиль мекенжайын жаңарту мүмкін болмады.
     heatmaps:
       show:
+        title: Түзетім күнтізбесін реттеу
         cancel: Болдырмау
   sessions:
     new:
       tab_title: Кіру
+      email or username: Эл. пошта немесе пайдаланушының аты
       password: Пароль
-      remember: Мені есте сақта
-      lost password link: Пароліңді жоғалтып алдың ба?
+      remember: Мені есте сақтау
+      lost password link: Пароліңізді жоғалтып алдыңыз ба?
       login_button: Кіру
       with external: болмаса басқа сайт арқылы кіріңіз
       or: немесе
@@ -2054,11 +2131,12 @@ kk-cyrl:
         newest: Ең жаңа қатысушылар
   site:
     about:
-      heading_html: '%{copyright}OpenStreetMap авторлары%{br}'
+      heading_html: '%{copyright}OpenStreetMap-қа үлес қосушылар%{br}'
       used_by_html: '%{name} мыңдаған сайттарға, мобильді қолданбаларға және құрылғыларға
         карта деректерін ұсынады'
     about_section:
       open_data_title: Ашық дерек
+      legal_1_1_terms_of_use: Қолдану шарттары
       legal_attribution_example_film_title: Фильм
       legal_attribution_example_tv_title: ТВ
       partners_title: Әріптестер
@@ -2070,8 +2148,17 @@ kk-cyrl:
         title: Бұл бет туралы
         mapping_link: картаға түсіруді бастау
       legal_babble:
+        licensing_1_open: ашық
+        licensing_1_osm_foundation: OpenStreetMap қоры
+        credit_title_html: OpenStreetMap-қа қалай сілтенсем болады
+        trademarks_title: Тауар белгілері
+        services_title_html: Қосымша сервистер
+        contributors_title_html: Үлес қосушыларымыз
         contributors_at_austria: Аустрия
+        contributors_at_stadt_wien: Вена қаласы
+        contributors_at_land_vorarlberg: Форарльберг жері
         contributors_au_australia: Аустралия
+        contributors_au_geoscape_australia: Geoscape Аустралия
         contributors_ca_canada: Канада
         contributors_cz_czechia: Чехия
         contributors_fi_finland: Финляндия
@@ -2087,17 +2174,23 @@ kk-cyrl:
         contributors_gb_united_kingdom: Ұлыбритания
     not_public_flash:
       user_page_link: қолданушы беті
+      anon_edits_link_text: Неліктен бұлай екенін білу.
     export:
       title: Экспорттау
+      manually_select: Қолмен басқа аумақты таңдау
       licence: Лицензиясы
       too_large:
         planet:
           title: OSM ғаламшары
         overpass:
           title: Overpass API
+        other:
+          title: Басқа дереккөздер
+          description: OpenStreetMap уикисінде көрсетілген қосымша дереккөздер
       export_button: Экспорттау
       export_download: Жазылуда...
       confirmation:
+        header: XML деректерін жазып алу
         cancel: Болдырмау
         download: Жүктеп алу
     fixthemap:
@@ -2105,6 +2198,8 @@ kk-cyrl:
         title: Қалай көмектессем
         join_the_community:
           title: Қауымдастыққа қосылу
+      other_concerns:
+        title: Басқа да мәсәлелер
     help:
       title: Анықтама алу
       welcome:
@@ -2133,11 +2228,14 @@ kk-cyrl:
       from: Қайдан
       to: Қайда
       where_am_i: Бұл қай жер?
-      submit_text: Өту
+      submit_text: Табу
+      reverse_directions_text: Керісінше бағдар
       modes:
         bicycle: Велосипедпен
         car: Машинамен
         foot: Жаяу
+      providers:
+        description: Навигациялық сервистер
     welcome:
       title: Қош келдіңіз!
       introduction: Ашық және ерікті әлем картасы OpenStreetMap-қа қош келдіңіз. Енді
@@ -2145,19 +2243,29 @@ kk-cyrl:
         нәрселер туралы қысқаша нұсқаулық берілген.
       whats_on_the_map:
         title: Картада не бар
+        real_and_current: нақты және ағымдағы
         doesnt: жоқ
       basic_terms:
+        editor: редактор
         node: нүкте
         way: сызық
+        tag: тег
       rules:
         title: Ережелер!
+        imports: Импорттар
         automated_edits: Автоматты өңдемелер
+      start_mapping: Картаға түсіруді бастау
+      continue_authorization: Авторизацияны жалғастыру
     add_a_note:
       title: Өңдеуге уақыт жоқ па? Ескертпе қос!
+      the_map: картаға
     communities:
       title: Қауымдастықтар
       other_groups:
         title: Басқа топтар
+  social_links:
+    show:
+      website: сайт
   legend_panes:
     show:
       entries:
@@ -2171,6 +2279,10 @@ kk-cyrl:
         track: Қара жол
         bridleway: Атпен жүретін жол
         cycleway: Веложол
+        national_bike_route: Ұлттық веложол
+        regional_bike_route: Өңірлік веложол
+        local_bike_route: Жергілікті веложол
+        mountain_bike_route: Таудағы веложол
         footway: Жаяужол
         rail: Темір жол
         train: Пойыз
@@ -2180,6 +2292,7 @@ kk-cyrl:
         tram: Трамвай
         trolleybus: Толлейбус
         bus: Автобус
+        taxiway: Рульдеу жолы
         apron: Әуежай перроны
         admin: Әкімшілік шекара
         capital: Астана
@@ -2241,6 +2354,10 @@ kk-cyrl:
       image_dimensions_html: Өлшемі %{width} x %{height} болатын суретте стандартты
         қабат көрсетіледі
       download: Жүктеп алу
+      downloading: Жүктелуде...
+  webgl_error_panes:
+    show:
+      read_more_about_webgl: Көбірек оқу
   traces:
     new:
       visibility_help: бұл не деген?
@@ -2261,32 +2378,77 @@ kk-cyrl:
       none: Жоқ
       delete_trace: Осы тректі өшіріп тастау
       trace_not_found: Трек табылмады!
+      confirm_delete: Осы тректі өшіресіз бе?
     trace:
+      pending: ӨҢДЕЛУДЕ
+      count_points:
+        one: '%{count} нүкте'
+        other: '%{count} нүкте'
+      more: толығырақ
       edit_map: Картаны өңдеу
+      public: АШЫҚ
+      identifiable: СӘЙКЕСТЕНДІРІЛЕТІН
+      private: ЖЕКЕ
+      trackable: ҚАДАҒАЛАНАТЫН
     index:
+      public_traces: Ашық GPS-тректер
+      my_gps_traces: GPS-тректерім
+      public_traces_from: '%{user} жасаған ашық GPS-тректер'
+      description: Жақында салынған GPS-тректерді қарау
+      tagged_with: '%{tags} тэгі бар'
       empty_title: Әзірше мында дым жоқ
+      all_traces: Барлық тректер
+      my_traces: Тректерім
+      traces_from_html: '%{user} жасаған ашық тректер'
   application:
     settings_menu:
+      account_settings: Аккаунт баптаулары
       oauth2_applications: OAuth 2 қосымшалары
     auth_providers:
       google:
         title: Google арқылы кіру
+        alt: Google логотибі
+      apple:
+        title: Apple арқылы кіру
+        alt: Apple логотибі
       facebook:
         title: Facebook арқылы кіру
+        alt: Facebook логотибі
       microsoft:
         title: Microsoft арқылы кіру
+        alt: Microsoft логотибі
       github:
         title: GitHub арқылы кіру
+        alt: GitHub логотибі
       wikipedia:
         title: Уикипедия арқылы кіру
+        alt: Уикипедия логотибі
     share:
+      share:
+        title: Бөлісу
+      email:
+        title: Эл. пошта арқылы бөлісу
+      bluesky:
+        title: Bluesky арқылы бөлісу
+      facebook:
+        title: Facebook арқылы бөлісу
+      linkedin:
+        title: LinkedIn арқылы бөлісу
+      mastodon:
+        title: Mastodon-да бөлісу
       telegram:
         title: Телеграмда бөлісу
+      x:
+        title: X-те бөлісу
   oauth:
     scopes:
       openid: OpenStreetMap арқылы кіру
   oauth2_applications:
     index:
+      no_applications_html: '%{oauth2} стандарты арқылы бізбен жұмыс істеу үшін тіркегіңіз
+        келетін қолданбаңыз бар ма? Бұл қызметке OAuth-сұратымын жібере алуы үшін
+        алдымен қолданбаңызды тіркеуіңіз қажет.'
+      new: Жаңа қолданба тіркеу
       name: Атауы
       permissions: Рұқсаттар
     application:
@@ -2302,9 +2464,16 @@ kk-cyrl:
       deny: Бас тарту
   oauth2_authorized_applications:
     index:
+      application: Қолданба
       permissions: Рұқсаттар
+      last_authorized: Соңғы авторизация
+    application:
+      revoke: Кіру мүмкіндігін жою
+      confirm_revoke: Мына қосымшаға кіру мүмкіндігін жоясыз ба?
   users:
     new:
+      title: Тіркелу
+      tab_title: Тіркелу
       about:
         header: Ашық та өңделмелі.
         paragraph_1: Басқа карталарға қарағада, OpenStreetMap толықтай сіз сияқты
@@ -2322,13 +2491,13 @@ kk-cyrl:
     show:
       my diary: Күнделігім
       my edits: Өңдемелерім
-      my traces: Бағдарларым
+      my traces: Тректерім
       my notes: Ескертпелерім
       my messages: Хабарламаларым
       my profile: Профилім
-      my_account: Менің аккаунтым
+      my_account: Аккаунтым
       my comments: Комментарийларым
-      my_preferences: Қалайтындарым
+      my_preferences: Бапталымдарым
       my_dashboard: Ақпарат панелім
       send message: Хабарлама жіберу
       diary: Күнделік
@@ -2336,6 +2505,14 @@ kk-cyrl:
       traces: Тректер
       mapper since: 'Тіркелген күні:'
       last map edit: 'Соңғы өңдемесі:'
+      comments: Комментарийлер
+      create_block: Мына қатысушыны бұғаттау
+      activate_user: Мына қатысушыны активтендіру
+      edit_profile_details: Профиль деректерін түзету
+      edit_contribution_calendar: Түзетім күнтізбесін реттеу
+      contributions:
+        one: Соңғы бір жылда %{count} түзетім
+        other: Соңғы бір жылда %{count} түзетім
     lists:
       show:
         title: Қатысушылар
@@ -2370,19 +2547,68 @@ kk-cyrl:
       edit: Өңдеу
     page:
       reason: 'Бұғаттау себебі:'
+  user_mutes:
+    index:
+      table:
+        thead:
+          actions: Әрекеттер
+        tbody:
+          send_message: Хабарлама жіберу
   notes:
     index:
+      heading: '%{user} қалдырған ескертпелер'
+      subheading_html: '%{user} арқылы %{submitted} немесе %{commented} ескертпелер'
+      subheading_submitted: жолданған
+      subheading_commented: комментарий қалдырылған
+      no_notes: Ескертпе жоқ
+      id: Id
+      creator: Авторы
       description: Сипаттама
+      created_at: Құрылды
+      last_changed: Соңғы өзгеріс
       apply: Қолданысқа енгізу
       all: Барлығы
+      open: Шешілмеген
+      closed: Шешілген
+      hidden: Жасырылған
+      status: Статусы
     show:
       title: 'Ескертпе: %{id}'
       description: Сипаттама
+      open_title: '#%{note_name} шешілмеген ескертпесі'
+      closed_title: '#%{note_name} шешілген ескертпесі'
+      hidden_title: '#%{note_name} жасырылған ескертпесі'
+      description_when_author_is_deleted: өшірілді
+      description_when_there_is_no_opening_comment: белгісіз
+      event_opened_by_html: '%{time_ago} %{user} қатысушысымен құрылды'
+      event_opened_by_anonymous_html: '%{time_ago} анонимді түрде құрылды'
+      event_commented_by_html: '%{time_ago} %{user} қалдырған комментарий'
+      event_commented_by_anonymous_html: '%{time_ago} анонимн қалдырған комментариий'
+      event_closed_by_html: '%{time_ago} %{user} қатысушысымен шешілді'
+      event_closed_by_anonymous_html: '%{time_ago} анониммен шешілді'
+      event_reopened_by_html: '%{time_ago} %{user} қатысушысымен қайта ашылды'
+      event_reopened_by_anonymous_html: '%{time_ago} анониммен қайта ашылды'
+      event_hidden_by_html: '%{time_ago} %{user} қатысушымен жасырылды'
+      report: Мына ескертпеге шағымдану
       discussion: Талқы
       subscribe: Жазылу
+      unsubscribe: Жазылудан бас тарту
       hide: Жасыру
+      resolve: Шешу
+      reactivate: Қайта ашу
+      comment_and_resolve: Комментарий қалдырып, шешу
+      comment: Комментарий қалдыру
+      log_in_to_comment: Ескертпеге комментариий қалдыру үшін жүйеге кіріңіз
     new:
       title: Жаңа ескертпе
+      intro: Қате немесе жетіспейтін нәрсе байқадыңыз ба? Оны түзету үшін басқа картографтарды
+        құлағдар етіңіз. Маркерді керек жерге жылжытып, мәселені түсіндіретін жазба
+        қалдырыңыз.
+      counter_warning_guide_link:
+        text: Өздігінен үлес қосу
+      advice: Сіздің жазбаңыз көпшілікке ашық болады, және де картаны жаңарту үшін
+        пайдаланылуы мүмкін, сондықтан жеке мәліметтерді немесе авторлық құқықпен
+        қорғалған карталар мен анықтамалықтардағы ақпаратты енгізбеңіз.
       add: Ескертпе қосу
     notes_paging_nav:
       showing_page: '%{page}-беті'
@@ -2398,6 +2624,10 @@ kk-cyrl:
       tooltip: Шартты белгілер
       tooltip_disabled: Бұл қабаттың шартты белгілері қолжетімсіз
     map:
+      map:
+        title: Карта
+      popup:
+        close: Жабу
       navigation_control:
         zoom_in: Жақындату
         zoom_out: Алыстату
@@ -2405,14 +2635,32 @@ kk-cyrl:
         find_my_location: Орналасқан жерімді көрсету
       base:
         standard: Cтандартты
+        cycle_map: Велосипед картасы
         transport_map: Көлік картасы
+        tracestracktop_topo: Топографиялық
+        hot: Гуманитарлық
+        shortbread: Shortbread
+        openmaptiles_osm: MapTiler OMT
       layers:
         header: Карта қабаттары
+        notes: Ескертпелер
+        data: Карта деректері
+        gps: Ашық GPS-тректер
+        overlays: Картадағы қателіктерді анықтау үшін қабаттасуларды қосыңыз
         title: Қабаттар
+      openstreetmap_contributors: OpenStreetMap-қа үлес қосушылар
+      make_a_donation: Қайырымдылық жасау
+      website_and_api_terms: Сайт пен API шарттары
+      osm_france: OpenStreetMap Франция
+      andy_allan: Энди Аллан
     site:
+      edit_tooltip: Картаны түзету
       edit_disabled_tooltip: Картаны өңдеу үшін, оны жақындатыңыз
+      createnote_disabled_tooltip: Картаға ескертпе қосу үшін, оны жақындатыңыз
       queryfeature_tooltip: Мұнда не бар?
       queryfeature_disabled_tooltip: Маңайдағы нысандарды көру үшін картаны жақындатыңыз
+    profile:
+      social_link_n: Әлеуметтік профильдерге сілтемелер %{n}
     directions:
       distance_in_units:
         m: '%{distance}м'
@@ -2420,9 +2668,30 @@ kk-cyrl:
         ft: '%{distance}фут'
         yd: '%{distance}ярд'
         mi: '%{distance}миль'
+      errors:
+        no_place:
+          body: '''%{place}'' деген жер табылмады.'
       instructions:
+        continue_without_exit: '%{name} бойынша жүре беріңіз'
+        slight_right_without_exit: '%{name} бағытында сәл оңға'
+        offramp_right: Жолайрықтан оңға бұрылыңыз
+        offramp_right_with_exit: Оң жақтағы %{exit} бағытында бұрылыңыз
+        offramp_right_with_exit_name: '%{exit} бағытында оң жақтағы %{name} бағытында
+          бұрылыңыз'
+        turn_right_without_exit: '%{name} бағытына қарай оңға'
+        sharp_right_without_exit: '%{name} бағытына қарай қатты оңға'
+        uturn_without_exit: '%{name} бағытында артқа бұрылыңыз'
+        sharp_left_without_exit: '%{name} бағытына қарай қатты солға'
+        turn_left_without_exit: '%{name} бағытына қарай солға'
+        offramp_left: Жолайрықтан солға бұрылыңыз
+        offramp_left_with_exit: Сол жақтағы %{exit} бағытында бұрылыңыз
+        offramp_left_with_exit_name: '%{exit} бағытында сол жақтағы %{name} бағытында
+          бұрылыңыз'
         via_point_without_exit: (нүкте арқылы)
+        follow_without_exit: '%{name} бойымен жүріңіз'
+        stay_roundabout_without_exit: '%{name} жол айрығында қалыңыз'
         start_without_exit: '%{name} дегенен бастаңыз'
+        destination_without_exit: Жетіп қалдыңыз
         unnamed: атаусыз жол
         exit_counts:
           first: 1-ші
@@ -2442,12 +2711,18 @@ kk-cyrl:
     element:
       wikipedia: Уикипедия
     context:
-      directions_from: Осы жерден маршрут құру
-      directions_to: Осы жерге маршрут құру
+      directions_from: Осы жерден бастап
+      directions_to: Осы жерге дейін
       add_note: Осы жерге ескертпе қосу
       show_address: Мекенжайын көрсету
       query_features: Мұнда не бар?
       centre_map: Картаны центрлендіру
+    home:
+      marker_title: Үй мекенжайым
+      not_set: Аккаунтыңыздың үй мекенжайы қойылмаған
+    contribution_calendar:
+      tooltip:
+        no_contributions: '%{date} күнінде өңдеме жоқ'
   redactions:
     edit:
       heading: Түзетуді өңдеу
@@ -2456,11 +2731,15 @@ kk-cyrl:
       heading: Түзетулер тізімі
       title: Түзетулер тізімі
     show:
+      description: 'Сипаттамасы:'
+      user: 'Жасаушы:'
       confirm: Сенімдісіз бе?
     create:
       flash: Түзету жасалды.
     update:
       flash: Өзгерістер сақталды.
   validations:
+    leading_whitespace: алдыңғы бос орын бар
+    trailing_whitespace: артыңғы бос орын бар
     invalid_characters: ішінде жарамсыз таңбалар бар
 ...

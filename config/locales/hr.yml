@@ -1959,7 +1959,7 @@ hr:
   user_mailer:
     diary_comment_notification:
       description: 'Dnevnički zapis OpenStreetMapa #%{id}'
-      subject: '[OpenStreetMap] %{user} je komentirao vaš dnevnički zapis'
+      subject: '[OpenStreetMap] %{user} je komentirao dnevnički zapis'
       hi: Pozdrav %{to_user},
       header: '%{from_user} je komentirao OpenStreetMap dnevnički zapis s predmetom
         %{subject}:'
