@@ -824,6 +824,10 @@ kab:
       ascend: Asawen
       descend: Takessart
       kilometers: ikilumitren
+      miles_feet: imilen, aḍar
+      miles_yards: imilen, iyarden
+      download: Sader-d abrid am GeoJSON
+      directions_courtesy_html: Tinilwin s lmendad n %{link}
       check_demo_html: Ugar n yisallen sɣur %{link}
   issues:
     index:
@@ -1116,6 +1120,7 @@ kab:
       remember: Cfu fell-i
       lost password link: Tweddreḍ awal-ik uffir?
       login_button: Qqen
+      with external: neɣ qqen s tanfa taberranit
     destroy:
       title: Tuffɣa
       heading: Tuffɣa si OpenStreetMap
@@ -1542,9 +1547,19 @@ kab:
           body: Ur ufiɣ ara '%{place}'.
       instructions:
         continue_without_exit: Kemmel ɣef %{name}
+        slight_right_without_exit: Bren am acemma ɣer tama tayeffust ɣef %{name}
+        endofroad_right_without_exit: Am ara ifakk ubrid, bref ɣer tama tayeffust
+          ɣef %{name}
+        fork_right_without_exit: Ar ger iberdan, bren ɣer tama tayeffust ɣef %{name}
         turn_right_without_exit: Bren ɣer tama tayeffust ɣef %{name}
+        sharp_right_without_exit: Bren mliḥ ɣer tama tayeffust ɣef %{name}
+        sharp_left_without_exit: Bren mliḥ ɣer tama taẓelmaḍt ɣef %{name}
         turn_left_without_exit: Bren ɣer tama taẓelmaḍt ɣef %{name}
         offramp_left_with_exit: Ṭṭef tuffɣa %{exit} ɣef tama taẓemaḍt
+        endofroad_left_without_exit: Am ara ifakk ubrid, bref ɣer tama taẓelmaḍt ɣef
+          %{name}
+        fork_left_without_exit: Ar ger iberdan, bren ɣer tama taẓelmaḍt ɣef %{name}
+        slight_left_without_exit: Bren am acemma ɣer tama taẓelmaḍt ɣef %{name}
         via_point_without_exit: (ekk taneqqiḍt)
         follow_without_exit: Ḍfer %{name}
         start_without_exit: Bdu seg %{name}

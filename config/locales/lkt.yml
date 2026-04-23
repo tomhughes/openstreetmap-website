@@ -449,9 +449,13 @@ lkt:
       your location: Tuktél yauŋ
       following: Tuwá otȟáyapȟe kiŋ
     show:
-      edit_your_profile: Čhažé-oyáŋke hdutȟókeča yo/ye
+      no_home_location_html: '%{edit_profile_link} na tuktél yathí kiŋ ékignaka kiŋháŋ,
+        tuwá khiyéla uŋ kiŋ waŋláŋka oyákihi kte.'
+      edit_your_profile: Čhažé-oyáŋke yahdútȟókeča
       followings: Tuwá otȟáyapȟa kiŋ
       no followings: Héčhena tuwéni otȟáyapȟa šni.
+      nearby users: Tuwá khiyéla uŋ kiŋ uŋmá
+      no nearby users: Héčhena tuwéni khiyéla uŋ šni, s'eléčheča.
       followed_changesets: wóyutȟokča-opȟáȟte
       followed_diaries: aŋpél'okigwapi wówapi
   diary_entries:
@@ -461,6 +465,9 @@ lkt:
       location: Tuktél
       use_map_link: Makȟówapi Uŋ wo/we
     index:
+      title: Tuwá Uŋ Kiŋ Tȟaáŋpél'okigwapi
+      title_followed: Tuwá Otȟáyapȟa Kiŋ Tȟaáŋpél'okigwapi
+      title_nearby: Tuwá Khiyéla Uŋ Kiŋ Tȟaáŋpél'okigwapi
       user_title: '%{user} Tȟaaŋpél''okigwapi'
       in_language_title: '%{language} ogná Aŋpél''okigwapi Wówapi'
       no_entries: Aŋpél'okigwapi wówapi waníča
@@ -994,7 +1001,7 @@ lkt:
       comments_on_this_issue: Wóičaǧi Tȟawóeye
     helper:
       reportable_title:
-        note: 'Wóeye #%{note_id}'
+        note: 'Wówapi čístila #%{note_id}'
   reports:
     new:
       title_html: Wahóši %{link}
@@ -1130,13 +1137,15 @@ lkt:
     terms_of_use: Úƞpi-Wóopȟe
     tou: Úƞpi-wóopȟe
     header:
+      about: OpenStreetMap-Ihóši
+      communities: Okȟólakičhiye Kiŋ
       copyright: Wayúota-wóiyowiƞkhiye
       donate: Mázaska kič'úŋ wo/we
       edit: Yutȟókeča
       edit_with: '%{editor} uƞ yutȟókeča'
       export: Yutȟáŋkal ičú wo/we
       gps_traces: GPS Waóye
-      help: Ómakiya yo/ye
+      help: Wóokiye
       history: Eháƞni-wóyakapi
       issues: Wóičaǧi
       log_out: Čhaž'óigwa-ayúštaƞ yo/ye
@@ -1144,6 +1153,7 @@ lkt:
       more: Sáƞpȟa
       select_language: Iyápi Kaȟníǧa wo/we
       sign_up: Čhažé-oyáŋke kičháǧayo/ye
+      user_diaries: Aŋpél'okigwapi
     meta:
       openstreetmap_search: OpenStreetMap Olé
     select_language_button:
@@ -1191,7 +1201,7 @@ lkt:
       click_the_link: He uŋyákilapi ehaŋtaŋš, wóičhikȟoyake kiŋ le akákpi yo/ye. Héčhel
         iyówiƞkhiya-wičhóiye yaglútȟeča kte.
     note_comment_notification:
-      description: 'OpenStreetMap Wóeye #%{id}'
+      description: 'OpenStreetMap Wówapi-čístila #%{id}'
       anonymous: Tuwá čhažé-wanílya uŋ waŋ
       greeting: Hau/Haƞ,
     changeset_comment_notification:
@@ -1245,10 +1255,14 @@ lkt:
         destroy_button: Iháƞgya yo/ye
     inboxes:
       show:
-        people_mapping_nearby: tuwá nikhíyela makȟówapi
+        no_messages_yet_html: Waŋna tákuni wónaȟ'uŋ iyáču šni. %{people_mapping_nearby_link}
+          ob wóyaglaka oyakihi. Yačhíŋ he?
+        people_mapping_nearby: Tuwá nikhíyela makȟówapi kiŋ
     outboxes:
       show:
-        people_mapping_nearby: tuwá nikhíyela makȟówapi
+        no_sent_messages_html: Waŋna tákuni wónaȟ'uŋ iyeyáye šni. %{people_mapping_nearby_link}
+          ob wóyaglaka oyakihi. Yačhíŋ he?
+        people_mapping_nearby: Tuwá nikhíyela makȟówapi kiŋ
       message:
         destroy_button: Iháƞgya yo/ye
   passwords:
@@ -1355,7 +1369,7 @@ lkt:
       url: URL
     richtext_field:
       edit: Yutȟókeča
-      help: Ókiya
+      help: Wóokiye
     pagination:
       changeset_comments:
         older: Wóeye Isáŋm Kaŋ
@@ -1386,13 +1400,14 @@ lkt:
     about:
       heading_html: '%{copyright}OpenStreetMap %{br} tuwá kíč''uŋ kiŋ'
     about_section:
+      community_driven_user_diaries: aŋpél'okigwapi
       community_driven_osm_foundation: OSM Okȟólakičhiye
       open_data_copyright_license: Wayúota-wóiyowiƞkhiye na Wóopȟe-wóiyowiƞkhiye oyúblaye
       legal_title: Wóopȟe Kiƞ
       legal_1_1_openstreetmap_foundation: OpenStreetMap Okȟólakičhiye
       legal_1_1_terms_of_use: Úƞpi-wóopȟe
       legal_1_1_privacy_policy: Waúŋyutȟaŋiŋpi-šni
-      legal_attribution_guidelines_url: https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines
+      legal_attribution_guidelines_url: https://osmfoundation.org/wiki/Licence/Attribution_Guidelines
       legal_attribution_example_film_title: Wanáškaƞškaƞyaƞpi
       legal_attribution_example_film_url: https://wiki.openstreetmap.org/wiki/Films
       legal_attribution_example_tv_title: Wičhítenaškaŋškaŋ
@@ -1699,7 +1714,7 @@ lkt:
       openid: OpenStreetMap ogná Čhaž'óigwa yo/ye
       write_api: Makȟówapi kiƞ yutȟókeča
       write_gpx: GPS waóye waŋkál okšu wo/we
-      write_notes: Wóeye kiŋ yutȟókeča yo/ye
+      write_notes: Wówapi-čístila kiŋ yutȟókeča yo/ye
   oauth2_applications:
     index:
       name: Čhažé
@@ -1850,8 +1865,8 @@ lkt:
       error: '%{name} luínila oyákihi šni. %{full_message}'
   notes:
     index:
-      heading: '%{user} Tȟawóeye'
-      no_notes: Wóeye waníča
+      heading: '%{user} Tȟawówapi-čístila'
+      no_notes: Wówapi-čístila waníča
       id: Id
       creator: Tuwá le káǧe
       description: Wóyakapi
@@ -1860,7 +1875,7 @@ lkt:
     show:
       title: 'Wóeye: %{id}'
       description: Wóyakapi
-      hidden_title: 'Wóeye naȟmápi #%{note_name}'
+      hidden_title: 'Wówapi-čístila naȟmápi #%{note_name}'
       description_when_author_is_deleted: iháŋgyapi
       description_when_there_is_no_opening_comment: olsólyapi šni
       event_opened_by_html: '%{time_ago} he eháŋ %{user} káǧe'
@@ -1903,16 +1918,19 @@ lkt:
       base:
         standard: Ikčé
         cycle_map: Nagmíyaƞpi Makȟówapi
-        shortbread: Shortbread
+        transport_map: Tȟokšúpi Makȟówapi
+        hot: Wówauŋšila Wóečhuŋ
+        shortbread: Aǧúyapi-ptéčela
         openmaptiles_osm: MapTiler OMT
       layers:
-        notes: Makȟówapi Wóeye
+        notes: Makȟówapi Wówapi-čístila
         data: Makȟówapi-Ihóši
       make_a_donation: Mázaska Kič’úŋ wo/we
       osm_france: OpenStreetMap Wašíču Ikčéka-Makȟóčhe
       andy_allan: Andy Allan
     site:
       edit_tooltip: Oyúblaye kiŋ lé yutȟókeča yo/ye
+      createnote_tooltip: Makȟówapi akáŋn wówapi-čístila waŋ égnaka yo/ye
     directions:
       distance_in_units:
         m: '%{distance}čha’íyutȟapi'
@@ -1939,6 +1957,7 @@ lkt:
     element:
       wikipedia: Wikipedia
     context:
+      add_note: Léčhiya wówapi-čístila waŋ égnaka yo/ye
       show_address: Makȟóčhažeyate pazó wo/we
   redactions:
     edit:
