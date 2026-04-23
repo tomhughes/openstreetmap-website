@@ -1,20 +1,20 @@
 # Manual Installation Guide
 
-These instructions are based on Ubuntu 24.04 LTS, though the OSMF servers are currently running Debian 12. The instructions also work, with only minor amendments, for all other current Ubuntu releases, Fedora and macOS.
+These instructions are based on Ubuntu 26.04 LTS, though the OSMF servers are currently running Debian 12. The instructions also work, with only minor amendments, for all other current Ubuntu releases, Fedora and macOS.
 
 ## Prerequisites
 
 Many of the dependencies are managed through the standard Ruby on Rails mechanisms - i.e. Ruby gems specified in the Gemfile and installed using Bundler. Some system packages are also required before you can get the various gems installed.
 
 **Minimum requirements:**
-* Ruby 3.2+
+* Ruby 3.3+
 * PostgreSQL 13+
 * Bundler (see note below about [developer Ruby setup](#ruby-version-manager-optional))
 * JavaScript Runtime
 
 ## Step 1: Install System Dependencies
 
-### Ubuntu 24.04 LTS
+### Ubuntu 26.04 LTS
 
 ```bash
 sudo apt-get update
@@ -28,7 +28,7 @@ sudo npm install --global yarn
 ```
 
 > [!TIP]
-> On Ubuntu 24.04, you may need to start PostgreSQL:
+> On Ubuntu 26.04, you may need to start PostgreSQL:
 >
 > ```bash
 > sudo systemctl start postgresql.service
