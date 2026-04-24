@@ -229,7 +229,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    database_consistency (3.0.3)
+    database_consistency (3.0.4)
       activerecord (>= 3.2)
     date (3.5.1)
     debug (1.11.1)
@@ -339,7 +339,7 @@ GEM
     hashdiff (1.2.1)
     hashie (5.1.0)
       logger
-    herb (0.9.7)
+    herb (0.10.1)
     highline (3.1.2)
       reline
     htmlentities (4.4.2)
