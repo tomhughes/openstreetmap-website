@@ -176,7 +176,7 @@ GEM
     builder (3.3.0)
     bzip2-ffi (1.1.1)
       ffi (~> 1.0)
-    cancancan (3.6.1)
+    cancancan (3.6.2)
     capybara (3.40.0)
       addressable
       matrix
