@@ -738,7 +738,7 @@ GEM
       track_open_instances (~> 0.1)
     progress (3.6.0)
     prosopite (2.2.0)
-    pstore (0.2.1)
+    pstore (0.3.0)
     public_suffix (7.0.5)
     puma (8.0.2)
       nio4r (~> 2.0)
