@@ -353,6 +353,8 @@ en:
         retain_notes: Your map notes and note comments, if any, will be retained but hidden from view.
         retain_changeset_discussions: Your changeset discussions, if any, will be retained.
         retain_email: Your email address will be retained.
+        details_change_html: If you are trying to change your display name or email address, or link your account to a third party login, then you do not need to delete and recreate your account to do so as you can change those from the %{settings_link}.
+        settings_page: settings page
         recent_editing_html: "As you have edited recently your account cannot currently be deleted. Deletion will be possible in %{time}."
         confirm_delete: Are you sure?
         cancel: Cancel
